@@ -1,0 +1,801 @@
+# IRDB NYC Wave 2b — Chefs scored 43–75
+# Run: python3 scripts/batch-intake.py data/nyc-wave2b.yaml --dry-run --verbose
+
+default_city: "New York"
+default_state: "NY"
+
+chefs:
+  # ─── REFERENCE MENTORS ───────────────────────────────────────
+
+  - name: "Masaharu Morimoto"
+    bio: "Iron Chef (original Japanese + America). Trained under Nobu Matsuhisa at Nobu NYC. Global restaurant empire."
+    birth_country: "JP"
+    birth_city: "Hiroshima, Japan"
+    tier: "lineage"
+    cuisine_tags: ["japanese", "fusion", "fine-dining"]
+    stops:
+      - restaurant: "Nobu"
+        position: "Executive Chef"
+        start_year: 1994
+        mentor: "Nobu Matsuhisa"
+        neighborhood: "Tribeca"
+        cuisine_tags: ["japanese", "peruvian"]
+        open_year: 1994
+      - restaurant: "Morimoto"
+        position: "Chef/Owner"
+        start_year: 2001
+        is_current: true
+        city: "Philadelphia"
+        state: "PA"
+        cuisine_tags: ["japanese", "fine-dining"]
+        open_year: 2001
+      - restaurant: "Momosan Ramen & Sake"
+        position: "Chef/Owner"
+        is_current: true
+        neighborhood: "Murray Hill"
+        cuisine_tags: ["japanese", "ramen"]
+
+  - name: "Rene Redzepi"
+    bio: "Co-founder of Noma (4x World's Best Restaurant). Redefined fine dining with New Nordic cuisine. Noma closed 2024."
+    birth_country: "DK"
+    birth_city: "Copenhagen, Denmark"
+    tier: "lineage"
+    cuisine_tags: ["nordic", "fine-dining", "foraging"]
+    stops:
+      - restaurant: "Noma"
+        position: "Chef/Co-Founder"
+        start_year: 2003
+        end_year: 2024
+        is_current: false
+        city: "Copenhagen"
+        state: "Denmark"
+        cuisine_tags: ["nordic", "fine-dining", "foraging"]
+        open_year: 2003
+        close_year: 2024
+        restaurant_status: "closed"
+
+  - name: "Laurent Tourondel"
+    bio: "French-trained NYC chef. Troisgros and Maximin lineage. Built the BLT restaurant empire. Mentor to Marc Forgione."
+    birth_country: "FR"
+    tier: "lineage"
+    cuisine_tags: ["french", "fine-dining", "steakhouse"]
+    education:
+      - institution: "Saint Vincent Ecole de Cuisine"
+        city: "France"
+    stops:
+      - restaurant: "Troisgros"
+        position: "Cook"
+        city: "Roanne"
+        state: "France"
+        cuisine_tags: ["french", "fine-dining"]
+      - restaurant: "Le Chantecler"
+        position: "Cook"
+        city: "Nice"
+        state: "France"
+        cuisine_tags: ["french", "fine-dining"]
+      - restaurant: "Cello"
+        position: "Chef/Owner"
+        neighborhood: "Upper East Side"
+        cuisine_tags: ["french", "fine-dining"]
+        restaurant_status: "closed"
+      - restaurant: "BLT Steak"
+        position: "Chef/Owner"
+        start_year: 2004
+        neighborhood: "Midtown"
+        cuisine_tags: ["steakhouse", "american"]
+        open_year: 2004
+
+  # ─── WAVE 2b CHEFS ──────────────────────────────────────────
+
+  - name: "Hoyoung Kim"
+    bio: "Direct protege of Jungsik Yim. Former exec chef of 2-star Jungsik. Michelin star at JUA."
+    birth_country: "KR"
+    tier: "lineage"
+    cuisine_tags: ["korean", "fine-dining", "wood-fire"]
+    stops:
+      - restaurant: "Jungsik"
+        position: "Line Cook"
+        start_year: 2009
+        mentor: "Jungsik Yim"
+        notes: "Started at Jung Sik Dang Seoul, came to NYC with Yim in 2011"
+      - restaurant: "Jungsik"
+        position: "Executive Chef"
+        mentor: "Jungsik Yim"
+        notes: "Promoted to exec chef after Paris training"
+      - restaurant: "JUA"
+        position: "Chef/Owner"
+        start_year: 2020
+        is_current: true
+        neighborhood: "Flatiron"
+        cuisine_tags: ["korean", "wood-fire", "fine-dining"]
+        open_year: 2020
+
+  - name: "Sam Lawrence"
+    bio: "Trained under Ignacio Mattos as lead chef and culinary director at Estela. Michelin star at Bridges in first year."
+    birth_country: "US"
+    tier: "lineage"
+    cuisine_tags: ["french", "basque", "fine-dining"]
+    stops:
+      - restaurant: "The NoMad"
+        position: "Cook"
+        neighborhood: "NoMad"
+        cuisine_tags: ["american", "fine-dining"]
+        restaurant_status: "closed"
+      - restaurant: "Estela"
+        position: "Lead Chef / Culinary Director"
+        mentor: "Ignacio Mattos"
+        notes: "Oversaw Estela, Lodi, and Altro Paradiso"
+      - restaurant: "Bridges"
+        position: "Chef/Owner"
+        start_year: 2024
+        is_current: true
+        neighborhood: "Chinatown"
+        cuisine_tags: ["french", "basque", "fine-dining"]
+        open_year: 2024
+
+  - name: "Nick Curtola"
+    bio: "Trained at Noma. Michelin star at The Four Horsemen. 2x JBF semifinalist."
+    birth_country: "US"
+    tier: "lineage"
+    cuisine_tags: ["new-american", "natural-wine"]
+    stops:
+      - restaurant: "Noma"
+        position: "Cook"
+        mentor: "Rene Redzepi"
+        city: "Copenhagen"
+        state: "Denmark"
+      - restaurant: "The Four Horsemen"
+        position: "Executive Chef"
+        start_year: 2015
+        is_current: true
+        neighborhood: "Williamsburg"
+        city: "Brooklyn"
+        cuisine_tags: ["new-american", "natural-wine"]
+        open_year: 2015
+
+  - name: "Sunny Lee"
+    bio: "Trained at EMP and Blue Hill at Stone Barns under Barber. JBF 2026 Emerging Chef semifinalist."
+    birth_country: "KR"
+    tier: "lineage"
+    cuisine_tags: ["korean", "wine-bar"]
+    stops:
+      - restaurant: "Eleven Madison Park"
+        position: "Cook"
+        mentor: "Daniel Humm"
+      - restaurant: "Blue Hill at Stone Barns"
+        position: "Cook"
+        mentor: "Dan Barber"
+      - restaurant: "Sunn's"
+        position: "Chef/Owner"
+        is_current: true
+        neighborhood: "Chinatown"
+        cuisine_tags: ["korean", "wine-bar"]
+
+  - name: "Greg Baxtrom"
+    bio: "Trained at Alinea (3.5yr sous), Per Se, and Blue Hill Stone Barns. F&W Restaurant of the Year (Olmsted). 4 Brooklyn restaurants."
+    birth_country: "US"
+    tier: "lineage"
+    cuisine_tags: ["new-american", "fine-dining", "seasonal"]
+    education:
+      - institution: "Kendall College"
+        city: "Chicago, IL"
+    stops:
+      - restaurant: "Alinea"
+        position: "Sous Chef"
+        start_year: 2010
+        end_year: 2013
+        mentor: "Grant Achatz"
+        city: "Chicago"
+        state: "IL"
+      - restaurant: "Per Se"
+        position: "Cook"
+        mentor: "Thomas Keller"
+      - restaurant: "Blue Hill at Stone Barns"
+        position: "Chef de Cuisine"
+        mentor: "Dan Barber"
+      - restaurant: "Olmsted"
+        position: "Chef/Owner"
+        start_year: 2016
+        is_current: true
+        neighborhood: "Prospect Heights"
+        city: "Brooklyn"
+        cuisine_tags: ["new-american", "seasonal"]
+        open_year: 2016
+
+  - name: "Gregory Gourdet"
+    bio: "Top Chef finalist. Trained under Vongerichten for 7 years — first CIA intern at JG. Opening Maison Passerelle in NYC."
+    birth_country: "US"
+    tier: "lineage"
+    cuisine_tags: ["french", "haitian", "diaspora"]
+    education:
+      - institution: "New York University"
+        credential: "Pre-Med"
+      - institution: "Culinary Institute of America"
+        city: "Hyde Park, NY"
+    stops:
+      - restaurant: "Jean-Georges"
+        position: "Cook"
+        mentor: "Jean-Georges Vongerichten"
+        notes: "First CIA intern at JG. 7 years across 3 restaurants, rose to chef de cuisine"
+      - restaurant: "Kann"
+        position: "Chef/Owner"
+        start_year: 2022
+        is_current: true
+        city: "Portland"
+        state: "OR"
+        cuisine_tags: ["haitian", "diaspora"]
+        open_year: 2022
+      - restaurant: "Maison Passerelle"
+        position: "Chef/Owner"
+        start_year: 2025
+        is_current: true
+        neighborhood: "Financial District"
+        cuisine_tags: ["french", "brasserie"]
+        open_year: 2025
+
+  - name: "Geoffrey Zakarian"
+    bio: "Iron Chef. Trained at Le Cirque under Alain Sailhac for 4 years. Three separate 3-star NYT reviews. Michelin star at Country."
+    birth_country: "US"
+    tier: "lineage"
+    cuisine_tags: ["french", "american", "fine-dining"]
+    education:
+      - institution: "Culinary Institute of America"
+        city: "Hyde Park, NY"
+    stops:
+      - restaurant: "Le Cirque"
+        position: "Chef de Cuisine"
+        notes: "4 years under Alain Sailhac, started by volunteering"
+      - restaurant: "Le Chantecler"
+        position: "Stage"
+        city: "Nice"
+        state: "France"
+      - restaurant: "Town"
+        position: "Chef/Owner"
+        neighborhood: "Midtown"
+        cuisine_tags: ["american", "fine-dining"]
+        restaurant_status: "closed"
+      - restaurant: "Country"
+        position: "Chef/Owner"
+        neighborhood: "Flatiron"
+        cuisine_tags: ["american", "fine-dining"]
+        restaurant_status: "closed"
+      - restaurant: "The Lambs Club"
+        position: "Chef/Owner"
+        is_current: true
+        neighborhood: "Midtown"
+        cuisine_tags: ["american", "fine-dining"]
+
+  - name: "Dale Talde"
+    bio: "CIA grad. Top Chef S4 and All-Stars. Trained at Vong under Vongerichten and Morimoto under Morimoto. JBF nominee."
+    birth_country: "US"
+    birth_city: "Chicago, IL"
+    tier: "lineage"
+    cuisine_tags: ["asian-american", "filipino", "cantonese"]
+    education:
+      - institution: "Culinary Institute of America"
+        city: "Hyde Park, NY"
+    stops:
+      - restaurant: "Vong"
+        position: "Cook"
+        mentor: "Jean-Georges Vongerichten"
+        city: "Chicago"
+        state: "IL"
+        cuisine_tags: ["thai", "french"]
+        restaurant_status: "closed"
+      - restaurant: "Morimoto"
+        position: "Cook"
+        mentor: "Masaharu Morimoto"
+        city: "Philadelphia"
+        state: "PA"
+      - restaurant: "Buddakan"
+        position: "Chef de Cuisine"
+        neighborhood: "Chelsea"
+        cuisine_tags: ["asian"]
+      - restaurant: "Goosefeather"
+        position: "Chef/Owner"
+        is_current: true
+        city: "Tarrytown"
+        cuisine_tags: ["cantonese"]
+        open_year: 2019
+
+  - name: "Melissa Rodriguez"
+    bio: "CIA grad. Trained at Daniel under Boulud for 5 years. First woman to helm a NYT 4-star restaurant (Del Posto)."
+    birth_country: "US"
+    tier: "lineage"
+    cuisine_tags: ["contemporary", "wood-fire", "fine-dining"]
+    education:
+      - institution: "Culinary Institute of America"
+        city: "Hyde Park, NY"
+        year: 1999
+    stops:
+      - restaurant: "Daniel"
+        position: "Sous Chef"
+        start_year: 2006
+        end_year: 2011
+        mentor: "Daniel Boulud"
+      - restaurant: "Del Posto"
+        position: "Executive Chef"
+        start_year: 2017
+        end_year: 2021
+        is_current: false
+        neighborhood: "Chelsea"
+        cuisine_tags: ["italian", "fine-dining"]
+        restaurant_status: "closed"
+      - restaurant: "Crane Club"
+        position: "Chef"
+        start_year: 2023
+        is_current: true
+        neighborhood: "Chelsea"
+        cuisine_tags: ["contemporary", "wood-fire"]
+        open_year: 2023
+
+  - name: "Daniel Rose"
+    bio: "American-born, Paris-trained. Institut Paul Bocuse. Michelin star and JBF Best New Restaurant at Le Coucou."
+    birth_country: "US"
+    tier: "lineage"
+    cuisine_tags: ["french", "classical", "fine-dining"]
+    education:
+      - institution: "American University of Paris"
+      - institution: "Institut Paul Bocuse"
+        city: "Lyon, France"
+    stops:
+      - restaurant: "Bruneau"
+        position: "Cook"
+        city: "Brussels"
+        state: "Belgium"
+        cuisine_tags: ["french", "fine-dining"]
+        restaurant_status: "closed"
+      - restaurant: "Le Meurice"
+        position: "Cook"
+        city: "Paris"
+        state: "France"
+      - restaurant: "Spring Paris"
+        position: "Chef/Owner"
+        start_year: 2006
+        end_year: 2017
+        is_current: false
+        city: "Paris"
+        state: "France"
+        cuisine_tags: ["french"]
+        restaurant_status: "closed"
+        open_year: 2006
+        close_year: 2017
+      - restaurant: "Le Coucou"
+        position: "Chef"
+        start_year: 2016
+        is_current: true
+        neighborhood: "SoHo"
+        cuisine_tags: ["french", "classical", "fine-dining"]
+        open_year: 2016
+
+  - name: "Isao Yamada"
+    bio: "Trained at Kitcho (3★ Kyoto kaiseki). Executive chef of Brushstroke under David Bouley (2★). Michelin star at Yamada."
+    birth_country: "JP"
+    birth_city: "Fukuoka, Japan"
+    tier: "lineage"
+    cuisine_tags: ["japanese", "kaiseki", "fine-dining"]
+    stops:
+      - restaurant: "Kitcho"
+        position: "Cook"
+        city: "Kyoto"
+        state: "Japan"
+        cuisine_tags: ["japanese", "kaiseki"]
+      - restaurant: "Brushstroke"
+        position: "Executive Chef"
+        mentor: "David Bouley"
+        neighborhood: "Tribeca"
+        cuisine_tags: ["japanese", "kaiseki"]
+        restaurant_status: "closed"
+      - restaurant: "Yamada"
+        position: "Chef/Owner"
+        start_year: 2025
+        is_current: true
+        neighborhood: "Chinatown"
+        cuisine_tags: ["japanese", "kaiseki"]
+        open_year: 2025
+
+  - name: "Brian Kim"
+    bio: "CIA grad. Trained at Bouley. Michelin star at Oiji Mi."
+    birth_country: "KR"
+    tier: "lineage"
+    cuisine_tags: ["korean", "contemporary", "fine-dining"]
+    education:
+      - institution: "Culinary Institute of America"
+        city: "Hyde Park, NY"
+    stops:
+      - restaurant: "Bouley"
+        position: "Cook"
+        mentor: "David Bouley"
+      - restaurant: "Oiji"
+        position: "Chef/Owner"
+        start_year: 2015
+        end_year: 2022
+        is_current: false
+        neighborhood: "East Village"
+        cuisine_tags: ["korean"]
+        restaurant_status: "closed"
+      - restaurant: "Oiji Mi"
+        position: "Chef/Owner"
+        start_year: 2022
+        is_current: true
+        neighborhood: "Flatiron"
+        cuisine_tags: ["korean", "contemporary", "fine-dining"]
+        open_year: 2022
+
+  - name: "Joshua Pinsky"
+    bio: "Trained at Momofuku Ko under Chang for 10 years (sous chef to corporate chef). 3-star NYT at both Claud and Penny."
+    birth_country: "US"
+    tier: "lineage"
+    cuisine_tags: ["wine-bar", "bistro", "american"]
+    education:
+      - institution: "Culinary Institute of America"
+        city: "Hyde Park, NY"
+    stops:
+      - restaurant: "Momofuku Ko"
+        position: "Sous Chef / Corporate Chef"
+        mentor: "David Chang"
+        notes: "10 years at Momofuku, sous chef to corporate chef"
+      - restaurant: "Claud"
+        position: "Chef/Owner"
+        start_year: 2022
+        is_current: true
+        neighborhood: "East Village"
+        cuisine_tags: ["wine-bar", "american"]
+        open_year: 2022
+      - restaurant: "Penny"
+        position: "Chef/Owner"
+        is_current: true
+        neighborhood: "East Village"
+        cuisine_tags: ["bistro"]
+
+  - name: "Fariyal Abdullahi"
+    bio: "CIA grad. Trained at Noma. Recruited by Marcus Samuelsson to lead Hav & Mar. JBF 2026 semifinalist."
+    birth_country: "ET"
+    birth_city: "Addis Ababa, Ethiopia"
+    tier: "lineage"
+    cuisine_tags: ["global", "seafood"]
+    education:
+      - institution: "Culinary Institute of America"
+        city: "Hyde Park, NY"
+    stops:
+      - restaurant: "Noma"
+        position: "Cook"
+        mentor: "Rene Redzepi"
+        city: "Copenhagen"
+        state: "Denmark"
+      - restaurant: "Hav & Mar"
+        position: "Executive Chef"
+        is_current: true
+        mentor: "Marcus Samuelsson"
+        neighborhood: "Chelsea"
+        cuisine_tags: ["global", "seafood"]
+
+  - name: "Aretah Ettarh"
+    bio: "F&W Best New Chef 2025. Chef de cuisine at Gramercy Tavern (3rd in 30-year history). Trained under Anthony and Vongerichten."
+    birth_country: "US"
+    tier: "lineage"
+    cuisine_tags: ["contemporary-american", "seasonal"]
+    education:
+      - institution: "University of Delaware"
+        credential: "Hotel & Restaurant Management"
+      - institution: "Culinary Institute of America"
+        city: "Napa, CA"
+        credential: "Greystone"
+    stops:
+      - restaurant: "Jean-Georges"
+        position: "Cook"
+        mentor: "Jean-Georges Vongerichten"
+      - restaurant: "Gramercy Tavern"
+        position: "Chef de Cuisine"
+        start_year: 2016
+        is_current: true
+        mentor: "Michael Anthony"
+        notes: "3rd chef de cuisine in the restaurant's 30-year history"
+
+  - name: "Justin Bazdarich"
+    bio: "Trained at Jean-Georges flagship. Rose from intern to sous to opening chef of Perry Street. Michelin star at Oxomoco."
+    birth_country: "US"
+    birth_city: "Kansas City, MO"
+    tier: "lineage"
+    cuisine_tags: ["mexican", "wood-fire"]
+    education:
+      - institution: "International Culinary Center"
+        city: "New York, NY"
+    stops:
+      - restaurant: "Jean-Georges"
+        position: "Sous Chef"
+        mentor: "Jean-Georges Vongerichten"
+        notes: "Intern to sous chef to opening chef of Perry Street in 3 years"
+      - restaurant: "Perry Street"
+        position: "Opening Chef"
+        mentor: "Jean-Georges Vongerichten"
+        neighborhood: "West Village"
+        cuisine_tags: ["american", "fine-dining"]
+      - restaurant: "Oxomoco"
+        position: "Chef/Owner"
+        start_year: 2018
+        is_current: true
+        neighborhood: "Greenpoint"
+        city: "Brooklyn"
+        cuisine_tags: ["mexican", "wood-fire"]
+        open_year: 2018
+
+  - name: "Marc Forgione"
+    bio: "Iron Chef (won Next Iron Chef S3). Son of Larry Forgione. Michelin star at Restaurant Marc Forgione. Trained under Tourondel."
+    birth_country: "US"
+    tier: "lineage"
+    cuisine_tags: ["american", "fine-dining"]
+    education:
+      - institution: "University of Massachusetts"
+        credential: "Hotel & Restaurant Management"
+    stops:
+      - restaurant: "An American Place"
+        position: "Cook"
+        neighborhood: "Midtown"
+        cuisine_tags: ["american"]
+        restaurant_status: "closed"
+        notes: "Father Larry Forgione's restaurant"
+      - restaurant: "BLT Steak"
+        position: "Chef de Cuisine"
+        mentor: "Laurent Tourondel"
+      - restaurant: "Restaurant Marc Forgione"
+        position: "Chef/Owner"
+        start_year: 2008
+        is_current: true
+        neighborhood: "Tribeca"
+        cuisine_tags: ["american", "fine-dining"]
+        open_year: 2008
+
+  - name: "Alex Stupak"
+    bio: "CIA grad. Pastry chef at Alinea under Achatz and wd~50 under Dufresne. F&W Best New Chef. Built Empellon empire."
+    birth_country: "US"
+    tier: "lineage"
+    cuisine_tags: ["mexican", "fine-dining"]
+    education:
+      - institution: "Culinary Institute of America"
+        city: "Hyde Park, NY"
+    stops:
+      - restaurant: "Alinea"
+        position: "Pastry Chef"
+        mentor: "Grant Achatz"
+        city: "Chicago"
+        state: "IL"
+      - restaurant: "wd~50"
+        position: "Pastry Chef"
+        mentor: "Wylie Dufresne"
+      - restaurant: "Empellon"
+        position: "Chef/Owner"
+        start_year: 2011
+        is_current: true
+        neighborhood: "Midtown"
+        cuisine_tags: ["mexican", "fine-dining"]
+        open_year: 2011
+
+  - name: "Keiji Nakazawa"
+    bio: "Three Michelin stars at Sushi Sho NYC — highest-starred new entry in 2025 guide. Competed on Iron Chef Japan."
+    birth_country: "JP"
+    tier: "lineage"
+    cuisine_tags: ["japanese", "sushi", "fine-dining"]
+    stops:
+      - restaurant: "Sushi Sho Tokyo"
+        position: "Chef/Owner"
+        start_year: 1989
+        end_year: 2019
+        is_current: false
+        city: "Tokyo"
+        state: "Japan"
+        cuisine_tags: ["japanese", "sushi"]
+        open_year: 1989
+        restaurant_status: "closed"
+      - restaurant: "Sushi Sho"
+        position: "Chef/Owner"
+        start_year: 2024
+        is_current: true
+        neighborhood: "Midtown East"
+        cuisine_tags: ["japanese", "sushi", "fine-dining"]
+        open_year: 2024
+
+  - name: "Angie Rito"
+    bio: "Trained at Torrisi Italian Specialties under Carbone and Torrisi. JBF semifinalist. Don Angie is a perennial reservation."
+    birth_country: "US"
+    birth_city: "Cleveland, OH"
+    tier: "lineage"
+    cuisine_tags: ["italian-american"]
+    stops:
+      - restaurant: "Torrisi Italian Specialties"
+        position: "Cook"
+        mentor: "Rich Torrisi"
+        neighborhood: "Nolita"
+        cuisine_tags: ["italian-american"]
+        restaurant_status: "closed"
+        notes: "Also worked under Mario Carbone"
+      - restaurant: "Don Angie"
+        position: "Chef/Partner"
+        start_year: 2017
+        is_current: true
+        neighborhood: "West Village"
+        cuisine_tags: ["italian-american"]
+        open_year: 2017
+      - restaurant: "San Sabino"
+        position: "Chef/Partner"
+        start_year: 2024
+        is_current: true
+        neighborhood: "West Village"
+        cuisine_tags: ["italian"]
+        open_year: 2024
+
+  - name: "Scott Tacinelli"
+    bio: "French Culinary Institute grad. Co-chef with Angie Rito at Don Angie and San Sabino."
+    birth_country: "US"
+    tier: "lineage"
+    cuisine_tags: ["italian-american"]
+    education:
+      - institution: "French Culinary Institute"
+        city: "New York, NY"
+    stops:
+      - restaurant: "Quality Meats"
+        position: "Cook"
+        neighborhood: "Midtown"
+        cuisine_tags: ["steakhouse", "american"]
+      - restaurant: "Don Angie"
+        position: "Chef/Partner"
+        start_year: 2017
+        is_current: true
+      - restaurant: "San Sabino"
+        position: "Chef/Partner"
+        start_year: 2024
+        is_current: true
+
+  - name: "Mads Refslund"
+    bio: "Co-founded Noma with Rene Redzepi. JBF 2026 semifinalist at Ilis."
+    birth_country: "DK"
+    tier: "lineage"
+    cuisine_tags: ["nordic", "fire-cooking"]
+    stops:
+      - restaurant: "Noma"
+        position: "Chef/Co-Founder"
+        start_year: 2003
+        end_year: 2005
+        is_current: false
+        mentor: "Rene Redzepi"
+        city: "Copenhagen"
+        state: "Denmark"
+        notes: "Co-founded Noma with Redzepi and Claus Meyer, left early"
+      - restaurant: "Ilis"
+        position: "Chef/Owner"
+        start_year: 2023
+        is_current: true
+        neighborhood: "Greenpoint"
+        city: "Brooklyn"
+        cuisine_tags: ["nordic", "fire-cooking"]
+        open_year: 2023
+
+  - name: "Leah Cohen"
+    bio: "CIA grad. Top Chef S5. Trained at EMP under Humm. Built Pig & Khao empire."
+    birth_country: "US"
+    tier: "lineage"
+    cuisine_tags: ["filipino", "thai", "southeast-asian"]
+    education:
+      - institution: "Culinary Institute of America"
+        city: "Hyde Park, NY"
+    stops:
+      - restaurant: "Eleven Madison Park"
+        position: "Cook"
+        mentor: "Daniel Humm"
+      - restaurant: "Pig & Khao"
+        position: "Chef/Owner"
+        start_year: 2012
+        is_current: true
+        neighborhood: "Lower East Side"
+        cuisine_tags: ["filipino", "thai", "southeast-asian"]
+        open_year: 2012
+
+  - name: "Sohui Kim"
+    bio: "ICE grad. Trained at Blue Hill under Dan Barber and Michael Anthony. Michelin star at Gage & Tollner."
+    birth_country: "KR"
+    birth_city: "Seoul, South Korea"
+    tier: "lineage"
+    cuisine_tags: ["american", "seasonal"]
+    education:
+      - institution: "Institute of Culinary Education"
+        city: "New York, NY"
+    stops:
+      - restaurant: "Blue Hill"
+        position: "Cook"
+        mentor: "Dan Barber"
+        neighborhood: "Greenwich Village"
+        cuisine_tags: ["farm-to-table", "american"]
+        open_year: 2000
+      - restaurant: "The Good Fork"
+        position: "Chef/Owner"
+        start_year: 2005
+        end_year: 2019
+        is_current: false
+        neighborhood: "Red Hook"
+        city: "Brooklyn"
+        cuisine_tags: ["american", "korean"]
+        restaurant_status: "closed"
+      - restaurant: "Insa"
+        position: "Chef/Owner"
+        neighborhood: "Gowanus"
+        city: "Brooklyn"
+        cuisine_tags: ["korean", "barbecue"]
+        restaurant_status: "closed"
+      - restaurant: "Gage & Tollner"
+        position: "Chef/Partner"
+        start_year: 2021
+        is_current: true
+        neighborhood: "Downtown Brooklyn"
+        city: "Brooklyn"
+        cuisine_tags: ["american", "seafood"]
+        open_year: 2021
+
+  - name: "Ayesha Nurdjaja"
+    bio: "ICE grad. Trained under Lidia Bastianich at Felidia and under Missy Robbins at A Voce. JBF 2026 semifinalist."
+    birth_country: "US"
+    tier: "lineage"
+    cuisine_tags: ["mediterranean", "middle-eastern"]
+    education:
+      - institution: "Institute of Culinary Education"
+        city: "New York, NY"
+    stops:
+      - restaurant: "Felidia"
+        position: "Extern / Sous Chef"
+        neighborhood: "Upper East Side"
+        cuisine_tags: ["italian"]
+        notes: "Under Lidia Bastianich"
+      - restaurant: "A Voce"
+        position: "Cook"
+        mentor: "Missy Robbins"
+        neighborhood: "Columbus Circle"
+        cuisine_tags: ["italian"]
+        restaurant_status: "closed"
+      - restaurant: "Shuka"
+        position: "Chef/Partner"
+        is_current: true
+        neighborhood: "SoHo"
+        cuisine_tags: ["eastern-mediterranean"]
+      - restaurant: "Shukette"
+        position: "Chef/Partner"
+        is_current: true
+        neighborhood: "Chelsea"
+        cuisine_tags: ["eastern-mediterranean"]
+
+  - name: "Vijay Kumar"
+    bio: "JBF Best Chef: New York State 2025 — first Indian cuisine chef to win. Michelin star at Semma, first starred South Indian restaurant in US."
+    birth_country: "IN"
+    birth_city: "Arasampatti, Tamil Nadu"
+    tier: "lineage"
+    cuisine_tags: ["indian", "south-indian", "fine-dining"]
+    stops:
+      - restaurant: "Semma"
+        position: "Executive Chef"
+        is_current: true
+        neighborhood: "West Village"
+        cuisine_tags: ["south-indian", "fine-dining"]
+        open_year: 2021
+
+  - name: "Chintan Pandya"
+    bio: "Oberoi-trained. JBF Best Chef: New York State (Dhamaka). Co-founder of Unapologetic Foods with Roni Mazumdar."
+    birth_country: "IN"
+    birth_city: "Mumbai, India"
+    tier: "lineage"
+    cuisine_tags: ["indian", "regional-indian"]
+    education:
+      - institution: "Oberoi School of Hotel Management"
+        city: "Delhi, India"
+    stops:
+      - restaurant: "Adda"
+        position: "Chef/Partner"
+        start_year: 2018
+        is_current: true
+        neighborhood: "Long Island City"
+        cuisine_tags: ["indian"]
+        open_year: 2018
+      - restaurant: "Dhamaka"
+        position: "Chef/Partner"
+        start_year: 2021
+        is_current: true
+        neighborhood: "Lower East Side"
+        cuisine_tags: ["regional-indian"]
+        open_year: 2021

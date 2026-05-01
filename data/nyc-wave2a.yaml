@@ -1,0 +1,393 @@
+# ICDB NYC Wave 2a — Top 12 Chefs by Lineage Score
+# Plus 2 reference mentors (Gordon Ramsay, Martin Berasategui)
+# Run: python3 scripts/batch-intake.py data/nyc-wave2a.yaml --dry-run --verbose
+
+default_city: "New York"
+default_state: "NY"
+
+chefs:
+  # ─── REFERENCE MENTORS ───────────────────────────────────────
+
+  - name: "Gordon Ramsay"
+    bio: "Three-Michelin-star chef in London. Global restaurant empire. Iron Chef."
+    birth_country: "GB"
+    birth_city: "Johnstone, Scotland"
+    tier: "lineage"
+    cuisine_tags: ["french", "fine-dining"]
+    stops:
+      - restaurant: "Restaurant Gordon Ramsay"
+        position: "Chef/Owner"
+        start_year: 1998
+        is_current: true
+        city: "London"
+        state: "UK"
+        neighborhood: "Chelsea"
+        cuisine_tags: ["french", "fine-dining"]
+        open_year: 1998
+
+  - name: "Martin Berasategui"
+    bio: "Three-Michelin-star Basque chef in Lasarte-Oria. One of Spain's most decorated culinary figures."
+    birth_country: "ES"
+    birth_city: "San Sebastian, Spain"
+    tier: "lineage"
+    cuisine_tags: ["basque", "spanish", "fine-dining"]
+    stops:
+      - restaurant: "Martin Berasategui"
+        position: "Chef/Owner"
+        start_year: 1993
+        is_current: true
+        city: "Lasarte-Oria"
+        state: "Spain"
+        cuisine_tags: ["basque", "fine-dining"]
+        open_year: 1993
+
+  # ─── WAVE 2a CHEFS (scored 75–105) ──────────────────────────
+
+  - name: "Thomas Allan"
+    bio: "Executive chef of The Modern (2★). Trained at EMP under Humm and Per Se under Keller. Won Bocuse d'Or USA alongside James Kent."
+    birth_country: "US"
+    tier: "lineage"
+    cuisine_tags: ["contemporary-american", "french", "fine-dining"]
+    education:
+      - institution: "International Culinary Center"
+        city: "New York, NY"
+    stops:
+      - restaurant: "Blue Smoke"
+        position: "Cook"
+        neighborhood: "Flatiron"
+        cuisine_tags: ["barbecue", "american"]
+        open_year: 2002
+      - restaurant: "Eleven Madison Park"
+        position: "Sous Chef"
+        mentor: "Daniel Humm"
+      - restaurant: "Per Se"
+        position: "Cook"
+        mentor: "Thomas Keller"
+      - restaurant: "Le Meurice"
+        position: "Cook"
+        city: "Paris"
+        state: "France"
+        cuisine_tags: ["french", "fine-dining"]
+      - restaurant: "The Modern"
+        position: "Executive Chef"
+        start_year: 2020
+        is_current: true
+
+  - name: "Christina Tosi"
+    bio: "JBF Outstanding Pastry Chef (2015). Founded Milk Bar within Momofuku. Trained under Bouley, Dufresne, and Chang."
+    birth_country: "US"
+    birth_city: "Springfield, OH"
+    tier: "lineage"
+    cuisine_tags: ["pastry", "bakery"]
+    education:
+      - institution: "James Madison University"
+        credential: "BA Applied Mathematics & Italian"
+      - institution: "French Culinary Institute"
+        city: "New York, NY"
+    stops:
+      - restaurant: "Bouley"
+        position: "Pastry Cook"
+        mentor: "David Bouley"
+      - restaurant: "wd~50"
+        position: "Pastry Cook"
+        mentor: "Wylie Dufresne"
+      - restaurant: "Momofuku Noodle Bar"
+        position: "Pastry Chef"
+        mentor: "David Chang"
+      - restaurant: "Milk Bar"
+        position: "Founder & CEO"
+        start_year: 2008
+        is_current: true
+        neighborhood: "East Village"
+        cuisine_tags: ["pastry", "bakery"]
+        open_year: 2008
+
+  - name: "Buddha Lo"
+    bio: "Only person to win Top Chef twice (S19 + World All Stars S20). Michelin star at Huso. Trained at EMP and Gordon Ramsay London."
+    birth_country: "AU"
+    birth_city: "Sydney, Australia"
+    tier: "lineage"
+    cuisine_tags: ["contemporary", "fine-dining", "seafood"]
+    education:
+      - institution: "William Angliss Institute"
+        city: "Melbourne, Australia"
+    stops:
+      - restaurant: "Restaurant Gordon Ramsay"
+        position: "Cook"
+        mentor: "Gordon Ramsay"
+        city: "London"
+        state: "UK"
+      - restaurant: "Eleven Madison Park"
+        position: "Cook"
+        mentor: "Daniel Humm"
+      - restaurant: "Huso"
+        position: "Chef/Owner"
+        start_year: 2024
+        is_current: true
+        neighborhood: "Tribeca"
+        cuisine_tags: ["contemporary", "fine-dining", "seafood"]
+        open_year: 2024
+
+  - name: "Sungchul Shim"
+    bio: "CIA grad. Two Michelin stars across Kochi and Mari. Trained at Le Bernardin under Ripert and Per Se under Keller."
+    birth_country: "KR"
+    tier: "lineage"
+    cuisine_tags: ["korean", "fine-dining", "contemporary"]
+    education:
+      - institution: "Culinary Institute of America"
+        city: "Hyde Park, NY"
+    stops:
+      - restaurant: "Le Bernardin"
+        position: "Extern"
+        mentor: "Eric Ripert"
+      - restaurant: "Aureole"
+        position: "Line Cook"
+      - restaurant: "Per Se"
+        position: "Cook"
+        start_year: 2009
+        mentor: "Thomas Keller"
+      - restaurant: "Neta"
+        position: "Executive Chef"
+        neighborhood: "Greenwich Village"
+        cuisine_tags: ["japanese", "sushi"]
+      - restaurant: "Kochi"
+        position: "Chef/Owner"
+        start_year: 2019
+        is_current: true
+        neighborhood: "Hell's Kitchen"
+        cuisine_tags: ["korean", "fine-dining", "tasting-menu"]
+        open_year: 2019
+      - restaurant: "Mari"
+        position: "Chef/Owner"
+        is_current: true
+        neighborhood: "Hell's Kitchen"
+        cuisine_tags: ["korean", "fine-dining"]
+
+  - name: "Paul Carmichael"
+    bio: "CIA grad. Executive chef of Momofuku's Kabawa (NYT #4 restaurant 2025). Trained at wd~50 under Dufresne and Aquavit under Samuelsson."
+    birth_country: "BB"
+    birth_city: "Bridgetown, Barbados"
+    tier: "lineage"
+    cuisine_tags: ["caribbean", "fine-dining", "tasting-menu"]
+    education:
+      - institution: "Culinary Institute of America"
+        city: "Hyde Park, NY"
+    stops:
+      - restaurant: "wd~50"
+        position: "Cook"
+        mentor: "Wylie Dufresne"
+      - restaurant: "Aquavit"
+        position: "Cook"
+        mentor: "Marcus Samuelsson"
+      - restaurant: "Momofuku Ma Peche"
+        position: "Cook"
+        neighborhood: "Midtown"
+        cuisine_tags: ["asian", "american"]
+        restaurant_status: "closed"
+      - restaurant: "Kabawa"
+        position: "Executive Chef"
+        start_year: 2024
+        is_current: true
+        mentor: "David Chang"
+        neighborhood: "East Village"
+        cuisine_tags: ["caribbean", "tasting-menu"]
+        open_year: 2024
+
+  - name: "Hooni Kim"
+    bio: "Opened Danji, the world's first Michelin-starred Korean restaurant. Trained at Daniel under Boulud and Masa under Takayama."
+    birth_country: "KR"
+    tier: "lineage"
+    cuisine_tags: ["korean", "fermentation", "fine-dining"]
+    education:
+      - institution: "French Culinary Institute"
+        city: "New York, NY"
+    stops:
+      - restaurant: "Daniel"
+        position: "Cook"
+        mentor: "Daniel Boulud"
+      - restaurant: "Masa"
+        position: "Cook"
+        mentor: "Masa Takayama"
+      - restaurant: "Danji"
+        position: "Chef/Owner"
+        start_year: 2010
+        end_year: 2021
+        is_current: false
+        neighborhood: "Hell's Kitchen"
+        cuisine_tags: ["korean"]
+        open_year: 2010
+        close_year: 2021
+        restaurant_status: "closed"
+      - restaurant: "Meju"
+        position: "Chef/Owner"
+        is_current: true
+        neighborhood: "Long Island City"
+        cuisine_tags: ["korean", "fermentation", "fine-dining"]
+
+  - name: "Dae Kim"
+    bio: "Triple-lineage chef trained at Per Se, Daniel, and Atomix. Michelin star at Noksu."
+    birth_country: "KR"
+    tier: "lineage"
+    cuisine_tags: ["korean", "contemporary", "fine-dining", "tasting-menu"]
+    stops:
+      - restaurant: "Per Se"
+        position: "Cook"
+        mentor: "Thomas Keller"
+      - restaurant: "Daniel"
+        position: "Cook"
+        mentor: "Daniel Boulud"
+      - restaurant: "Atomix"
+        position: "Cook"
+        mentor: "Junghyun Park"
+      - restaurant: "Noksu"
+        position: "Chef/Owner"
+        start_year: 2023
+        is_current: true
+        neighborhood: "Koreatown"
+        cuisine_tags: ["korean", "contemporary", "tasting-menu"]
+        open_year: 2023
+
+  - name: "Stefano Secchi"
+    bio: "CIA grad. Trained at Osteria Francescana under Bottura. Michelin star and 3-star NYT at Rezdora."
+    birth_country: "US"
+    tier: "lineage"
+    cuisine_tags: ["italian", "pasta", "emilian"]
+    education:
+      - institution: "Culinary Institute of America"
+        city: "Hyde Park, NY"
+    stops:
+      - restaurant: "Osteria Francescana"
+        position: "Cook"
+        mentor: "Massimo Bottura"
+        city: "Modena"
+        state: "Italy"
+      - restaurant: "Rezdora"
+        position: "Chef/Owner"
+        start_year: 2019
+        is_current: true
+        neighborhood: "Flatiron"
+        cuisine_tags: ["italian", "pasta", "emilian"]
+        open_year: 2019
+
+  - name: "Fidel Caballero"
+    bio: "Trained under Berasategui (3★). Michelin star at Corima in 11 months. Bon Appetit Best New Restaurant 2024."
+    birth_country: "US"
+    birth_city: "El Paso, TX"
+    tier: "lineage"
+    cuisine_tags: ["mexican", "contemporary", "fine-dining"]
+    stops:
+      - restaurant: "Martin Berasategui"
+        position: "Cook"
+        mentor: "Martin Berasategui"
+        city: "Lasarte-Oria"
+        state: "Spain"
+      - restaurant: "Contra"
+        position: "Sous Chef"
+        neighborhood: "Lower East Side"
+        cuisine_tags: ["contemporary", "tasting-menu"]
+        open_year: 2013
+      - restaurant: "Corima"
+        position: "Chef/Owner"
+        start_year: 2024
+        is_current: true
+        neighborhood: "Chinatown"
+        cuisine_tags: ["mexican", "contemporary", "fine-dining"]
+        open_year: 2024
+
+  - name: "Douglas Kim"
+    bio: "CIA grad. Trained at Bouley and Per Se. Jeju Noodle Bar is the only Michelin-starred noodle restaurant in America."
+    birth_country: "US"
+    tier: "lineage"
+    cuisine_tags: ["korean", "noodles", "fine-dining"]
+    education:
+      - institution: "Culinary Institute of America"
+        city: "Hyde Park, NY"
+    stops:
+      - restaurant: "Bouley"
+        position: "Cook"
+        mentor: "David Bouley"
+      - restaurant: "Per Se"
+        position: "Cook"
+        mentor: "Thomas Keller"
+      - restaurant: "Chef's Table at Brooklyn Fare"
+        position: "Cook"
+      - restaurant: "Jeju Noodle Bar"
+        position: "Chef/Owner"
+        start_year: 2017
+        is_current: true
+        neighborhood: "West Village"
+        cuisine_tags: ["korean", "noodles"]
+        open_year: 2017
+
+  - name: "Vikas Khanna"
+    bio: "Held Michelin star at Junoon for 8 consecutive years. Trained under Boulud at Daniel. JBF 2026 semifinalist."
+    birth_country: "IN"
+    birth_city: "Amritsar, India"
+    tier: "lineage"
+    cuisine_tags: ["indian", "fine-dining"]
+    education:
+      - institution: "Manipal Academy of Higher Education"
+        city: "Manipal, India"
+      - institution: "Culinary Institute of America"
+        city: "Hyde Park, NY"
+    stops:
+      - restaurant: "Daniel"
+        position: "Apprentice"
+        mentor: "Daniel Boulud"
+      - restaurant: "Junoon"
+        position: "Executive Chef"
+        start_year: 2010
+        end_year: 2019
+        is_current: false
+        neighborhood: "Flatiron"
+        cuisine_tags: ["indian", "fine-dining"]
+        open_year: 2010
+        restaurant_status: "closed"
+      - restaurant: "Bungalow"
+        position: "Chef/Owner"
+        start_year: 2024
+        is_current: true
+        neighborhood: "East Village"
+        cuisine_tags: ["indian"]
+        open_year: 2024
+
+  - name: "April Bloomfield"
+    bio: "JBF Best Chef NYC. Earned Michelin star at The Spotted Pig. Trained at The River Cafe London. 3-star NYT at Sailor."
+    birth_country: "GB"
+    birth_city: "Birmingham, England"
+    tier: "lineage"
+    cuisine_tags: ["british", "gastropub", "seasonal"]
+    education:
+      - institution: "Birmingham College of Food"
+        city: "Birmingham, UK"
+    stops:
+      - restaurant: "The River Cafe"
+        position: "Cook"
+        city: "London"
+        state: "UK"
+        cuisine_tags: ["italian"]
+        open_year: 1987
+      - restaurant: "Chez Panisse"
+        position: "Cook"
+        city: "Berkeley"
+        state: "CA"
+        mentor: "Alice Waters"
+      - restaurant: "The Spotted Pig"
+        position: "Chef/Partner"
+        start_year: 2004
+        end_year: 2019
+        is_current: false
+      - restaurant: "The Breslin"
+        position: "Chef"
+        neighborhood: "NoMad"
+        cuisine_tags: ["british", "gastropub"]
+        open_year: 2009
+        restaurant_status: "closed"
+      - restaurant: "Sailor"
+        position: "Chef"
+        start_year: 2023
+        is_current: true
+        neighborhood: "Fort Greene"
+        city: "Brooklyn"
+        cuisine_tags: ["british", "seasonal"]
+        open_year: 2023

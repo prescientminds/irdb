@@ -1,0 +1,368 @@
+# ICDB NYC Award Audit Gap Fill — Tier 1 + Top Tier 2
+# Michelin 2-3 star gaps, JBF winners, F&W honorees
+# Run: python3 scripts/batch-intake.py data/nyc-audit-fill.yaml --dry-run --verbose
+
+default_city: "New York"
+default_state: "NY"
+
+chefs:
+  # ─── TIER 1: Multi-star Michelin + JBF winners ──────────────
+
+  - name: "Charlie Mitchell"
+    bio: "JBF Best Chef: NY State 2024. First Black Michelin-starred chef in NYC. Trained at EMP, Per Se, Benu, and Blue Hill."
+    birth_country: "US"
+    tier: "lineage"
+    cuisine_tags: ["contemporary-american", "fine-dining"]
+    stops:
+      - restaurant: "Blue Hill"
+        position: "Cook"
+        mentor: "Dan Barber"
+      - restaurant: "Per Se"
+        position: "Cook"
+        mentor: "Thomas Keller"
+      - restaurant: "Eleven Madison Park"
+        position: "Cook"
+        mentor: "Daniel Humm"
+      - restaurant: "Benu"
+        position: "Cook"
+        city: "San Francisco"
+        state: "CA"
+        cuisine_tags: ["contemporary", "fine-dining"]
+      - restaurant: "Clover Hill"
+        position: "Chef/Owner"
+        start_year: 2022
+        is_current: true
+        neighborhood: "Brooklyn Heights"
+        city: "Brooklyn"
+        cuisine_tags: ["contemporary-american", "fine-dining"]
+        open_year: 2022
+      - restaurant: "Saga"
+        position: "Executive Chef"
+        is_current: true
+
+  - name: "Fredrik Berselius"
+    bio: "Two Michelin stars at Aska. Pioneered Nordic cuisine in NYC. Trained at Aquavit, Per Se, and Corton."
+    birth_country: "SE"
+    tier: "lineage"
+    cuisine_tags: ["nordic", "fine-dining", "tasting-menu"]
+    stops:
+      - restaurant: "Aquavit"
+        position: "Cook"
+        mentor: "Marcus Samuelsson"
+      - restaurant: "Per Se"
+        position: "Cook"
+        mentor: "Thomas Keller"
+      - restaurant: "Corton"
+        position: "Cook"
+        neighborhood: "Tribeca"
+        cuisine_tags: ["french", "fine-dining"]
+        restaurant_status: "closed"
+      - restaurant: "Aska"
+        position: "Chef/Owner"
+        start_year: 2012
+        is_current: true
+        neighborhood: "Williamsburg"
+        city: "Brooklyn"
+        cuisine_tags: ["nordic", "fine-dining", "tasting-menu"]
+        open_year: 2012
+
+  - name: "Ronny Emborg"
+    bio: "Two Michelin stars at Atera. Danish training: elBulli, Mugaritz, Geranium, Restaurant AOC, Danish Royal Yacht."
+    birth_country: "DK"
+    tier: "lineage"
+    cuisine_tags: ["nordic", "contemporary", "fine-dining", "tasting-menu"]
+    stops:
+      - restaurant: "Atera"
+        position: "Executive Chef"
+        is_current: true
+        neighborhood: "Tribeca"
+        cuisine_tags: ["contemporary", "fine-dining", "tasting-menu"]
+
+  - name: "Hiroki Odo"
+    bio: "Two Michelin stars, NYT 3 stars at Odo. Kaiseki innovator. Trained at Kyoto Wakuden and Kajitsu NYC."
+    birth_country: "JP"
+    tier: "lineage"
+    cuisine_tags: ["japanese", "kaiseki", "fine-dining"]
+    stops:
+      - restaurant: "Kajitsu"
+        position: "Chef"
+        neighborhood: "Murray Hill"
+        cuisine_tags: ["japanese", "kaiseki", "shojin"]
+        restaurant_status: "closed"
+      - restaurant: "Odo"
+        position: "Chef/Owner"
+        is_current: true
+        neighborhood: "Flatiron"
+        cuisine_tags: ["japanese", "kaiseki", "fine-dining"]
+
+  - name: "Nozomu Abe"
+    bio: "Two Michelin stars at Sushi Noz. Also runs 1-star Noz 17. Trained in Sapporo and Tokyo."
+    birth_country: "JP"
+    tier: "lineage"
+    cuisine_tags: ["japanese", "sushi", "omakase"]
+    stops:
+      - restaurant: "Sushiden"
+        position: "Cook"
+        neighborhood: "Midtown"
+        cuisine_tags: ["japanese", "sushi"]
+      - restaurant: "Sushi Noz"
+        position: "Chef/Owner"
+        start_year: 2018
+        is_current: true
+        neighborhood: "Upper East Side"
+        cuisine_tags: ["japanese", "sushi", "omakase"]
+        open_year: 2018
+      - restaurant: "Noz 17"
+        position: "Chef/Owner"
+        is_current: true
+        neighborhood: "East Village"
+        cuisine_tags: ["japanese", "sushi"]
+
+  - name: "Lee Hanson"
+    bio: "JBF Outstanding Restaurateur 2025. Co-chef at Frenchette (JBF Best New Restaurant 2019). Trained at Daniel, Balthazar, and Pastis under McNally."
+    birth_country: "US"
+    tier: "lineage"
+    cuisine_tags: ["french", "bistro"]
+    stops:
+      - restaurant: "Daniel"
+        position: "Cook"
+        mentor: "Daniel Boulud"
+      - restaurant: "Aureole"
+        position: "Cook"
+      - restaurant: "Balthazar"
+        position: "Co-Executive Chef"
+        neighborhood: "SoHo"
+        cuisine_tags: ["french", "bistro"]
+      - restaurant: "Pastis"
+        position: "Co-Executive Chef"
+        neighborhood: "Meatpacking"
+        cuisine_tags: ["french", "bistro"]
+        restaurant_status: "closed"
+      - restaurant: "Minetta Tavern"
+        position: "Co-Executive Chef"
+        neighborhood: "Greenwich Village"
+        cuisine_tags: ["french", "american"]
+      - restaurant: "Frenchette"
+        position: "Chef/Co-Owner"
+        start_year: 2018
+        is_current: true
+        mentor: "Riad Nasr"
+        notes: "Co-chef with Riad Nasr (already in DB)"
+      - restaurant: "Le Rock"
+        position: "Chef/Co-Owner"
+        is_current: true
+        neighborhood: "Midtown"
+        cuisine_tags: ["french", "brasserie"]
+
+  - name: "Markus Glocker"
+    bio: "JBF Best New Restaurant 2015 (Bâtard). Trained under Charlie Trotter and Gordon Ramsay. Michelin star at Bâtard, NYT 3 stars."
+    birth_country: "AT"
+    birth_city: "Salzburg, Austria"
+    tier: "lineage"
+    cuisine_tags: ["austrian", "french", "fine-dining"]
+    stops:
+      - restaurant: "Charlie Trotter's"
+        position: "Cook"
+        mentor: "Charlie Trotter"
+        city: "Chicago"
+        state: "IL"
+      - restaurant: "Restaurant Gordon Ramsay"
+        position: "Cook"
+        mentor: "Gordon Ramsay"
+        city: "London"
+        state: "UK"
+      - restaurant: "Batard"
+        position: "Executive Chef"
+        start_year: 2014
+        end_year: 2020
+        is_current: false
+        neighborhood: "Tribeca"
+        cuisine_tags: ["french", "fine-dining"]
+        restaurant_status: "closed"
+      - restaurant: "Koloman"
+        position: "Chef/Owner"
+        start_year: 2024
+        is_current: true
+        neighborhood: "NoMad"
+        cuisine_tags: ["austrian", "central-european"]
+        open_year: 2024
+
+  # ─── TIER 2: 1-star Michelin, JBF finalists, F&W ───────────
+
+  - name: "Christophe Bellanca"
+    bio: "Michelin star at Essential by Christophe. JBF 2026 semifinalist. Trained under Anne-Sophie Pic (6 years), Georges Blanc, Régis Marcon, Le Cirque."
+    birth_country: "FR"
+    tier: "lineage"
+    cuisine_tags: ["french", "fine-dining"]
+    stops:
+      - restaurant: "Le Cirque"
+        position: "Cook"
+      - restaurant: "Essential by Christophe"
+        position: "Chef/Owner"
+        is_current: true
+        cuisine_tags: ["french", "fine-dining"]
+
+  - name: "Shion Uino"
+    bio: "Michelin star at Shion 69 Leonard. Trained 8 years at 3-star Sushi Saito (Tokyo). Considered one of NYC's top sushi masters."
+    birth_country: "JP"
+    tier: "lineage"
+    cuisine_tags: ["japanese", "sushi", "omakase"]
+    stops:
+      - restaurant: "Sushi Amane"
+        position: "Chef"
+        neighborhood: "Midtown"
+        cuisine_tags: ["japanese", "sushi"]
+        restaurant_status: "closed"
+      - restaurant: "Shion 69 Leonard"
+        position: "Chef/Owner"
+        is_current: true
+        neighborhood: "Tribeca"
+        cuisine_tags: ["japanese", "sushi", "omakase"]
+
+  - name: "Franco Sampogna"
+    bio: "Michelin star at Frevo. JBF semifinalist. Trained under Alain Ducasse and Guy Savoy. Brazilian-born, decade in Paris."
+    birth_country: "BR"
+    tier: "lineage"
+    cuisine_tags: ["french", "fine-dining", "contemporary"]
+    stops:
+      - restaurant: "Frevo"
+        position: "Chef/Owner"
+        is_current: true
+        neighborhood: "West Village"
+        cuisine_tags: ["french", "fine-dining"]
+
+  - name: "Nasim Alikhani"
+    bio: "JBF finalist Best Chef: NY (2025). Pioneer of Persian fine dining in NYC at Sofreh. ICC graduate."
+    birth_country: "IR"
+    birth_city: "Isfahan, Iran"
+    tier: "notable"
+    cuisine_tags: ["persian", "middle-eastern"]
+    education:
+      - institution: "International Culinary Center"
+        city: "New York, NY"
+    stops:
+      - restaurant: "Sofreh"
+        position: "Chef/Owner"
+        start_year: 2018
+        is_current: true
+        neighborhood: "Prospect Heights"
+        city: "Brooklyn"
+        cuisine_tags: ["persian", "middle-eastern"]
+        open_year: 2018
+
+  - name: "Eunji Lee"
+    bio: "F&W Best New Chef 2023. JBF Outstanding Pastry Chef 2026 semifinalist. Trained under Cédric Grolet at Le Meurice (3★) and executive pastry chef at Jungsik."
+    birth_country: "KR"
+    tier: "lineage"
+    cuisine_tags: ["pastry", "korean-french"]
+    education:
+      - institution: "Institut National de la Boulangerie Pâtisserie"
+        city: "Rouen, France"
+      - institution: "École Ferrandi"
+        city: "Paris, France"
+    stops:
+      - restaurant: "Le Meurice"
+        position: "Pastry Cook"
+        city: "Paris"
+        state: "France"
+        notes: "Under Cédric Grolet / Alain Ducasse. 3 Michelin stars."
+      - restaurant: "Jungsik"
+        position: "Executive Pastry Chef"
+        mentor: "Jungsik Yim"
+      - restaurant: "Lysee"
+        position: "Chef/Owner"
+        is_current: true
+        neighborhood: "Flatiron"
+        cuisine_tags: ["pastry", "korean-french"]
+
+  - name: "Ed Szymanski"
+    bio: "F&W Best New Chef 2023. Trained at The Spotted Pig, head chef at Beatrice Inn, 2-star NYT at Cherry Point."
+    birth_country: "GB"
+    tier: "lineage"
+    cuisine_tags: ["seafood", "british", "coastal"]
+    stops:
+      - restaurant: "The Spotted Pig"
+        position: "Cook"
+        mentor: "April Bloomfield"
+      - restaurant: "Dame"
+        position: "Chef/Owner"
+        is_current: true
+        neighborhood: "West Village"
+        cuisine_tags: ["seafood", "coastal"]
+      - restaurant: "Lord's"
+        position: "Chef/Owner"
+        is_current: true
+        neighborhood: "West Village"
+        cuisine_tags: ["british"]
+
+  - name: "Clare de Boer"
+    bio: "NYT 100 Best (#6). Trained at The River Cafe London under Ruth Rogers. Co-chef/owner of King."
+    birth_country: "GB"
+    tier: "lineage"
+    cuisine_tags: ["italian", "seasonal"]
+    stops:
+      - restaurant: "The River Cafe"
+        position: "Cook"
+        mentor: "Ruth Rogers"
+        city: "London"
+        state: "UK"
+      - restaurant: "King"
+        position: "Chef/Co-Owner"
+        start_year: 2016
+        is_current: true
+        neighborhood: "SoHo"
+        cuisine_tags: ["italian", "seasonal"]
+        open_year: 2016
+
+  - name: "Thomas Chen"
+    bio: "Michelin star at Tuome for 5+ years. Trained at Jean-Georges and EMP. First-gen Chinese-American fine dining."
+    birth_country: "US"
+    tier: "lineage"
+    cuisine_tags: ["chinese-american", "contemporary", "fine-dining"]
+    stops:
+      - restaurant: "Jean-Georges"
+        position: "Extern"
+        mentor: "Jean-Georges Vongerichten"
+      - restaurant: "Eleven Madison Park"
+        position: "Cook"
+        mentor: "Daniel Humm"
+      - restaurant: "Tuome"
+        position: "Chef/Owner"
+        is_current: true
+        neighborhood: "East Village"
+        cuisine_tags: ["chinese-american", "contemporary"]
+
+  - name: "Yara Herrera"
+    bio: "NYT 100 Best 2025. StarChefs Rising Star 2025. Trained at Spago under Puck and Providence under Cimarusti."
+    birth_country: "MX"
+    tier: "lineage"
+    cuisine_tags: ["mexican-american", "contemporary"]
+    stops:
+      - restaurant: "Spago"
+        position: "Cook"
+        mentor: "Wolfgang Puck"
+        city: "Los Angeles"
+        state: "CA"
+      - restaurant: "Providence"
+        position: "Cook"
+        mentor: "Michael Cimarusti"
+        city: "Los Angeles"
+        state: "CA"
+      - restaurant: "Hellbender"
+        position: "Chef/Owner"
+        is_current: true
+        neighborhood: "Ridgewood"
+        city: "Queens"
+        state: "NY"
+        cuisine_tags: ["mexican-american", "contemporary"]
+
+  - name: "Jassimran Singh"
+    bio: "Michelin star at Crown Shy. NYT 100 Best."
+    birth_country: "US"
+    tier: "lineage"
+    cuisine_tags: ["contemporary-american", "fine-dining"]
+    stops:
+      - restaurant: "Crown Shy"
+        position: "Chef de Cuisine"
+        is_current: true
+        mentor: "James Kent"

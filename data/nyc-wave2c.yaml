@@ -1,0 +1,308 @@
+# IRDB NYC Wave 2c — Remaining Tier 2/3 + Notable chefs
+# Run: python3 scripts/batch-intake.py data/nyc-wave2c.yaml --dry-run --verbose
+
+default_city: "New York"
+default_state: "NY"
+
+chefs:
+  # ─── REFERENCE MENTOR ────────────────────────────────────────
+
+  - name: "Ruth Rogers"
+    bio: "Co-founder of The River Cafe London. One of the most important training kitchens in the world — alumni include Jamie Oliver and April Bloomfield."
+    birth_country: "US"
+    birth_city: "Woodstock, NY"
+    tier: "lineage"
+    cuisine_tags: ["italian"]
+    stops:
+      - restaurant: "The River Cafe"
+        position: "Chef/Co-Founder"
+        start_year: 1987
+        is_current: true
+        city: "London"
+        state: "UK"
+
+  # ─── WAVE 2c CHEFS ──────────────────────────────────────────
+
+  - name: "Mitsunobu Nagae"
+    bio: "Tsuji Culinary Institute Student of the Year. Trained through Joel Robuchon empire. Michelin star at l'abeille."
+    birth_country: "JP"
+    tier: "lineage"
+    cuisine_tags: ["french-japanese", "fine-dining"]
+    education:
+      - institution: "Tsuji Culinary Institute"
+        city: "Lyon, France"
+    stops:
+      - restaurant: "Chateau Restaurant Joel Robuchon"
+        position: "Cook"
+        city: "Tokyo"
+        state: "Japan"
+        cuisine_tags: ["french", "fine-dining"]
+        restaurant_status: "closed"
+        notes: "Under Alain Verzeroli. 3 Michelin stars."
+      - restaurant: "L'Atelier de Joel Robuchon"
+        position: "Cook"
+        neighborhood: "Midtown"
+        cuisine_tags: ["french", "fine-dining"]
+        restaurant_status: "closed"
+      - restaurant: "l'abeille"
+        position: "Chef/Owner"
+        start_year: 2022
+        is_current: true
+        neighborhood: "Tribeca"
+        cuisine_tags: ["french-japanese", "fine-dining"]
+        open_year: 2022
+
+  - name: "Manabu Asanuma"
+    bio: "Trained under Iron Chef Koumei Nakamura. Fastest Michelin star in NYC history — 2 months after opening Muku."
+    birth_country: "JP"
+    birth_city: "Yamagata, Japan"
+    tier: "lineage"
+    cuisine_tags: ["japanese", "kaiseki", "fine-dining"]
+    stops:
+      - restaurant: "Sushi Ichimura"
+        position: "Cook"
+        neighborhood: "Tribeca"
+        cuisine_tags: ["japanese", "sushi"]
+        restaurant_status: "closed"
+      - restaurant: "Muku"
+        position: "Chef/Owner"
+        start_year: 2025
+        is_current: true
+        neighborhood: "Tribeca"
+        cuisine_tags: ["japanese", "kaiseki"]
+        open_year: 2025
+
+  - name: "Cheng Lin"
+    bio: "Self-taught sushi master. Moved from Fujian to NYC in 1997. Nearly 30 years of training. Michelin star at Shota Omakase. JBF 2026 semifinalist."
+    birth_country: "CN"
+    birth_city: "Fujian, China"
+    tier: "lineage"
+    cuisine_tags: ["japanese", "sushi", "omakase"]
+    stops:
+      - restaurant: "Hatsuhana"
+        position: "Trainee"
+        neighborhood: "Midtown"
+        cuisine_tags: ["japanese", "sushi"]
+      - restaurant: "Sushi Seki"
+        position: "Cook"
+        cuisine_tags: ["japanese", "sushi"]
+      - restaurant: "Blue Ribbon"
+        position: "Cook"
+        neighborhood: "SoHo"
+        cuisine_tags: ["american", "seafood"]
+      - restaurant: "Shota Omakase"
+        position: "Chef/Owner"
+        start_year: 2023
+        is_current: true
+        neighborhood: "Williamsburg"
+        city: "Brooklyn"
+        cuisine_tags: ["japanese", "sushi", "omakase"]
+        open_year: 2023
+
+  - name: "Telly Justice"
+    bio: "F&W Best New Chef 2025. Michelin Young Chef NYC 2023. Trained at Contra/Wildair under von Hauske and Stone."
+    birth_country: "US"
+    tier: "lineage"
+    cuisine_tags: ["fine-dining", "tasting-menu"]
+    stops:
+      - restaurant: "Contra"
+        position: "Cook"
+        notes: "Trained under Fabian von Hauske and Jeremiah Stone"
+      - restaurant: "HAGS"
+        position: "Chef/Owner"
+        is_current: true
+        neighborhood: "East Village"
+        cuisine_tags: ["fine-dining", "tasting-menu"]
+
+  - name: "Chang-ho Shin"
+    bio: "Two Michelin stars in both Seoul and NYC. Relocated Joo Ok from Seoul to Koreatown. Grows ingredients on 2-acre upstate plot."
+    birth_country: "KR"
+    tier: "notable"
+    cuisine_tags: ["korean", "jang", "fine-dining", "tasting-menu"]
+    stops:
+      - restaurant: "Joo Ok"
+        position: "Chef/Owner"
+        start_year: 2024
+        is_current: true
+        neighborhood: "Koreatown"
+        cuisine_tags: ["korean", "jang", "fine-dining", "tasting-menu"]
+        open_year: 2024
+        notes: "Relocated from Seoul (2016-2024, 2 Michelin stars) to NYC"
+
+  - name: "Takanori Akiyama"
+    bio: "Born into family of sushi chefs in Miyazaki. Trained in kaiseki in Tokyo. Michelin star at Tsukimi."
+    birth_country: "JP"
+    birth_city: "Miyazaki, Japan"
+    tier: "notable"
+    cuisine_tags: ["japanese", "kaiseki", "fine-dining"]
+    stops:
+      - restaurant: "SakaMai"
+        position: "Chef/Owner"
+        neighborhood: "Lower East Side"
+        cuisine_tags: ["japanese"]
+        restaurant_status: "closed"
+      - restaurant: "Bar Moga"
+        position: "Chef/Owner"
+        neighborhood: "West Village"
+        cuisine_tags: ["japanese"]
+        restaurant_status: "closed"
+      - restaurant: "Tsukimi"
+        position: "Chef/Owner"
+        is_current: true
+        neighborhood: "East Village"
+        cuisine_tags: ["japanese", "kaiseki"]
+
+  - name: "Ayo Balogun"
+    bio: "3x JBF nominee (Best New Restaurant 2023, Best Chef NY 2024-2025). Bon Appetit Top 50 Restaurants. Self-taught Nigerian cooking."
+    birth_country: "NG"
+    birth_city: "Kwara State, Nigeria"
+    tier: "notable"
+    cuisine_tags: ["nigerian", "west-african"]
+    stops:
+      - restaurant: "Dept of Culture"
+        position: "Chef/Owner"
+        start_year: 2022
+        is_current: true
+        neighborhood: "Bed-Stuy"
+        city: "Brooklyn"
+        cuisine_tags: ["nigerian", "west-african"]
+        open_year: 2022
+
+  - name: "Jody Williams"
+    bio: "JBF Best Chefs NYC (Via Carota). Self-taught. New Yorker called Via Carota 'New York's most perfect restaurant.'"
+    birth_country: "US"
+    tier: "notable"
+    cuisine_tags: ["italian", "french"]
+    stops:
+      - restaurant: "Buvette"
+        position: "Chef/Owner"
+        is_current: true
+        neighborhood: "West Village"
+        cuisine_tags: ["french"]
+      - restaurant: "Via Carota"
+        position: "Chef/Co-Owner"
+        start_year: 2014
+        is_current: true
+        neighborhood: "West Village"
+        cuisine_tags: ["italian"]
+        open_year: 2014
+
+  - name: "Rita Sodi"
+    bio: "JBF Best Chefs NYC (Via Carota). Self-taught. 25 years in fashion (Calvin Klein) before opening I Sodi."
+    birth_country: "IT"
+    birth_city: "Florence, Italy"
+    tier: "notable"
+    cuisine_tags: ["italian"]
+    stops:
+      - restaurant: "I Sodi"
+        position: "Chef/Owner"
+        start_year: 2008
+        is_current: true
+        neighborhood: "West Village"
+        cuisine_tags: ["italian"]
+        open_year: 2008
+      - restaurant: "Via Carota"
+        position: "Chef/Co-Owner"
+        start_year: 2014
+        is_current: true
+
+  - name: "Patty Lee"
+    bio: "JBF 2026 Best New Restaurant semifinalist (Lei). Resy's #1 restaurant that defined NYC 2025. Former Mission Chinese Food."
+    birth_country: "US"
+    tier: "notable"
+    cuisine_tags: ["chinese-american", "wine-bar"]
+    stops:
+      - restaurant: "Mission Chinese Food"
+        position: "Cook"
+        neighborhood: "Lower East Side"
+        cuisine_tags: ["chinese", "american"]
+      - restaurant: "Lei"
+        position: "Chef"
+        start_year: 2025
+        is_current: true
+        neighborhood: "Chinatown"
+        cuisine_tags: ["chinese-american", "wine-bar"]
+        open_year: 2025
+
+  - name: "Ann Redding"
+    bio: "ICE grad. Earned Michelin star at Uncle Boons. Trained at Per Se. Now Thai Diner."
+    birth_country: "TH"
+    tier: "lineage"
+    cuisine_tags: ["thai"]
+    education:
+      - institution: "Institute of Culinary Education"
+        city: "New York, NY"
+    stops:
+      - restaurant: "Per Se"
+        position: "Cook"
+        mentor: "Thomas Keller"
+      - restaurant: "Uncle Boons"
+        position: "Chef/Owner"
+        start_year: 2013
+        end_year: 2020
+        is_current: false
+        neighborhood: "Nolita"
+        cuisine_tags: ["thai"]
+        open_year: 2013
+        close_year: 2020
+        restaurant_status: "closed"
+      - restaurant: "Thai Diner"
+        position: "Chef/Owner"
+        start_year: 2020
+        is_current: true
+        neighborhood: "Nolita"
+        cuisine_tags: ["thai"]
+        open_year: 2020
+
+  - name: "George Ruan"
+    bio: "Spent nearly 2 decades at Masa (3★) under Masa Takayama. Michelin star at Joji."
+    birth_country: "US"
+    tier: "lineage"
+    cuisine_tags: ["japanese", "omakase"]
+    stops:
+      - restaurant: "Masa"
+        position: "Cook"
+        mentor: "Masa Takayama"
+        notes: "Nearly 2 decades, server to grill to sushi"
+      - restaurant: "Joji"
+        position: "Chef/Co-Owner"
+        is_current: true
+        neighborhood: "Midtown East"
+        cuisine_tags: ["japanese", "omakase"]
+        notes: "Inside One Vanderbilt"
+
+  - name: "Wayne Cheng"
+    bio: "Trained at Masa (3★) and Eleven Madison Park. Co-chef at Joji (1★) with George Ruan."
+    birth_country: "US"
+    tier: "lineage"
+    cuisine_tags: ["japanese", "omakase"]
+    stops:
+      - restaurant: "Masa"
+        position: "Cook"
+        mentor: "Masa Takayama"
+      - restaurant: "Eleven Madison Park"
+        position: "Cook"
+        mentor: "Daniel Humm"
+      - restaurant: "Joji"
+        position: "Chef/Co-Owner"
+        is_current: true
+
+  - name: "Sherry Cardoso"
+    bio: "Per Se (4 years) under Keller. Currently on Top Chef S23. Opening Cynthia in West Village 2026."
+    birth_country: "US"
+    tier: "lineage"
+    cuisine_tags: ["american", "fine-dining"]
+    stops:
+      - restaurant: "Le Cirque"
+        position: "Cook"
+      - restaurant: "Per Se"
+        position: "Cook"
+        mentor: "Thomas Keller"
+        notes: "4 years"
+      - restaurant: "Cynthia"
+        position: "Chef/Owner"
+        start_year: 2026
+        is_current: true
+        neighborhood: "West Village"
+        cuisine_tags: ["american", "fine-dining"]
+        open_year: 2026

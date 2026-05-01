@@ -1,0 +1,166 @@
+# IRDB Batch Intake — Multi-Source Scrape 2026-03-18 (Batch 2)
+# Sources: Eater Sushi, Fine Dining, Michelin, Italian/Pasta, Silver Lake,
+#          East Hollywood, Arts District maps
+# FILTER: Only chefs with verified lineage connections or Michelin stars
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+chefs:
+
+  - name: "Lennon Silvers Lee"
+    bio: "Michelin-starred sushi chef. Brother of Phillip Frankland Lee. Only US sibling pair with concurrent Michelin stars."
+    cuisine_tags: ["japanese", "sushi", "omakase"]
+    stops:
+      - restaurant: "Sushi Bar Montecito"
+        position: "Chef"
+        is_current: false
+        city: "Montecito"
+        cuisine_tags: ["japanese", "sushi"]
+        restaurant_status: "closed"
+        mentor: "Phillip Frankland Lee"
+        notes: "Had Michelin star under his tenure."
+      - restaurant: "Silvers Omakase"
+        position: "Chef & Owner"
+        is_current: true
+        city: "Santa Barbara"
+        cuisine_tags: ["japanese", "sushi", "omakase"]
+        restaurant_status: "open"
+        notes: "One Michelin star 2025. Edomae sushi, house-milled rice."
+
+  - name: "Keith Phillips"
+    bio: "Former Rustic Canyon chef. Now at Bar Siesta in Silver Lake."
+    cuisine_tags: ["spanish", "california"]
+    stops:
+      - restaurant: "Rustic Canyon"
+        position: "Chef"
+        is_current: false
+      - restaurant: "Bar Siesta"
+        position: "Chef"
+        is_current: true
+        city: "Los Angeles"
+        neighborhood: "Silver Lake"
+        cuisine_tags: ["spanish"]
+        restaurant_status: "open"
+        notes: "Tapas with Botanica co-founder. Eater Silver Lake 2026."
+
+  - name: "Ari Kolender"
+    bio: "Chef of Found Oyster. Brother of David Kolender (Hermon's)."
+    cuisine_tags: ["seafood"]
+    stops:
+      - restaurant: "Found Oyster"
+        position: "Chef & Partner"
+        is_current: true
+        notes: "Eater East Hollywood 2026."
+
+  - name: "Seigo Tamaru"
+    bio: "Michelin-starred sushi chef from Osaka."
+    birth_country: "JP"
+    cuisine_tags: ["japanese", "sushi", "omakase"]
+    stops:
+      - restaurant: "715"
+        position: "Chef & Owner"
+        is_current: true
+        city: "Los Angeles"
+        neighborhood: "Arts District"
+        cuisine_tags: ["japanese", "sushi", "omakase"]
+        restaurant_status: "open"
+        notes: "One Michelin star. Earned within 3 months of opening."
+
+  - name: "Hisashi Udatsu"
+    bio: "Michelin-starred sushi chef from Tokyo."
+    birth_country: "JP"
+    cuisine_tags: ["japanese", "sushi", "omakase"]
+    stops:
+      - restaurant: "Udatsu"
+        position: "Chef & Owner"
+        is_current: true
+        city: "Los Angeles"
+        neighborhood: "Hollywood"
+        cuisine_tags: ["japanese", "sushi", "omakase"]
+        restaurant_status: "open"
+        notes: "17 courses. Hokkaido + Santa Barbara uni. Eater Sushi 2025."
+
+  - name: "David Schlosser"
+    bio: "Michelin-starred kappo-style Japanese chef."
+    cuisine_tags: ["japanese", "fine-dining"]
+    stops:
+      - restaurant: "Shibumi"
+        position: "Chef & Owner"
+        is_current: true
+        city: "Los Angeles"
+        neighborhood: "Downtown"
+        cuisine_tags: ["japanese", "fine-dining"]
+        restaurant_status: "open"
+        notes: "One Michelin star. Kappo-style. $125 tasting."
+
+  - name: "Evan Algorri"
+    bio: "Previously at Lupa and Marea in NYC."
+    cuisine_tags: ["italian"]
+    stops:
+      - restaurant: "Lupa"
+        position: "Cook"
+        is_current: false
+        city: "New York"
+        cuisine_tags: ["italian"]
+        restaurant_status: "open"
+      - restaurant: "Marea"
+        position: "Cook"
+        is_current: false
+        city: "New York"
+        cuisine_tags: ["italian", "seafood"]
+        restaurant_status: "open"
+      - restaurant: "Ètra"
+        position: "Chef"
+        is_current: true
+        city: "Los Angeles"
+        neighborhood: "Melrose Hill"
+        cuisine_tags: ["italian"]
+        restaurant_status: "open"
+        notes: "Minimalist osteria. Eater Italian 2025."
+
+  - name: "Miles Shorey"
+    bio: "Roberta's alum. Indian-Italian fusion."
+    cuisine_tags: ["indian", "italian"]
+    stops:
+      - restaurant: "Roberta's"
+        position: "Cook"
+        is_current: false
+        city: "New York"
+        neighborhood: "Bushwick"
+        cuisine_tags: ["italian", "pizza"]
+        restaurant_status: "open"
+      - restaurant: "Pijja Palace"
+        position: "Chef"
+        is_current: true
+        city: "Los Angeles"
+        neighborhood: "Silver Lake"
+        cuisine_tags: ["indian", "italian"]
+        restaurant_status: "open"
+        notes: "Indian sports bar. Eater Italian 2025."
+
+  - name: "Steve Samson"
+    bio: "Bologna-inspired Italian chef."
+    cuisine_tags: ["italian"]
+    stops:
+      - restaurant: "Rossoblu"
+        position: "Chef & Owner"
+        is_current: true
+        city: "Los Angeles"
+        neighborhood: "Downtown"
+        cuisine_tags: ["italian"]
+        restaurant_status: "open"
+        notes: "Bologna-style pasta. Eater Italian 2025."
+
+  - name: "Kian Samyani"
+    bio: "Iranian chef from London. Michelin Bib Gourmand in London."
+    birth_country: "GB"
+    cuisine_tags: ["persian", "middle-eastern"]
+    stops:
+      - restaurant: "Berenjak"
+        position: "Chef & Founder"
+        is_current: true
+        city: "Los Angeles"
+        neighborhood: "Arts District"
+        cuisine_tags: ["persian", "middle-eastern"]
+        restaurant_status: "open"
+        notes: "Tehran-style kebab house. Michelin Bib Gourmand (London). Eater + Timeout 2026."
+

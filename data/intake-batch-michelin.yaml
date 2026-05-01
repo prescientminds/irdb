@@ -1,0 +1,141 @@
+# IRDB Michelin Gap-Fill Batch — 2026-03-18
+# Source: WebSearch on 5 Michelin restaurants missing chefs from intake-runs.json
+# Run: python3 scripts/batch-intake.py data/intake-batch-michelin.yaml --dry-run --verbose
+
+chefs:
+  - name: "Max Boonthanakit"
+    bio: "Thai-Taiwanese chef, Alain Ducasse-trained. Exec pastry chef at Blue by Alain Ducasse (Bangkok). Co-opened Camphor in 2022, earned Michelin star within first year."
+    birth_country: "US"
+    birth_city: "Atlanta, GA"
+    cuisine_tags: ["french", "thai", "fine-dining", "contemporary"]
+    stops:
+      - restaurant: "Camphor"
+        position: "Co-Chef & Co-Owner"
+        start_year: 2022
+        is_current: true
+        city: "Los Angeles"
+        neighborhood: "Arts District"
+        cuisine_tags: ["french", "contemporary", "fine-dining"]
+        open_year: 2022
+        ratings:
+          michelin_stars: 1
+          michelin_year: 2023
+
+      - restaurant: "Blue by Alain Ducasse"
+        position: "Executive Pastry Chef"
+        city: "Bangkok"
+        state: null
+        restaurant_status: "closed"
+        cuisine_tags: ["french", "fine-dining"]
+
+      - restaurant: "Kato"
+        position: "Cook"
+        mentor: "Jon Yao"
+
+      - restaurant: "Nightshade"
+        position: "Cook"
+
+  - name: "Lijo George"
+    bio: "Kerala-born, trained at Kuttukaran Institute of Hotel Management (Kochi). Worked at Blue by Alain Ducasse (Bangkok) alongside Boonthanakit. Co-chef and co-owner of Camphor."
+    birth_country: "IN"
+    birth_city: "Thrissur, Kerala"
+    cuisine_tags: ["french", "indian-influenced", "fine-dining", "contemporary"]
+    education:
+      - institution: "Kuttukaran Institute of Hotel Management"
+        city: "Kochi, Kerala"
+        year: 2005
+    stops:
+      - restaurant: "Camphor"
+        position: "Co-Chef & Co-Owner"
+        start_year: 2022
+        is_current: true
+
+      - restaurant: "Blue by Alain Ducasse"
+        position: "Chef"
+        city: "Bangkok"
+        state: null
+        restaurant_status: "closed"
+
+  - name: "Taketoshi Azumi"
+    bio: "Michelin-starred sushi chef. Trained at Sushi of Gari, Asanebo, and Mori Sushi before opening Shin Sushi in Encino (2018)."
+    birth_country: "JP"
+    cuisine_tags: ["japanese", "sushi", "omakase"]
+    stops:
+      - restaurant: "Shin Sushi"
+        position: "Chef & Owner"
+        start_year: 2018
+        is_current: true
+        city: "Los Angeles"
+        neighborhood: "Encino"
+        cuisine_tags: ["japanese", "sushi", "omakase"]
+        open_year: 2018
+        ratings:
+          michelin_stars: 1
+          michelin_year: 2021
+
+      - restaurant: "Mori Sushi"
+        position: "Sushi Chef"
+        mentor: "Morihiro Onodera"
+
+      - restaurant: "Asanebo"
+        position: "Sushi Chef"
+        city: "Los Angeles"
+        neighborhood: "Studio City"
+        cuisine_tags: ["japanese", "sushi"]
+
+  - name: "Yasuhiro Hirano"
+    bio: "Michelin-starred sushi chef operating Sushi Inaba out of sister restaurant Inaba in Torrance. Specializes in dry-aged fish and Edomae technique."
+    birth_country: "JP"
+    cuisine_tags: ["japanese", "sushi", "edomae", "omakase"]
+    stops:
+      - restaurant: "Sushi Inaba"
+        position: "Chef & Owner"
+        is_current: true
+        city: "Torrance"
+        neighborhood: null
+        cuisine_tags: ["japanese", "sushi", "omakase"]
+        ratings:
+          michelin_stars: 1
+          michelin_year: 2021
+
+  - name: "Yoshiyuki Inoue"
+    bio: "Michelin-starred sushi chef. Trained under Kuwano Tatsuya (Sushi Kuwano, Ginza). Worked at Sushi Ginza Onodera (2 stars) and Mori Sushi (1 star). Moved to US in 1997, spent years in South Bay sushi bars before opening Sushi Kaneyoshi."
+    birth_country: "JP"
+    cuisine_tags: ["japanese", "sushi", "edomae", "omakase"]
+    stops:
+      - restaurant: "Sushi Kaneyoshi"
+        position: "Chef & Owner"
+        is_current: true
+        city: "Los Angeles"
+        neighborhood: "Downtown"
+        cuisine_tags: ["japanese", "sushi", "edomae", "omakase"]
+        ratings:
+          michelin_stars: 1
+          michelin_year: 2022
+
+      - restaurant: "Sushi Ginza Onodera"
+        position: "Sushi Chef"
+        city: "Los Angeles"
+        cuisine_tags: ["japanese", "sushi"]
+
+      - restaurant: "Mori Sushi"
+        position: "Sushi Chef"
+        mentor: "Morihiro Onodera"
+
+  - name: "Alain Ducasse"
+    bio: "French master chef, 21 Michelin stars across career. Louis XV (Monte Carlo), Plaza Athénée, Essex House. Mentor to Tony Esnault, Max Boonthanakit, Lijo George."
+    birth_country: "FR"
+    birth_city: "Orthez, France"
+    cuisine_tags: ["french", "fine-dining", "classical"]
+    status: "active"
+    stops:
+      - restaurant: "Louis XV"
+        position: "Chef & Owner"
+        start_year: 1987
+        is_current: true
+        city: "Monte Carlo"
+        state: null
+        cuisine_tags: ["french", "fine-dining"]
+        open_year: 1987
+        ratings:
+          michelin_stars: 3

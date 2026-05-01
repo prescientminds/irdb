@@ -1,0 +1,32 @@
+# IRDB Uka Chef — 2026-03-18
+# Source: WebSearch — Michelin gap fill
+
+chefs:
+  - name: "Yoshitaka Mitsue"
+    bio: "Osaka-trained kaiseki chef. Ran Suzaku in Kobe (2007–2014), then served as chef at Japan's UN Mission (NYC) and Consul General residence (Strasbourg). Opened Uka at Japan House LA. Michelin star 2024."
+    birth_country: "JP"
+    birth_city: "Imari, Japan"
+    cuisine_tags: ["japanese", "kaiseki", "omakase", "fine-dining"]
+    stops:
+      - restaurant: "Uka"
+        position: "Chef & Owner"
+        start_year: 2023
+        is_current: true
+        city: "Los Angeles"
+        neighborhood: "Hollywood"
+        cuisine_tags: ["japanese", "kaiseki", "omakase"]
+        open_year: 2023
+        ratings:
+          michelin_stars: 1
+          michelin_year: 2024
+
+      - restaurant: "Suzaku"
+        position: "Chef & Owner"
+        start_year: 2007
+        end_year: 2014
+        city: "Kobe"
+        state: null
+        cuisine_tags: ["japanese", "kaiseki"]
+        restaurant_status: "closed"
+        open_year: 2007
+        close_year: 2014
