@@ -1,0 +1,139 @@
+# IRDB Notable Tier Intake — Broader LA Scrape
+# Sources: Jonathan Gold 101, Bill Addison 101, Eater Essential 38, Michelin Bib Gourmand
+# These chefs run important LA restaurants on multiple major lists
+# but have no documented mentor-protégé lineage connections (yet).
+
+chefs:
+  - name: "Jazz Singsanong"
+    tier: "notable"
+    bio: "Runs Jitlada, the legendary Southern Thai restaurant her late uncle founded. On Jonathan Gold 101, Bill Addison 101, and Michelin Bib Gourmand."
+    birth_country: "TH"
+    cuisine_tags: ["thai", "southern-thai"]
+    stops:
+      - restaurant: "Jitlada"
+        position: "Chef & Owner"
+        start_year: 2006
+        is_current: true
+        city: "Los Angeles"
+        neighborhood: "East Hollywood"
+        cuisine_tags: ["thai", "southern-thai"]
+        restaurant_status: "open"
+        open_year: 1979
+        price_range: "$$"
+        ratings:
+          michelin_stars: 0
+          bib_gourmand: true
+          michelin_year: 2025
+          other: ["Jonathan Gold 101 (2017)", "Bill Addison 101 (2025)", "Michelin Bib Gourmand"]
+
+  - name: "Johnny Zone"
+    tier: "notable"
+    bio: "Nashville hot chicken evangelist who brought the genre to LA. Howlin' Ray's has been on Gold 101, Eater Essential 38, and Michelin Bib Gourmand."
+    birth_country: "US"
+    cuisine_tags: ["southern", "hot-chicken"]
+    stops:
+      - restaurant: "Howlin' Ray's"
+        position: "Chef & Owner"
+        start_year: 2015
+        is_current: true
+        city: "Los Angeles"
+        neighborhood: "Chinatown"
+        cuisine_tags: ["southern", "hot-chicken"]
+        restaurant_status: "open"
+        open_year: 2015
+        price_range: "$$"
+        ratings:
+          michelin_stars: 0
+          bib_gourmand: true
+          michelin_year: 2025
+          other: ["Jonathan Gold 101 (2017)", "Eater Essential 38 (2026)"]
+
+  - name: "Bricia Lopez"
+    tier: "notable"
+    bio: "Second-generation owner of Guelaguetza, LA's most celebrated Oaxacan restaurant. Author of Oaxaca: Home Cooking from the Heart of Mexico."
+    birth_country: "MX"
+    birth_city: "Oaxaca, Mexico"
+    cuisine_tags: ["mexican", "oaxacan"]
+    stops:
+      - restaurant: "Guelaguetza"
+        position: "Co-Owner"
+        start_year: 2005
+        is_current: true
+        city: "Los Angeles"
+        neighborhood: "Koreatown"
+        cuisine_tags: ["mexican", "oaxacan"]
+        restaurant_status: "open"
+        open_year: 1994
+        price_range: "$$"
+        ratings:
+          other: ["Jonathan Gold 101 (2017)"]
+
+  - name: "Tal Ronnen"
+    tier: "notable"
+    bio: "Vegan fine dining pioneer. Crossroads Kitchen appears on Addison 101 and Eater Essential 38."
+    birth_country: "US"
+    cuisine_tags: ["vegan", "fine-dining", "californian"]
+    stops:
+      - restaurant: "Crossroads Kitchen"
+        position: "Chef & Owner"
+        start_year: 2013
+        is_current: true
+        city: "Los Angeles"
+        neighborhood: "West Hollywood"
+        cuisine_tags: ["vegan", "fine-dining"]
+        restaurant_status: "open"
+        open_year: 2013
+        price_range: "$$$"
+        ratings:
+          other: ["Bill Addison 101 (2025)", "Eater Essential 38 (2026)"]
+
+  - name: "Jonathan Whitener"
+    tier: "notable"
+    bio: "Runs Here's Looking at You in Koreatown. On both Jonathan Gold 101 and Bill Addison 101."
+    birth_country: "US"
+    cuisine_tags: ["new-american", "eclectic"]
+    stops:
+      - restaurant: "Here's Looking at You"
+        position: "Chef & Owner"
+        start_year: 2016
+        is_current: true
+        city: "Los Angeles"
+        neighborhood: "Koreatown"
+        cuisine_tags: ["new-american", "eclectic"]
+        restaurant_status: "open"
+        open_year: 2016
+        price_range: "$$$"
+        ratings:
+          other: ["Jonathan Gold 101 (2017)", "Bill Addison 101 (2025)"]
+
+  - name: "Keith Corbin"
+    tier: "notable"
+    bio: "Runs Alta Adams in West Adams. California-soul food. On Bill Addison 101."
+    birth_country: "US"
+    birth_city: "Los Angeles, CA"
+    cuisine_tags: ["soul-food", "californian"]
+    stops:
+      - restaurant: "Alta Adams"
+        position: "Chef & Co-Owner"
+        start_year: 2018
+        is_current: true
+        city: "Los Angeles"
+        neighborhood: "West Adams"
+        cuisine_tags: ["soul-food", "californian"]
+        restaurant_status: "open"
+        open_year: 2018
+        price_range: "$$"
+        ratings:
+          other: ["Bill Addison 101 (2025)"]
+
+  - name: "Vivian Ku"
+    tier: "notable"
+    bio: "Runs Pine & Crane in Silver Lake. Taiwanese comfort food. On Gold 101, Addison 101, Michelin Bib Gourmand."
+    birth_country: "US"
+    cuisine_tags: ["taiwanese"]
+    stops:
+      - restaurant: "Pine & Crane"
+        position: "Chef & Owner"
+        start_year: 2014
+        is_current: true
+        notes: "Restaurant already in DB — this adds the chef"

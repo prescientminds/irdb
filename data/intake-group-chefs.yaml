@@ -1,0 +1,110 @@
+chefs:
+  - name: Ari Rosenson
+    bio: "Current executive chef and VP of Food & Beverage at Wolfgang Puck Fine Dining Group. Runs Spago Beverly Hills. Trained under Puck."
+    birth_country: US
+    cuisine_tags: [california, fine-dining, french]
+    stops:
+      - restaurant: Spago
+        position: "Executive Chef & VP of F&B"
+        is_current: true
+        mentor: Wolfgang Puck
+
+  - name: Drew Rosenberg
+    bio: "Executive chef at CUT Beverly Hills. Steakhouse specialist within the Wolfgang Puck Fine Dining empire."
+    birth_country: US
+    cuisine_tags: [steakhouse, fine-dining]
+    stops:
+      - restaurant: CUT
+        position: "Executive Chef"
+        is_current: true
+        mentor: Wolfgang Puck
+
+  - name: Andreas Roller
+    bio: "Executive chef at Patina (Walt Disney Concert Hall). Runs the flagship of Joachim Splichal's 60-restaurant group."
+    birth_country: DE
+    cuisine_tags: [french, california, fine-dining]
+    stops:
+      - restaurant: Patina
+        position: "Executive Chef"
+        is_current: true
+        mentor: Joachim Splichal
+
+  - name: Brendan Collins
+    bio: "Executive chef at BOA Steakhouse for Innovative Dining Group. UK-trained. Formerly ran Waterloo & City (Culver City) and Larry's (Venice) — both earned critical acclaim."
+    birth_country: GB
+    cuisine_tags: [steakhouse, british, fine-dining]
+    stops:
+      - restaurant: BOA Steakhouse
+        position: "Executive Chef"
+        is_current: true
+        city: Los Angeles
+        neighborhood: West Hollywood
+
+  - name: Hiroshi Shima
+    bio: "Executive sushi chef at Sushi Roku for Innovative Dining Group. Oversees sushi program across all IDG Japanese concepts."
+    birth_country: JP
+    cuisine_tags: [japanese, sushi]
+    stops:
+      - restaurant: Sushi Roku
+        position: "Executive Sushi Chef"
+        is_current: true
+        city: Santa Monica
+
+  - name: Jose Melendez
+    bio: "Executive chef at Katana on Sunset Blvd for Innovative Dining Group. Known as Junior Melendez."
+    birth_country: US
+    nickname: Junior
+    cuisine_tags: [japanese, robata]
+    stops:
+      - restaurant: Katana
+        position: "Executive Chef"
+        is_current: true
+        city: Los Angeles
+        neighborhood: West Hollywood
+
+  - name: Gregorio Stephenson
+    bio: "Executive chef at Nobu Malibu. Trained under Nobu Matsuhisa within the Nobu Hospitality system."
+    birth_country: US
+    cuisine_tags: [japanese, sushi, fine-dining]
+    stops:
+      - restaurant: Nobu Malibu
+        position: "Executive Chef"
+        is_current: true
+        mentor: Nobu Matsuhisa
+
+  - name: James Bailey
+    bio: "Executive chef at Majordomo in the Arts District. Runs David Chang's only LA restaurant."
+    birth_country: US
+    cuisine_tags: [korean, california, large-format]
+    stops:
+      - restaurant: Majordomo
+        position: "Executive Chef"
+        is_current: true
+
+  - name: Steve Benjamin
+    bio: "Executive chef at Waldorf Astoria Beverly Hills, operating The Rooftop by JG under Jean-Georges Vongerichten."
+    birth_country: US
+    cuisine_tags: [california, fine-dining, hotel]
+    stops:
+      - restaurant: The Rooftop by JG
+        position: "Executive Chef"
+        is_current: true
+
+  - name: Yoji Tajima
+    bio: "Head chef at n/soto, the izakaya concept by Niki Nakayama and Carole Iida-Nakayama. 1 Michelin star."
+    birth_country: JP
+    cuisine_tags: [japanese, izakaya]
+    stops:
+      - restaurant: "n/soto"
+        position: "Head Chef"
+        is_current: true
+        mentor: Niki Nakayama
+
+  - name: Katsuya Uechi
+    bio: "Master sushi chef and brand chef for all Katsuya restaurants under sbe/Disruptive Restaurant Group. 4 LA locations plus global expansion."
+    birth_country: JP
+    cuisine_tags: [japanese, sushi]
+    stops:
+      - restaurant: Katsuya
+        position: "Master Chef & Brand Chef"
+        is_current: true

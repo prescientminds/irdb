@@ -1,0 +1,692 @@
+# IRDB NYC Wave 1 — First batch of New York chefs
+# Run: python3 scripts/batch-intake.py data/intake-nyc-wave1.yaml
+# Dry: python3 scripts/batch-intake.py data/intake-nyc-wave1.yaml --dry-run --verbose
+#
+# 27 chefs, ordered so mentors precede protégés within this batch.
+# Existing DB chefs (Boulud, Ripert, Keller, Barber, Takayama) can be
+# referenced as mentors without needing to appear here.
+
+default_city: "New York"
+default_state: "NY"
+
+chefs:
+  # ─── Historical Mentor Figures ───
+
+  - name: "David Bouley"
+    bio: "Defined TriBeCa fine dining for three decades. Trained under Roger Vergé, Joël Robuchon, and Frédy Girardet. Bouley earned 4 NYT stars and produced an enormous alumni tree. Died October 2023."
+    birth_country: "US"
+    birth_city: "Storrs, CT"
+    status: "deceased"
+    cuisine_tags: ["french", "fine-dining", "seasonal"]
+    education:
+      - institution: "New England Culinary Institute"
+        city: "Montpelier, VT"
+    stops:
+      - restaurant: "Bouley"
+        position: "Chef & Owner"
+        start_year: 1987
+        end_year: 2017
+        is_current: false
+        neighborhood: "TriBeCa"
+        cuisine_tags: ["french", "fine-dining"]
+        open_year: 1987
+        close_year: 2017
+        restaurant_status: "closed"
+
+  - name: "Gray Kunz"
+    bio: "Swiss-Singaporean chef who ran Lespinasse to 4 NYT stars. Pioneered Southeast Asian-French fusion at the highest level. Major training kitchen — produced Floyd Cardoz, Rocco DiSpirito. Died September 2020."
+    birth_country: "CH"
+    birth_city: "Singapore"
+    status: "deceased"
+    cuisine_tags: ["french", "southeast-asian", "fine-dining"]
+    stops:
+      - restaurant: "Lespinasse"
+        position: "Executive Chef"
+        start_year: 1995
+        end_year: 2003
+        is_current: false
+        neighborhood: "Midtown"
+        cuisine_tags: ["french", "southeast-asian", "fine-dining"]
+        open_year: 1991
+        close_year: 2003
+        restaurant_status: "closed"
+        price_range: "$$$$"
+        format: "fine-dining"
+
+  - name: "Jean-Georges Vongerichten"
+    bio: "French-Thai fusion pioneer. Trained under Paul Haeberlin at L'Auberge de l'Ill and Louis Outhier at L'Oasis. Jean-Georges earned 3 Michelin stars (later reduced to 2). Global empire spanning 40+ restaurants. Mentor to Wylie Dufresne."
+    birth_country: "FR"
+    birth_city: "Strasbourg"
+    cuisine_tags: ["french", "thai-influenced", "fine-dining", "global"]
+    stops:
+      - restaurant: "Jean-Georges"
+        position: "Chef & Owner"
+        start_year: 1997
+        is_current: true
+        neighborhood: "Upper West Side"
+        cuisine_tags: ["french", "fine-dining"]
+        open_year: 1997
+        price_range: "$$$$"
+        format: "tasting-menu"
+        ratings:
+          michelin_stars: 2
+          michelin_year: 2025
+      - restaurant: "ABC Kitchen"
+        position: "Chef & Owner"
+        start_year: 2010
+        is_current: true
+        neighborhood: "Flatiron"
+        cuisine_tags: ["farm-to-table", "american"]
+        open_year: 2010
+        price_range: "$$$"
+
+  # ─── Foundational NYC Chefs ───
+
+  - name: "Tom Colicchio"
+    bio: "Self-taught chef who became founding executive chef of Gramercy Tavern, then opened Craft. Top Chef head judge. Training kitchen alumni include Marco Canora, David Chang."
+    birth_country: "US"
+    birth_city: "Elizabeth, NJ"
+    cuisine_tags: ["american", "italian-inflected", "farm-to-table"]
+    stops:
+      - restaurant: "Gramercy Tavern"
+        position: "Executive Chef & Partner"
+        start_year: 1994
+        end_year: 2006
+        is_current: false
+        neighborhood: "Gramercy"
+        cuisine_tags: ["american", "seasonal"]
+        open_year: 1994
+        price_range: "$$$"
+        format: "fine-dining"
+        ratings:
+          michelin_stars: 1
+          michelin_year: 2025
+      - restaurant: "Craft"
+        position: "Chef & Owner"
+        start_year: 2001
+        is_current: true
+        neighborhood: "Flatiron"
+        cuisine_tags: ["american", "seasonal"]
+        open_year: 2001
+        price_range: "$$$"
+
+  - name: "Daniel Humm"
+    bio: "Swiss-born chef who turned Eleven Madison Park into the #1 restaurant in the world (World's 50 Best, 2017). Transitioned to plant-based in 2021. Three Michelin stars. Originally trained in Switzerland."
+    birth_country: "CH"
+    birth_city: "Strengelbach"
+    cuisine_tags: ["fine-dining", "plant-based", "new-american", "swiss"]
+    stops:
+      - restaurant: "Eleven Madison Park"
+        position: "Chef & Owner"
+        start_year: 2006
+        is_current: true
+        neighborhood: "Flatiron"
+        cuisine_tags: ["fine-dining", "plant-based", "new-american"]
+        open_year: 2003
+        price_range: "$$$$"
+        format: "tasting-menu"
+        ratings:
+          michelin_stars: 3
+          michelin_year: 2025
+          jbf:
+            - "Outstanding Chef 2014 (winner)"
+          other:
+            - "World's 50 Best #1 (2017)"
+
+  # ─── The Boulud Tree ───
+
+  - name: "Jean-François Bruel"
+    bio: "Longtime Boulud lieutenant and current executive chef of Daniel. French-born. Has been at Daniel for over two decades."
+    birth_country: "FR"
+    cuisine_tags: ["french", "fine-dining"]
+    stops:
+      - restaurant: "Daniel"
+        position: "Executive Chef"
+        start_year: 2004
+        is_current: true
+        mentor: "Daniel Boulud"
+
+  - name: "Andrew Carmellini"
+    bio: "JBF Rising Star Chef at Café Boulud. Trained under Boulud, then built NoHo Hospitality (Locanda Verde, The Dutch, Bar Primi). CIA-trained."
+    birth_country: "US"
+    birth_city: "Cleveland, OH"
+    cuisine_tags: ["italian", "american", "french"]
+    education:
+      - institution: "Culinary Institute of America"
+        city: "Hyde Park, NY"
+    stops:
+      - restaurant: "Café Boulud"
+        position: "Chef de Cuisine"
+        start_year: 1999
+        end_year: 2003
+        is_current: false
+        mentor: "Daniel Boulud"
+        neighborhood: "Upper East Side"
+        cuisine_tags: ["french", "fine-dining"]
+        open_year: 1998
+        price_range: "$$$$"
+        ratings:
+          jbf:
+            - "Rising Star Chef 2000 (winner)"
+      - restaurant: "The Dutch"
+        position: "Chef & Owner"
+        start_year: 2011
+        is_current: true
+        neighborhood: "SoHo"
+        cuisine_tags: ["american", "eclectic"]
+        open_year: 2011
+        price_range: "$$$"
+      - restaurant: "Locanda Verde"
+        position: "Chef & Owner"
+        start_year: 2009
+        is_current: true
+        neighborhood: "TriBeCa"
+        cuisine_tags: ["italian", "taverna"]
+        open_year: 2009
+        price_range: "$$$"
+
+  - name: "Alex Guarnaschelli"
+    bio: "Iron Chef America champion and Food Network personality. Trained at Daniel under Boulud. Runs Butter in Midtown."
+    birth_country: "US"
+    birth_city: "New York"
+    cuisine_tags: ["american", "french-influenced"]
+    stops:
+      - restaurant: "Daniel"
+        position: "Sous Chef"
+        start_year: 1998
+        end_year: 2003
+        is_current: false
+        mentor: "Daniel Boulud"
+      - restaurant: "Butter"
+        position: "Executive Chef & Owner"
+        start_year: 2003
+        is_current: true
+        neighborhood: "Midtown"
+        cuisine_tags: ["american", "comfort"]
+        open_year: 2002
+        price_range: "$$$"
+
+  - name: "Michael Anthony"
+    bio: "Executive chef of Gramercy Tavern since 2006, succeeding Tom Colicchio. Trained at Daniel under Boulud and at Blue Hill. JBF Best Chef: NYC 2012."
+    birth_country: "US"
+    birth_city: "Cincinnati, OH"
+    cuisine_tags: ["american", "seasonal", "farm-to-table"]
+    stops:
+      - restaurant: "Daniel"
+        position: "Sous Chef"
+        start_year: 2000
+        end_year: 2003
+        is_current: false
+        mentor: "Daniel Boulud"
+      - restaurant: "Blue Hill at Stone Barns"
+        position: "Chef de Cuisine"
+        start_year: 2004
+        end_year: 2006
+        is_current: false
+        mentor: "Dan Barber"
+      - restaurant: "Gramercy Tavern"
+        position: "Executive Chef"
+        start_year: 2006
+        is_current: true
+        notes: "Succeeded Tom Colicchio"
+
+  - name: "Riad Nasr"
+    bio: "Trained at Daniel under Boulud. Co-chef/owner of Frenchette with Lee Hanson. JBF Outstanding Restaurateur 2025."
+    birth_country: "US"
+    cuisine_tags: ["french", "bistro"]
+    stops:
+      - restaurant: "Daniel"
+        position: "Chef"
+        start_year: 1999
+        end_year: 2004
+        is_current: false
+        mentor: "Daniel Boulud"
+      - restaurant: "Frenchette"
+        position: "Chef & Co-Owner"
+        start_year: 2018
+        is_current: true
+        neighborhood: "TriBeCa"
+        cuisine_tags: ["french", "bistro", "natural-wine"]
+        open_year: 2018
+        price_range: "$$$"
+        ratings:
+          jbf:
+            - "Outstanding Restaurateur 2025 (winner)"
+
+  # ─── Colicchio / JGV Protégés ───
+
+  - name: "David Chang"
+    bio: "Momofuku founder. Trained at Craft under Colicchio and Café Boulud under Boulud. Momofuku Ko earned 2 Michelin stars. Netflix Ugly Delicious. Majordomo in LA."
+    birth_country: "US"
+    birth_city: "Arlington, VA"
+    cuisine_tags: ["korean-american", "ramen", "modern-asian"]
+    education:
+      - institution: "French Culinary Institute"
+        city: "New York, NY"
+    stops:
+      - restaurant: "Café Boulud"
+        position: "Cook"
+        start_year: 2001
+        end_year: 2002
+        is_current: false
+        mentor: "Daniel Boulud"
+      - restaurant: "Craft"
+        position: "Line Cook"
+        start_year: 2002
+        end_year: 2003
+        is_current: false
+        mentor: "Tom Colicchio"
+      - restaurant: "Momofuku Noodle Bar"
+        position: "Chef & Founder"
+        start_year: 2004
+        is_current: true
+        neighborhood: "East Village"
+        cuisine_tags: ["ramen", "korean-american", "asian"]
+        open_year: 2004
+        price_range: "$$"
+      - restaurant: "Momofuku Ko"
+        position: "Chef & Founder"
+        start_year: 2008
+        is_current: true
+        neighborhood: "East Village"
+        cuisine_tags: ["tasting-menu", "korean-american", "fine-dining"]
+        open_year: 2008
+        price_range: "$$$$"
+        format: "tasting-menu"
+        ratings:
+          michelin_stars: 2
+          michelin_year: 2019
+
+  - name: "Wylie Dufresne"
+    bio: "Molecular gastronomy pioneer in NYC. wd~50 was among the most important experimental kitchens in American dining. Trained under Jean-Georges Vongerichten. FCI graduate."
+    birth_country: "US"
+    birth_city: "Providence, RI"
+    cuisine_tags: ["molecular", "avant-garde", "american"]
+    education:
+      - institution: "French Culinary Institute"
+        city: "New York, NY"
+    stops:
+      - restaurant: "Jean-Georges"
+        position: "Sous Chef"
+        start_year: 1997
+        end_year: 1999
+        is_current: false
+        mentor: "Jean-Georges Vongerichten"
+      - restaurant: "wd~50"
+        position: "Chef & Owner"
+        start_year: 2003
+        end_year: 2014
+        is_current: false
+        neighborhood: "Lower East Side"
+        cuisine_tags: ["molecular", "avant-garde"]
+        open_year: 2003
+        close_year: 2014
+        restaurant_status: "closed"
+        price_range: "$$$"
+
+  - name: "Marco Canora"
+    bio: "Colicchio protégé who was sous chef at Gramercy Tavern before opening Hearth. Also created Brodo (bone broth takeaway window). Italian-American cooking with farmer focus."
+    birth_country: "US"
+    cuisine_tags: ["italian", "american", "farm-to-table"]
+    stops:
+      - restaurant: "Gramercy Tavern"
+        position: "Sous Chef"
+        start_year: 1996
+        end_year: 2001
+        is_current: false
+        mentor: "Tom Colicchio"
+      - restaurant: "Hearth"
+        position: "Chef & Owner"
+        start_year: 2003
+        is_current: true
+        neighborhood: "East Village"
+        cuisine_tags: ["italian", "american"]
+        open_year: 2003
+        price_range: "$$$"
+
+  - name: "Marcus Samuelsson"
+    bio: "Ethiopian-Swedish chef. Took over Aquavit at age 24, youngest chef to receive a 3-star NYT review. Opened Red Rooster in Harlem. Won Top Chef Masters Season 2. JBF Best Chef: NYC 2003."
+    birth_country: "ET"
+    birth_city: "Addis Ababa"
+    cuisine_tags: ["scandinavian", "ethiopian", "soul-food", "global"]
+    stops:
+      - restaurant: "Aquavit"
+        position: "Executive Chef"
+        start_year: 1995
+        end_year: 2003
+        is_current: false
+        neighborhood: "Midtown"
+        cuisine_tags: ["scandinavian", "nordic"]
+        open_year: 1987
+        price_range: "$$$$"
+        ratings:
+          michelin_stars: 2
+          michelin_year: 2025
+      - restaurant: "Red Rooster"
+        position: "Chef & Owner"
+        start_year: 2010
+        is_current: true
+        neighborhood: "Harlem"
+        cuisine_tags: ["soul-food", "american", "global"]
+        open_year: 2010
+        price_range: "$$$"
+        ratings:
+          jbf:
+            - "Best Chef: NYC 2003 (winner, at Aquavit)"
+
+  - name: "Floyd Cardoz"
+    bio: "Indian fine dining pioneer in NYC. Ran Tabla under Danny Meyer, first restaurant to bring Indian flavors to the NYC fine dining conversation. Trained under Gray Kunz at Lespinasse. Died March 2020."
+    birth_country: "IN"
+    birth_city: "Mumbai"
+    status: "deceased"
+    cuisine_tags: ["indian", "fine-dining", "american-indian"]
+    stops:
+      - restaurant: "Lespinasse"
+        position: "Sous Chef"
+        start_year: 1996
+        end_year: 1998
+        is_current: false
+        mentor: "Gray Kunz"
+      - restaurant: "Tabla"
+        position: "Executive Chef"
+        start_year: 1998
+        end_year: 2010
+        is_current: false
+        neighborhood: "Flatiron"
+        cuisine_tags: ["indian", "fine-dining"]
+        open_year: 1998
+        close_year: 2010
+        restaurant_status: "closed"
+        price_range: "$$$"
+
+  # ─── Major Food Group ───
+
+  - name: "Mario Carbone"
+    bio: "Co-founder of Major Food Group with Rich Torrisi and Jeff Zalaznick. Carbone is one of the most influential NYC Italian restaurants of the 2010s. Trained at Café Boulud under Boulud."
+    birth_country: "US"
+    birth_city: "New York"
+    cuisine_tags: ["italian-american", "fine-dining"]
+    stops:
+      - restaurant: "Café Boulud"
+        position: "Cook"
+        start_year: 2005
+        end_year: 2007
+        is_current: false
+        mentor: "Daniel Boulud"
+      - restaurant: "Carbone"
+        position: "Chef & Co-Owner"
+        start_year: 2013
+        is_current: true
+        neighborhood: "Greenwich Village"
+        cuisine_tags: ["italian-american", "fine-dining"]
+        open_year: 2013
+        price_range: "$$$$"
+      - restaurant: "The Grill"
+        position: "Chef & Co-Owner"
+        start_year: 2017
+        is_current: true
+        neighborhood: "Midtown"
+        cuisine_tags: ["american", "fine-dining", "steakhouse"]
+        open_year: 2017
+        price_range: "$$$$"
+
+  - name: "Rich Torrisi"
+    bio: "Co-founder of Major Food Group. Trained at Café Boulud under Boulud. Built Torrisi Italian Specialties, then pivoted to Carbone, The Grill, ZZ's Clam Bar. Italian-American fine dining empire."
+    birth_country: "US"
+    birth_city: "New York"
+    cuisine_tags: ["italian-american", "fine-dining"]
+    stops:
+      - restaurant: "Café Boulud"
+        position: "Cook"
+        start_year: 2005
+        end_year: 2007
+        is_current: false
+        mentor: "Daniel Boulud"
+      - restaurant: "Carbone"
+        position: "Chef & Co-Owner"
+        start_year: 2013
+        is_current: true
+
+  # ─── Current Generation Stars ───
+
+  - name: "James Kent"
+    bio: "Trained under Daniel Humm at EMP (sous chef). Opened Crown Shy and Saga/Overstory in the Financial District. Michelin-starred at both."
+    birth_country: "US"
+    cuisine_tags: ["new-american", "fine-dining"]
+    stops:
+      - restaurant: "Eleven Madison Park"
+        position: "Sous Chef"
+        start_year: 2010
+        end_year: 2014
+        is_current: false
+        mentor: "Daniel Humm"
+      - restaurant: "Crown Shy"
+        position: "Chef & Owner"
+        start_year: 2019
+        is_current: true
+        neighborhood: "Financial District"
+        cuisine_tags: ["new-american", "fine-dining"]
+        open_year: 2019
+        price_range: "$$$"
+        ratings:
+          michelin_stars: 1
+          michelin_year: 2025
+      - restaurant: "Saga"
+        position: "Chef & Owner"
+        start_year: 2020
+        is_current: true
+        neighborhood: "Financial District"
+        cuisine_tags: ["tasting-menu", "fine-dining"]
+        open_year: 2020
+        price_range: "$$$$"
+        format: "tasting-menu"
+
+  - name: "Kwame Onwuachi"
+    bio: "Raised in The Bronx and Nigeria. Trained at Per Se under Keller. Opened Shaw Bijou in DC, then became chef at Kith and Kin. Now runs Tatiana at Lincoln Center — 1 Michelin star, JBF Best Chef: New York 2024."
+    birth_country: "US"
+    birth_city: "New York"
+    cuisine_tags: ["afro-caribbean", "fine-dining", "soul-food"]
+    education:
+      - institution: "Culinary Institute of America"
+        city: "Hyde Park, NY"
+    stops:
+      - restaurant: "Per Se"
+        position: "Commis"
+        start_year: 2011
+        end_year: 2012
+        is_current: false
+        mentor: "Thomas Keller"
+      - restaurant: "Tatiana"
+        position: "Chef & Owner"
+        start_year: 2022
+        is_current: true
+        neighborhood: "Lincoln Center"
+        cuisine_tags: ["afro-caribbean", "fine-dining"]
+        open_year: 2022
+        price_range: "$$$"
+        ratings:
+          michelin_stars: 1
+          michelin_year: 2025
+          jbf:
+            - "Best Chef: New York 2024 (winner)"
+
+  - name: "Ignacio Mattos"
+    bio: "Uruguayan chef. Opened Estela in Nolita — raw bar meets Mediterranean flavors, 1 Michelin star. Also runs Flora Bar and Lodi. Cooked at Roberta's and ISA before Estela."
+    birth_country: "UY"
+    birth_city: "Montevideo"
+    cuisine_tags: ["mediterranean", "south-american", "raw-bar"]
+    stops:
+      - restaurant: "Roberta's"
+        position: "Chef"
+        start_year: 2008
+        end_year: 2010
+        is_current: false
+      - restaurant: "Estela"
+        position: "Chef & Owner"
+        start_year: 2013
+        is_current: true
+        neighborhood: "Nolita"
+        cuisine_tags: ["mediterranean", "raw-bar"]
+        open_year: 2013
+        price_range: "$$$"
+        ratings:
+          michelin_stars: 1
+          michelin_year: 2025
+
+  - name: "Missy Robbins"
+    bio: "Pasta specialist. Ran A Voce to a Michelin star, then opened Lilia in Williamsburg (1 Michelin star) and Misi. One of the most celebrated Italian cooks in NYC."
+    birth_country: "US"
+    birth_city: "Connecticut"
+    cuisine_tags: ["italian", "pasta", "fine-dining"]
+    stops:
+      - restaurant: "Lilia"
+        position: "Chef & Owner"
+        start_year: 2016
+        is_current: true
+        neighborhood: "Williamsburg"
+        cuisine_tags: ["italian", "pasta"]
+        open_year: 2016
+        price_range: "$$$"
+        ratings:
+          michelin_stars: 1
+          michelin_year: 2025
+
+  - name: "Gabriel Kreuther"
+    bio: "Alsatian-born chef. Was executive chef at The Modern (Danny Meyer's MoMA restaurant) before opening his eponymous restaurant near Bryant Park. Michelin-starred."
+    birth_country: "FR"
+    birth_city: "Bas-Rhin, Alsace"
+    cuisine_tags: ["alsatian", "french", "fine-dining"]
+    stops:
+      - restaurant: "The Modern"
+        position: "Executive Chef"
+        start_year: 2004
+        end_year: 2015
+        is_current: false
+        neighborhood: "Midtown"
+      - restaurant: "Gabriel Kreuther"
+        position: "Chef & Owner"
+        start_year: 2015
+        is_current: true
+        neighborhood: "Midtown"
+        cuisine_tags: ["alsatian", "french", "fine-dining"]
+        open_year: 2015
+        price_range: "$$$$"
+        format: "tasting-menu"
+        ratings:
+          michelin_stars: 2
+          michelin_year: 2025
+
+  - name: "César Ramirez"
+    bio: "Dominican-born chef. Chef's Table at Brooklyn Fare earned 3 Michelin stars — one of only a handful of Brooklyn restaurants to reach that level."
+    birth_country: "DO"
+    birth_city: "Dominican Republic"
+    cuisine_tags: ["tasting-menu", "french-japanese", "fine-dining"]
+    stops:
+      - restaurant: "Chef's Table at Brooklyn Fare"
+        position: "Chef & Owner"
+        start_year: 2009
+        is_current: true
+        neighborhood: "Hell's Kitchen"
+        cuisine_tags: ["tasting-menu", "french-japanese"]
+        open_year: 2009
+        price_range: "$$$$"
+        format: "tasting-menu"
+        ratings:
+          michelin_stars: 2
+          michelin_year: 2025
+
+  - name: "Emma Bengtsson"
+    bio: "Swedish chef. Executive chef of Aquavit, earning 2 Michelin stars — first female Swedish chef to reach that level. Succeeded Marcus Samuelsson."
+    birth_country: "SE"
+    birth_city: "Falkenberg"
+    cuisine_tags: ["scandinavian", "nordic", "fine-dining"]
+    stops:
+      - restaurant: "Aquavit"
+        position: "Executive Chef"
+        start_year: 2014
+        is_current: true
+
+  - name: "Gabrielle Hamilton"
+    bio: "Opened Prune in 1999, one of the most influential NYC restaurants across two decades. Memoirist (Blood, Bones & Butter). No culinary school — self-taught through line cooking and travel."
+    birth_country: "US"
+    cuisine_tags: ["bistro", "european", "nose-to-tail"]
+    stops:
+      - restaurant: "Prune"
+        position: "Chef & Owner"
+        start_year: 1999
+        is_current: true
+        neighborhood: "East Village"
+        cuisine_tags: ["bistro", "european", "nose-to-tail"]
+        open_year: 1999
+        price_range: "$$"
+
+  - name: "Daisuke Nakazawa"
+    bio: "Trained for 11 years under Jiro Ono at Sukiyabashi Jiro in Tokyo — featured in Jiro Dreams of Sushi. Opened Sushi Nakazawa in the West Village."
+    birth_country: "JP"
+    birth_city: "Tokyo"
+    cuisine_tags: ["sushi", "omakase", "japanese"]
+    stops:
+      - restaurant: "Sushi Nakazawa"
+        position: "Chef & Owner"
+        start_year: 2013
+        is_current: true
+        neighborhood: "West Village"
+        cuisine_tags: ["sushi", "omakase"]
+        open_year: 2013
+        price_range: "$$$$"
+        format: "omakase"
+
+  - name: "Simon Kim"
+    bio: "Korean-born. Cote Korean Steakhouse — Korean BBQ reinvented as fine dining. 1 Michelin star. First Korean steakhouse to receive a Michelin star in the US."
+    birth_country: "KR"
+    cuisine_tags: ["korean", "steakhouse", "fine-dining"]
+    stops:
+      - restaurant: "Cote"
+        position: "Chef & Owner"
+        start_year: 2017
+        is_current: true
+        neighborhood: "Flatiron"
+        cuisine_tags: ["korean", "steakhouse", "fine-dining"]
+        open_year: 2017
+        price_range: "$$$$"
+        ratings:
+          michelin_stars: 1
+          michelin_year: 2025
+
+  - name: "Amanda Cohen"
+    bio: "Runs Dirt Candy, vegetable-forward restaurant on the Lower East Side. One of the first chefs to make vegetables the entire focus of a fine dining menu."
+    birth_country: "CA"
+    birth_city: "Ottawa"
+    cuisine_tags: ["vegetable-forward", "vegetarian"]
+    stops:
+      - restaurant: "Dirt Candy"
+        position: "Chef & Owner"
+        start_year: 2008
+        is_current: true
+        neighborhood: "Lower East Side"
+        cuisine_tags: ["vegetable-forward", "vegetarian"]
+        open_year: 2008
+        price_range: "$$$"
+
+  - name: "Jungsik Yim"
+    bio: "Korean fine dining innovator. Jungsik promoted to 3 Michelin stars (2024) — first Korean restaurant in the US at that level. JBF Outstanding Chef 2025."
+    birth_country: "KR"
+    birth_city: "Seoul"
+    cuisine_tags: ["korean", "fine-dining", "tasting-menu"]
+    stops:
+      - restaurant: "Jungsik"
+        position: "Chef & Owner"
+        start_year: 2011
+        is_current: true
+
+  - name: "Junghyun Park"
+    bio: "Korean chef. Atomix — 2 Michelin stars, fine-dining Korean tasting menu in a 14-seat counter format. JBF Outstanding Hospitality 2025."
+    birth_country: "KR"
+    birth_city: "Seoul"
+    cuisine_tags: ["korean", "fine-dining", "tasting-menu"]
+    stops:
+      - restaurant: "Atomix"
+        position: "Chef & Owner"
+        start_year: 2018
+        is_current: true
+

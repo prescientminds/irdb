@@ -1,0 +1,1467 @@
+[
+  {
+    "id": "group_sprout_la",
+    "name": "Sprout LA",
+    "type": "development",
+    "key_people": [
+      "Bill Chait"
+    ],
+    "city": "Los Angeles",
+    "portfolio": [],
+    "description": "Bill Chait's restaurant incubator (2010-2018). Launched Bestia, Republique, Broken Spanish, Otium, Sotto, Picca, Redbird, Short Order. Chefs went independent. The most important development entity in modern LA dining.",
+    "active": false,
+    "founded_year": 2010,
+    "model": "development",
+    "total_locations": null,
+    "notable_alumni": [
+      "chef_ori_menashe",
+      "chef_walter_manzke",
+      "chef_ray_garcia",
+      "chef_tim_hollingsworth",
+      "chef_steve_samson",
+      "chef_ricardo_zarate"
+    ],
+    "website": null,
+    "notes": null
+  },
+  {
+    "id": "group_thinkfoodgroup",
+    "name": "ThinkFoodGroup",
+    "type": "restaurant-group",
+    "key_people": [
+      "Jose Andres",
+      "Rob Wilder"
+    ],
+    "city": "Washington, DC",
+    "portfolio": [
+      "rest_somni_original",
+      "rest_bazaar"
+    ],
+    "description": "Jose Andres's restaurant group. DC-based. Backed original Somni at SLS Beverly Hills.",
+    "active": true,
+    "founded_year": 1993,
+    "model": "chef-restaurateur",
+    "total_locations": 30,
+    "notable_alumni": [],
+    "website": null,
+    "notes": null
+  },
+  {
+    "id": "group_bb_hospitality",
+    "name": "B&B Hospitality Group",
+    "type": "restaurant-group",
+    "key_people": [
+      "Joe Bastianich"
+    ],
+    "city": "New York",
+    "portfolio": [
+      "rest_osteria_mozza",
+      "rest_pizzeria_mozza",
+      "rest_chi_spacca"
+    ],
+    "description": "Bastianich family + Nancy Silverton. Osteria Mozza (1 Michelin star + Green Star), Pizzeria Mozza, chi SPACCA, Mozza2Go. Elizabeth Hong is culinary director. Max & Helen's (with Phil Rosenthal) opening 2025. Expanding globally: Newport Beach, DC, London, Singapore.",
+    "active": true,
+    "founded_year": 2007,
+    "model": "chef-partner",
+    "total_locations": 15,
+    "notable_alumni": [
+      "chef_elizabeth_hong",
+      "chef_chad_colby"
+    ],
+    "website": null,
+    "notes": null
+  },
+  {
+    "id": "group_last_word",
+    "name": "Last Word Hospitality",
+    "type": "restaurant-group",
+    "key_people": [
+      "Holly Fox",
+      "Adam Weisblatt"
+    ],
+    "city": "Los Angeles",
+    "portfolio": [
+      "rest_rasarumah",
+      "rest_pearl_river_deli",
+      "rest_found_oyster"
+    ],
+    "description": "Founded 2014 by Holly Fox & Adam Weisblatt. Found Oyster, Rasarumah, Pearl River Deli, Barra Santos, Queen St., Shin's Pizza, The Copper Room. 2026 JBF semifinalist: Outstanding Restaurateur.",
+    "active": true,
+    "founded_year": 2014,
+    "model": "operator",
+    "total_locations": 6,
+    "notable_alumni": [],
+    "website": null,
+    "notes": null
+  },
+  {
+    "id": "group_shook_dotolo",
+    "name": "Jon Shook & Vinny Dotolo",
+    "type": "restaurant-group",
+    "key_people": [
+      "Jon Shook",
+      "Vinny Dotolo"
+    ],
+    "city": "Los Angeles",
+    "portfolio": [
+      "rest_jon_vinnys"
+    ],
+    "description": "Animal (closed 2023), Son of a Gun (closed 2024), Jon & Vinny's (5 LA locations + Saudi Arabia), Cookbook Market (3 locations), Helen's Wines. Kismet partnership ended May 2021. Petit Trois partnership with Ludo Lefebvre.",
+    "active": true,
+    "notes": "Kismet partnership ended May 2021.",
+    "founded_year": 2008,
+    "model": "chef-restaurateur",
+    "total_locations": 12,
+    "notable_alumni": [],
+    "website": null
+  },
+  {
+    "id": "group_francis_miranda",
+    "name": "Francis Miranda",
+    "type": "restaurateur",
+    "key_people": [
+      "Francis Miranda"
+    ],
+    "city": "Los Angeles",
+    "portfolio": [
+      "rest_88_club",
+      "rest_daybird",
+      "rest_nightshade"
+    ],
+    "description": "Restaurateur partnering with chefs on casual-to-fine concepts. Also behind Trophies Burger Club.",
+    "active": true,
+    "founded_year": null,
+    "model": "restaurateur",
+    "total_locations": 3,
+    "notable_alumni": [],
+    "website": null,
+    "notes": null
+  },
+  {
+    "id": "group_tkrg",
+    "name": "Thomas Keller Restaurant Group",
+    "type": "restaurant-group",
+    "key_people": [
+      "Thomas Keller"
+    ],
+    "city": "Yountville, CA",
+    "portfolio": [
+      "rest_french_laundry",
+      "rest_per_se",
+      "rest_bouchon_bh"
+    ],
+    "description": "French Laundry, Per Se, Bouchon, Ad Hoc. Training ground for multiple LA chefs.",
+    "active": true,
+    "founded_year": 1994,
+    "model": "chef-restaurateur",
+    "total_locations": 10,
+    "notable_alumni": [
+      "chef_eric_ziebold",
+      "chef_gary_menes",
+      "chef_tim_hollingsworth",
+      "chef_corey_lee"
+    ],
+    "website": null,
+    "notes": null
+  },
+  {
+    "id": "group_alinea_group",
+    "name": "Alinea Group",
+    "type": "restaurant-group",
+    "key_people": [
+      "Grant Achatz",
+      "Nick Kokonas"
+    ],
+    "city": "Chicago",
+    "portfolio": [
+      "rest_alinea",
+      "rest_next"
+    ],
+    "description": "Alinea, Next, The Aviary, Roister. Training ground for Dave Beran and Jordan Kahn.",
+    "active": true,
+    "founded_year": 2005,
+    "model": "chef-restaurateur",
+    "total_locations": 5,
+    "notable_alumni": [
+      "chef_dave_beran",
+      "chef_jordan_kahn"
+    ],
+    "website": null,
+    "notes": null
+  },
+  {
+    "id": "group_wolfgang_puck",
+    "name": "Wolfgang Puck Fine Dining Group",
+    "type": "restaurant-group",
+    "key_people": [
+      "Wolfgang Puck"
+    ],
+    "city": "Los Angeles",
+    "portfolio": [
+      "rest_spago",
+      "rest_cut",
+      "rest_chinois",
+      "rest_spago_vegas"
+    ],
+    "description": "Spago, CUT, Chinois on Main, Merois, Wolfgang Puck Bar & Grill. 100+ restaurants worldwide (fine dining + casual + airport). Current Spago EC: Ari Rosenson. Current CUT EC: Drew Rosenberg. Training ground for a generation of LA chefs.",
+    "active": true,
+    "founded_year": 1982,
+    "model": "chef-restaurateur",
+    "total_locations": 100,
+    "notable_alumni": [
+      "chef_nancy_silverton",
+      "chef_lee_hefter",
+      "chef_jon_shook",
+      "chef_vinny_dotolo",
+      "chef_walter_manzke",
+      "chef_govind_armstrong",
+      "chef_daniel_son"
+    ],
+    "website": null,
+    "notes": null
+  },
+  {
+    "id": "group_lucques",
+    "name": "Lucques Group",
+    "type": "restaurant-group",
+    "key_people": [
+      "Suzanne Goin",
+      "Caroline Styne"
+    ],
+    "city": "Los Angeles",
+    "portfolio": [
+      "rest_aoc"
+    ],
+    "description": "Suzanne Goin & Caroline Styne. A.O.C. (W. Hollywood), Hollywood Bowl Food + Wine (seasonal). Lucques (closed 2020), Tavern/A.O.C. Brentwood (closed Aug 2025), Caldo Verde + Cara Cara at Proper Hotel (closed). JBF Outstanding Chef (Goin 2016) and Outstanding Restaurateur (Styne 2018).",
+    "active": true,
+    "founded_year": 1998,
+    "model": "chef-restaurateur",
+    "total_locations": 3,
+    "notable_alumni": [],
+    "website": null,
+    "notes": null
+  },
+  {
+    "id": "group_rustic_canyon",
+    "name": "Rustic Canyon Family",
+    "type": "restaurant-group",
+    "key_people": [
+      "Jeremy Fox",
+      "Zoe Nathan",
+      "Josh Loeb"
+    ],
+    "city": "Santa Monica",
+    "portfolio": [
+      "rest_rustic_canyon",
+      "rest_birdie_gs",
+      "rest_huckleberry"
+    ],
+    "description": "Josh Loeb, Zoe Nathan, Colby Goff. Santa Monica-based. Rustic Canyon (Jeremy Fox), Birdie G's, Huckleberry, Milo+Olive, Sweet Rose Creamery, Esters, The Dutchess (Ojai, chef Saw Naing). Cassia closed Feb 2025.",
+    "active": true,
+    "founded_year": 2006,
+    "model": "chef-restaurateur",
+    "total_locations": 8,
+    "notable_alumni": [
+      "chef_bryant_ng"
+    ],
+    "website": null,
+    "notes": null
+  },
+  {
+    "id": "group_patina",
+    "name": "Patina Group",
+    "type": "restaurant-group",
+    "key_people": [
+      "Joachim Splichal"
+    ],
+    "city": "Los Angeles",
+    "portfolio": [
+      "rest_patina",
+      "rest_cafe_pinot",
+      "rest_pinot_bistro"
+    ],
+    "description": "Founded by Joachim Splichal. Grew from Patina to 60+ restaurants, catering, and venue operations (performing arts centers, Disney). Acquired by Sodexo's Centerplate. Current Patina EC: Andreas Roller. Training ground for a generation of LA French chefs.",
+    "active": true,
+    "founded_year": 1989,
+    "model": "operator",
+    "total_locations": 60,
+    "notable_alumni": [
+      "chef_walter_manzke",
+      "chef_tony_esnault"
+    ],
+    "website": null,
+    "notes": null
+  },
+  {
+    "id": "group_sugarfish",
+    "name": "SUGARFISH / KazuNori",
+    "type": "restaurant-group",
+    "key_people": [
+      "Kazunori Nozawa",
+      "Lele Massimini"
+    ],
+    "city": "Los Angeles",
+    "portfolio": [
+      "rest_sugarfish",
+      "rest_sushi_nozawa"
+    ],
+    "description": "Nozawa's omakase concept scaled by Massimini. 30+ SUGARFISH locations plus KazuNori hand-roll bars. One of the most successful chef-brand scaling stories in American dining.",
+    "active": true,
+    "founded_year": 2008,
+    "model": "chef-brand",
+    "total_locations": 30,
+    "notable_alumni": [],
+    "website": null,
+    "notes": null
+  },
+  {
+    "id": "group_gjelina",
+    "name": "Gjelina Group",
+    "type": "restaurant-group",
+    "key_people": [
+      "Travis Lett",
+      "Fran Camaj"
+    ],
+    "city": "Los Angeles",
+    "portfolio": [
+      "rest_gjelina",
+      "rest_gjusta"
+    ],
+    "description": "Fran Camaj (named for his mother). Gjelina, GTA, Gjusta, Gjusta Goods, Gjusta Grocer, Gjelina Hotel. Expanding to NYC and Las Vegas (2025). Travis Lett co-founded, sold stake 2019, now operates RVR independently.",
+    "active": true,
+    "founded_year": 2008,
+    "model": "operator",
+    "total_locations": 6,
+    "notable_alumni": [
+      "chef_travis_lett"
+    ],
+    "website": null,
+    "notes": null
+  },
+  {
+    "id": "group_cimarusti",
+    "name": "Michael Cimarusti Restaurants",
+    "type": "chef-owned",
+    "model": "chef-restaurateur",
+    "key_people": [
+      "Michael Cimarusti",
+      "Donato Poto"
+    ],
+    "city": "Los Angeles",
+    "founded_year": 2005,
+    "portfolio": [
+      "rest_providence",
+      "rest_connie_teds",
+      "rest_cape_seafood"
+    ],
+    "total_locations": 3,
+    "notable_alumni": [
+      "chef_jessica_largey"
+    ],
+    "description": "Providence (3 Michelin stars — first in LA history), Connie & Ted's, Cape Seafood & Provisions. Business partner Donato Poto. CIA-trained, shaped by Le Cirque and Arpège.",
+    "active": true,
+    "website": null,
+    "notes": null
+  },
+  {
+    "id": "group_nakayama",
+    "name": "Niki Nakayama & Carole Iida-Nakayama",
+    "type": "chef-owned",
+    "model": "chef-restaurateur",
+    "key_people": [
+      "Niki Nakayama",
+      "Carole Iida-Nakayama"
+    ],
+    "city": "Los Angeles",
+    "founded_year": 2011,
+    "portfolio": [
+      "rest_nnaka",
+      "rest_nsoto"
+    ],
+    "total_locations": 2,
+    "notable_alumni": [],
+    "description": "n/naka (2 Michelin stars, modern kaiseki) and n/soto (1 star, izakaya led by chef Yoji Tajima).",
+    "active": true,
+    "website": null,
+    "notes": null
+  },
+  {
+    "id": "group_beran",
+    "name": "Dave Beran Restaurants",
+    "type": "chef-owned",
+    "model": "chef-restaurateur",
+    "key_people": [
+      "Dave Beran"
+    ],
+    "city": "Santa Monica",
+    "founded_year": 2017,
+    "portfolio": [
+      "rest_pasjoli",
+      "rest_seline"
+    ],
+    "total_locations": 2,
+    "notable_alumni": [],
+    "description": "Pasjoli (1 Michelin star, French bistro) and Seline (tasting menu). Ex-Alinea/Next executive chef.",
+    "active": true,
+    "website": null,
+    "notes": null
+  },
+  {
+    "id": "group_menashe_gergis",
+    "name": "Ori Menashe & Genevieve Gergis",
+    "type": "chef-owned",
+    "model": "chef-restaurateur",
+    "key_people": [
+      "Ori Menashe",
+      "Genevieve Gergis",
+      "Leah Bunch"
+    ],
+    "city": "Los Angeles",
+    "founded_year": 2012,
+    "portfolio": [
+      "rest_bestia",
+      "rest_bavel",
+      "rest_saffys"
+    ],
+    "total_locations": 3,
+    "notable_alumni": [],
+    "description": "Bestia (Arts District), Bavel (Middle Eastern), Saffy's (East Hollywood). Originally incubated by Sprout LA, now independent.",
+    "active": true,
+    "website": null,
+    "notes": null
+  },
+  {
+    "id": "group_funke",
+    "name": "Evan Funke / Gusto 54",
+    "type": "chef-partner",
+    "model": "chef-partner",
+    "key_people": [
+      "Evan Funke",
+      "Janet Zuccarini"
+    ],
+    "city": "Los Angeles",
+    "founded_year": 2017,
+    "portfolio": [
+      "rest_felix",
+      "rest_mother_wolf",
+      "rest_funke"
+    ],
+    "total_locations": 6,
+    "notable_alumni": [],
+    "description": "Felix (Venice), Mother Wolf (Hollywood + Las Vegas + Miami), Funke (Beverly Hills, Michelin). Partnership with Janet Zuccarini's Toronto-based Gusto 54.",
+    "active": true,
+    "website": null,
+    "notes": null
+  },
+  {
+    "id": "group_citrin",
+    "name": "Citrin Hospitality",
+    "type": "chef-owned",
+    "model": "chef-restaurateur",
+    "key_people": [
+      "Josiah Citrin"
+    ],
+    "city": "Santa Monica",
+    "founded_year": 1999,
+    "portfolio": [
+      "rest_melisse",
+      "rest_citrin",
+      "rest_charcoal",
+      "rest_dear_johns"
+    ],
+    "total_locations": 6,
+    "notable_alumni": [],
+    "description": "Mélisse (2 Michelin stars), Citrin (1 star), Charcoal (Venice), Dear John's (Culver City, with Rockenwagners), Augie's on Main, Dear Jane's. Westside empire.",
+    "active": true,
+    "website": null,
+    "notes": null
+  },
+  {
+    "id": "group_stone",
+    "name": "Curtis Stone Restaurants",
+    "type": "chef-owned",
+    "model": "chef-restaurateur",
+    "key_people": [
+      "Curtis Stone",
+      "Luke Stone"
+    ],
+    "city": "Los Angeles",
+    "founded_year": 2014,
+    "portfolio": [
+      "rest_gwen"
+    ],
+    "total_locations": 2,
+    "notable_alumni": [
+      "chef_chad_colby"
+    ],
+    "description": "Gwen (1 Michelin star, relocating to Westside Aug 2025). Maude closed Sept 2024, replaced by The Pie Room. Co-owned with brother Luke Stone.",
+    "active": true,
+    "website": null,
+    "notes": null
+  },
+  {
+    "id": "group_lefebvre",
+    "name": "Ludo Lefebvre Restaurants",
+    "type": "chef-owned",
+    "model": "chef-restaurateur",
+    "key_people": [
+      "Ludo Lefebvre"
+    ],
+    "city": "Los Angeles",
+    "founded_year": 2013,
+    "portfolio": [
+      "rest_petit_trois"
+    ],
+    "total_locations": 3,
+    "notable_alumni": [],
+    "description": "Petit Trois (Hollywood + Sherman Oaks + Aspen). Trois Mec (1 star, closed 2020) was partnership with Shook & Dotolo.",
+    "active": true,
+    "website": null,
+    "notes": null
+  },
+  {
+    "id": "group_centeno",
+    "name": "Josef Centeno Restaurants",
+    "type": "chef-owned",
+    "model": "chef-restaurateur",
+    "key_people": [
+      "Josef Centeno"
+    ],
+    "city": "Los Angeles",
+    "founded_year": 2011,
+    "portfolio": [
+      "rest_baco_mercat",
+      "rest_orsa_winston"
+    ],
+    "total_locations": 2,
+    "notable_alumni": [],
+    "description": "Bäco Mercat (DTLA) and Orsa & Winston (DTLA). Multi-concept downtown operator.",
+    "active": true,
+    "website": null,
+    "notes": null
+  },
+  {
+    "id": "group_manzke",
+    "name": "Manzke Hospitality Group",
+    "type": "chef-owned",
+    "model": "chef-restaurateur",
+    "key_people": [
+      "Walter Manzke",
+      "Margarita Manzke"
+    ],
+    "city": "Los Angeles",
+    "founded_year": 2013,
+    "portfolio": [
+      "rest_republique"
+    ],
+    "total_locations": 1,
+    "notable_alumni": [],
+    "description": "République (La Brea). Originally Sprout LA, now independent. Manzke tasting menu + Bicyclette bistro both closed March 2024. Margarita: JBF Outstanding Pastry Chef/Baker 2023. Wildflour (17 locations, Philippines).",
+    "active": true,
+    "website": null,
+    "notes": null
+  },
+  {
+    "id": "group_choi",
+    "name": "10 Grand Hospitality / Roy Choi",
+    "type": "chef-owned",
+    "model": "chef-restaurateur",
+    "key_people": [
+      "Roy Choi"
+    ],
+    "city": "Los Angeles",
+    "founded_year": 2008,
+    "portfolio": [
+      "rest_kogi"
+    ],
+    "total_locations": 3,
+    "notable_alumni": [],
+    "description": "Kogi BBQ trucks (pioneered gourmet food truck movement). Kogi Taqueria (2 locations). LocoL, A-Frame, POT, Commissary all closed. Best Friend at Park MGM (Las Vegas).",
+    "active": true,
+    "website": null,
+    "notes": null
+  },
+  {
+    "id": "group_yenbamroong",
+    "name": "Night + Market",
+    "type": "chef-owned",
+    "model": "chef-restaurateur",
+    "key_people": [
+      "Kris Yenbamroong"
+    ],
+    "city": "Los Angeles",
+    "founded_year": 2010,
+    "portfolio": [
+      "rest_night_market",
+      "rest_night_market_song",
+      "rest_night_market_sahm"
+    ],
+    "total_locations": 4,
+    "notable_alumni": [],
+    "description": "Night + Market (WeHo), Song (Silver Lake), Sahm (Venice). F&W Best New Chef 2016. Also at Virgin Hotels Las Vegas.",
+    "active": true,
+    "website": null,
+    "notes": null
+  },
+  {
+    "id": "group_hwood",
+    "name": "h.wood Group",
+    "type": "operator",
+    "model": "operator",
+    "key_people": [
+      "John Terzian",
+      "Brian Toll"
+    ],
+    "city": "Los Angeles",
+    "founded_year": 2008,
+    "portfolio": [
+      "rest_delilah",
+      "rest_the_nice_guy"
+    ],
+    "total_locations": 14,
+    "notable_alumni": [],
+    "description": "Delilah, The Nice Guy, Harriet's, Slab. Nightlife-forward hospitality, supper club format. 9-figure valuation (2026 DIAFA investment). Expanding to Dallas, NYC.",
+    "active": true,
+    "website": null,
+    "notes": null
+  },
+  {
+    "id": "group_idg",
+    "name": "Innovative Dining Group",
+    "type": "operator",
+    "model": "operator",
+    "key_people": [
+      "Lee Maen",
+      "Philip Cummins",
+      "Craig Katz"
+    ],
+    "city": "Los Angeles",
+    "founded_year": 1997,
+    "portfolio": [
+      "rest_sushi_roku",
+      "rest_boa_steakhouse",
+      "rest_katana"
+    ],
+    "total_locations": 7,
+    "notable_alumni": [],
+    "description": "Sushi Roku, BOA Steakhouse, Katana, ROKU. Corp exec chef Tyson Wong. Sunset Strip institution since 1997.",
+    "active": true,
+    "website": null,
+    "notes": null
+  },
+  {
+    "id": "group_nobu",
+    "name": "Nobu Hospitality",
+    "type": "chef-brand",
+    "model": "chef-brand",
+    "key_people": [
+      "Nobu Matsuhisa",
+      "Robert De Niro",
+      "Meir Teper"
+    ],
+    "city": "Global",
+    "founded_year": 1994,
+    "portfolio": [
+      "rest_matsuhisa",
+      "rest_nobu_malibu",
+      "rest_nobu_la"
+    ],
+    "total_locations": 50,
+    "notable_alumni": [],
+    "description": "Matsuhisa (Beverly Hills, 1987 — Nobu's personal restaurant), Nobu Malibu, Nobu LA. 50+ restaurants, 17+ hotels worldwide. Founded with Robert De Niro.",
+    "active": true,
+    "website": null,
+    "notes": null
+  },
+  {
+    "id": "group_mina",
+    "name": "The Mina Group",
+    "type": "chef-partner",
+    "model": "chef-partner",
+    "key_people": [
+      "Michael Mina"
+    ],
+    "city": "San Francisco",
+    "founded_year": 2002,
+    "portfolio": [
+      "rest_bourbon_steak_la",
+      "rest_orla"
+    ],
+    "total_locations": 39,
+    "notable_alumni": [],
+    "description": "Bourbon Steak (Glendale), Orla (Regent Santa Monica). 39 restaurants globally. Chef-partner model pairs Mina brand with local executive chefs.",
+    "active": true,
+    "website": null,
+    "notes": null
+  },
+  {
+    "id": "group_momofuku",
+    "name": "Momofuku",
+    "type": "chef-owned",
+    "model": "chef-restaurateur",
+    "key_people": [
+      "David Chang"
+    ],
+    "city": "New York",
+    "founded_year": 2004,
+    "portfolio": [
+      "rest_majordomo",
+      "rest_momofuku_noodle_bar",
+      "rest_momofuku_ko",
+      "rest_kabawa",
+      "rest_milk_bar"
+    ],
+    "total_locations": 10,
+    "notable_alumni": [],
+    "description": "David Chang's restaurant empire. NYC: Momofuku Noodle Bar (East Village, 2004, Bib Gourmand), Noodle Bar Uptown (Columbus Circle), Kabawa (East Village), Bar Kabawa, Bang Bar. Closed: Ko (2 Michelin stars), Ssam Bar, Ma Peche, Nishi. LA: Majordomo (Arts District, 2018). Also: Milk Bar (Christina Tosi, spun off), Momofuku consumer goods line. Chang trained at Café Boulud (Boulud). Pioneered Asian-American fine-casual dining.",
+    "active": true,
+    "website": "https://www.momofuku.com",
+    "notes": "Ko and Ssam Bar closed. Current NYC operations scaled back to Noodle Bar locations + Kabawa."
+  },
+  {
+    "id": "group_sbe",
+    "name": "sbe / Disruptive Restaurant Group",
+    "type": "development",
+    "model": "development",
+    "key_people": [
+      "Sam Nazarian"
+    ],
+    "city": "Beverly Hills",
+    "founded_year": 2002,
+    "portfolio": [
+      "rest_katsuya"
+    ],
+    "total_locations": 15,
+    "notable_alumni": [],
+    "description": "Katsuya (4 LA locations, chef Katsuya Uechi), Casa Dani (Century City, chef Dani Garcia). Global hotel-restaurant platform. Previously operated The Bazaar by Jose Andres at SLS Hotel.",
+    "active": true,
+    "website": null,
+    "notes": null
+  },
+  {
+    "id": "group_wywh",
+    "name": "Wish You Were Here Group",
+    "type": "operator",
+    "model": "operator",
+    "key_people": [
+      "Nick Mathers"
+    ],
+    "city": "Los Angeles",
+    "founded_year": 2018,
+    "portfolio": [
+      "rest_elephante"
+    ],
+    "total_locations": 6,
+    "notable_alumni": [],
+    "description": "Elephante (Santa Monica rooftop, coastal Italian). Expanding to Scottsdale, Dallas, Las Vegas, NYC.",
+    "active": true,
+    "website": null,
+    "notes": null
+  },
+  {
+    "id": "group_williamson",
+    "name": "Brooke Williamson & Nick Roberts",
+    "type": "chef-owned",
+    "model": "chef-restaurateur",
+    "key_people": [
+      "Brooke Williamson",
+      "Nick Roberts"
+    ],
+    "city": "Los Angeles",
+    "founded_year": 2012,
+    "portfolio": [
+      "rest_playa_provisions",
+      "rest_hudson_house"
+    ],
+    "total_locations": 2,
+    "notable_alumni": [],
+    "description": "Playa Provisions (Playa del Rey) and Hudson House (Redondo Beach). Top Chef Season 14 winner.",
+    "active": true,
+    "website": null,
+    "notes": null
+  },
+  {
+    "id": "group_samson",
+    "name": "Steve Samson Restaurants",
+    "type": "chef-owned",
+    "model": "chef-restaurateur",
+    "key_people": [
+      "Steve Samson"
+    ],
+    "city": "Los Angeles",
+    "founded_year": 2011,
+    "portfolio": [
+      "rest_rossoblu"
+    ],
+    "total_locations": 1,
+    "notable_alumni": [],
+    "description": "Rossoblu (DTLA). Italian-focused. Trained at Angelini Osteria. Sotto (closed 2019, originally Sprout LA) was his first restaurant.",
+    "active": true,
+    "website": null,
+    "notes": null
+  },
+  {
+    "id": "group_jean_georges",
+    "name": "Jean-Georges Management",
+    "type": "chef-brand",
+    "model": "chef-brand",
+    "key_people": [
+      "Jean-Georges Vongerichten"
+    ],
+    "city": "New York",
+    "founded_year": 1997,
+    "portfolio": [
+      "rest_the_rooftop_by_jg",
+      "rest_jeangeorges",
+      "rest_abc_kitchen",
+      "rest_perry_street"
+    ],
+    "total_locations": 40,
+    "notable_alumni": [],
+    "description": "Jean-Georges Vongerichten's global restaurant empire. NYC: Jean-Georges (Upper West Side, 1997, 2 Michelin stars), Nougatine at Jean-Georges, JoJo (Upper East Side, his first restaurant), ABC Kitchen (Flatiron, eco-conscious American), ABC Cocina, Perry Street (West Village). Closed: Mercer Kitchen (1998-2022), Tin Building complex (The Fulton, House of Red Pearl, etc. — closed 2025). LA: The Rooftop by JG (Waldorf Astoria BH). 40+ restaurants worldwide. One of the most prolific restaurant empires in American dining.",
+    "active": true,
+    "website": "https://www.jean-georges.com",
+    "notes": "Tin Building complex shuttered 2025 (converted to Balloon Museum). Mercer Kitchen closed end of 2022 after 25 years."
+  },
+  {
+    "id": "group_kahn",
+    "name": "Jordan Kahn Restaurants",
+    "type": "chef-owned",
+    "model": "chef-restaurateur",
+    "key_people": [
+      "Jordan Kahn"
+    ],
+    "city": "Los Angeles",
+    "founded_year": 2016,
+    "portfolio": [
+      "rest_vespertine",
+      "rest_destroyer",
+      "rest_meteora"
+    ],
+    "total_locations": 3,
+    "notable_alumni": [],
+    "description": "Vespertine (2 Michelin stars + Green Star), Destroyer (breakfast/lunch), Meteora (1 star). All in Culver City/Hancock Park. Ex-Alinea. Vespertine closed 2020, reopened April 2024.",
+    "active": true,
+    "website": null,
+    "notes": null
+  },
+  {
+    "id": "group_diafa",
+    "name": "DIAFA",
+    "type": "investor",
+    "key_people": [],
+    "city": null,
+    "portfolio": [],
+    "description": "Investment firm. Took stake in h.wood Group at 9-figure valuation (2026).",
+    "active": true,
+    "founded_year": null,
+    "model": "investor",
+    "total_locations": null,
+    "notable_alumni": [],
+    "website": null
+  },
+  {
+    "id": "group_sodexo",
+    "name": "Sodexo / Centerplate",
+    "type": "investor",
+    "key_people": [],
+    "city": "Paris",
+    "portfolio": [],
+    "description": "Global food services corporation. Acquired Patina Restaurant Group via Centerplate subsidiary (2019).",
+    "active": true,
+    "founded_year": 1966,
+    "model": "investor",
+    "total_locations": null,
+    "notable_alumni": [],
+    "website": null
+  },
+  {
+    "id": "group_gusto54",
+    "name": "Gusto 54",
+    "type": "investor",
+    "key_people": [
+      "Janet Zuccarini"
+    ],
+    "city": "Toronto",
+    "portfolio": [],
+    "description": "Toronto-based hospitality group. Capital and operational partner for Evan Funke restaurants (Felix, Mother Wolf, Funke).",
+    "active": true,
+    "founded_year": 2008,
+    "model": "investor",
+    "total_locations": 10,
+    "notable_alumni": [],
+    "website": null
+  },
+  {
+    "id": "group_ushg",
+    "name": "Union Square Hospitality Group",
+    "type": "hospitality-group",
+    "key_people": [
+      "Danny Meyer"
+    ],
+    "city": "New York",
+    "portfolio": [
+      "rest_gramercy_tavern",
+      "rest_the_modern",
+      "rest_blue_smoke"
+    ],
+    "description": "Danny Meyer's restaurant and hospitality empire. NYC: Union Square Cafe (1985), Gramercy Tavern (1994), The Modern (MoMA, 2004), Blue Smoke (Flatiron), Marta (NoMad), Ci Siamo, Daily Provisions, Maialino, Caffe Marchio, Vini e Fritti, Porchlight. Previously: Tabla (closed), North End Grill (closed), Untitled (Whitney). Shake Shack (spun off as public company). Meyer pioneered 'enlightened hospitality' — 28 James Beard Awards. Expanding to Boston (2025) and Detroit. The single most influential restaurateur in modern American dining.",
+    "active": true,
+    "founded_year": 1985,
+    "model": "restaurateur",
+    "total_locations": 20,
+    "notable_alumni": [
+      "chef_tom_colicchio",
+      "chef_michael_anthony",
+      "chef_floyd_cardoz",
+      "chef_gabriel_kreuther"
+    ],
+    "website": null,
+    "notes": null
+  },
+  {
+    "id": "group_major_food",
+    "name": "Major Food Group",
+    "type": "restaurant-group",
+    "key_people": [
+      "Mario Carbone",
+      "Rich Torrisi",
+      "Jeff Zalaznick"
+    ],
+    "city": "New York",
+    "portfolio": [
+      "rest_carbone",
+      "rest_the_grill"
+    ],
+    "description": "Italian-American fine dining empire — 50+ restaurants globally. NYC: Carbone (Greenwich Village, 2013), Torrisi (Puck Building, Nolita, relaunched 2023, 1 Michelin star), The Grill (Midtown, Seagram Building), The Pool (Midtown, Seagram Building), ZZ's Clam Bar (Greenwich Village), ZZ's Club (members), The Lobster Club (Midtown), Dirty French (Lower East Side), Dirty French Steakhouse, Parm (multiple NYC locations), Sadelle's (SoHo), Contessa, Crown Club, Principessa, Bad Roman (Columbus Circle), Vino, Flamingo Grill. Carbone and Torrisi trained at Café Boulud (Boulud lineage). Global: Miami, Las Vegas, Hong Kong, Paris, Tel Aviv, Dallas.",
+    "active": true,
+    "founded_year": 2013,
+    "model": "chef-partner",
+    "total_locations": 50,
+    "notable_alumni": [],
+    "website": null,
+    "notes": null
+  },
+  {
+    "id": "group_noho_hospitality",
+    "name": "NoHo Hospitality Group",
+    "type": "restaurant-group",
+    "key_people": [
+      "Andrew Carmellini",
+      "Luke Ostrom",
+      "Josh Pickard"
+    ],
+    "city": "New York",
+    "portfolio": [
+      "rest_the_dutch",
+      "rest_locanda_verde"
+    ],
+    "description": "Andrew Carmellini's restaurant group. Built after his JBF Rising Star win at Café Boulud. Locanda Verde (TriBeCa), The Dutch (SoHo), Bar Primi, Lodi.",
+    "active": true,
+    "founded_year": 2009,
+    "model": "chef-owned",
+    "total_locations": 6,
+    "notable_alumni": [],
+    "website": null,
+    "notes": null
+  },
+  {
+    "id": "group_dinex",
+    "name": "The Dinex Group",
+    "type": "restaurant-group",
+    "key_people": [
+      "Daniel Boulud"
+    ],
+    "city": "New York",
+    "portfolio": [
+      "rest_daniel",
+      "rest_café_boulud"
+    ],
+    "description": "Daniel Boulud's restaurant group. Daniel (2 Michelin stars), Café Boulud, Le Pavillon. The most prolific mentor tree in NYC dining — alumni include Chang, Carmellini, Carbone, Torrisi, Anthony, Guarnaschelli, Nasr.",
+    "active": true,
+    "founded_year": 1993,
+    "model": "chef-owned",
+    "total_locations": 8,
+    "notable_alumni": [
+      "chef_andrew_carmellini",
+      "chef_david_chang",
+      "chef_mario_carbone",
+      "chef_rich_torrisi",
+      "chef_michael_anthony",
+      "chef_alex_guarnaschelli",
+      "chef_riad_nasr"
+    ],
+    "website": null,
+    "notes": null
+  },
+  {
+    "id": "group_sung_shim",
+    "name": "Sung Shim Food Group",
+    "type": "chef-owned",
+    "founder": "Sungchul Shim",
+    "founded_year": 2019,
+    "city": "New York",
+    "portfolio": [
+      "rest_kochi",
+      "rest_mari"
+    ],
+    "model": "Korean fine dining multi-concept",
+    "active": true,
+    "total_locations": 4,
+    "notable_alumni": []
+  },
+  {
+    "id": "group_unapologetic_foods",
+    "name": "Unapologetic Foods",
+    "type": "chef-partner",
+    "founder": "Roni Mazumdar & Chintan Pandya",
+    "founded_year": 2018,
+    "city": "New York",
+    "portfolio": [
+      "rest_adda",
+      "rest_dhamaka",
+      "rest_semma"
+    ],
+    "model": "Indian regional cuisine restaurants with different chefs",
+    "active": true,
+    "total_locations": 5,
+    "notable_alumni": []
+  },
+  {
+    "id": "group_marlow_collective",
+    "name": "The Marlow Collective",
+    "type": "restaurateur",
+    "founder": "Andrew Tarlow",
+    "founded_year": 1998,
+    "city": "New York",
+    "portfolio": [],
+    "model": "Brooklyn farm-to-table pioneer. Diner, Marlow & Sons, Roman's, She Wolf Bakery.",
+    "active": true,
+    "total_locations": 7,
+    "notable_alumni": []
+  },
+  {
+    "id": "group_officina_1397",
+    "name": "Officina 1397",
+    "type": "chef-owned",
+    "founder": "Jody Williams & Rita Sodi",
+    "founded_year": 2008,
+    "city": "New York",
+    "portfolio": [
+      "rest_i_sodi",
+      "rest_buvette",
+      "rest_via_carota"
+    ],
+    "model": "Self-financed West Village Italian empire",
+    "active": true,
+    "total_locations": 5,
+    "notable_alumni": []
+  },
+  {
+    "id": "group_baxtrom_hospitality",
+    "name": "Baxtrom Hospitality",
+    "type": "chef-owned",
+    "founder": "Greg Baxtrom",
+    "founded_year": 2016,
+    "city": "New York",
+    "portfolio": [
+      "rest_olmsted"
+    ],
+    "model": "Brooklyn neighborhood restaurants",
+    "active": true,
+    "total_locations": 4,
+    "notable_alumni": []
+  },
+  {
+    "id": "group_mcnally",
+    "name": "McNally Restaurants",
+    "type": "restaurateur",
+    "key_people": [
+      "Keith McNally"
+    ],
+    "city": "New York",
+    "portfolio": [],
+    "description": "Keith McNally's restaurant empire. Currently operating: Balthazar (SoHo, 1997), Pastis (Meatpacking, 1999/reopened 2019), Minetta Tavern (Greenwich Village, 2009), Morandi (West Village, 2007), Augustine (Financial District, 2020). Closed: The Odeon (1980, his first), Lucky Strike, Pravda, Schiller's, Café Luxembourg, Nell's, Cherche Midi, Pulino's. British-born McNally defined the NYC brasserie genre. Nasr & Hanson cooked at Balthazar, Pastis, and Minetta before launching Frenchette Group.",
+    "active": true,
+    "founded_year": 1980,
+    "model": "restaurateur",
+    "total_locations": 5,
+    "notable_alumni": [],
+    "website": null,
+    "notes": "Expanding to DC (Minetta Tavern + Lucy Mercer Bar, 2025). The Odeon was a co-creation with brother Brian McNally."
+  },
+  {
+    "id": "group_starr",
+    "name": "STARR Restaurants",
+    "type": "restaurateur",
+    "key_people": [
+      "Stephen Starr"
+    ],
+    "city": "Philadelphia",
+    "portfolio": [
+      "rest_le_coucou",
+      "rest_buddakan"
+    ],
+    "description": "Stephen Starr's 40+ restaurant empire, Philadelphia-based with 10+ NYC locations. NYC portfolio: Le Coucou (SoHo, 2016, chef Daniel Rose, JBF Best New Restaurant 2017), Buddakan (Chelsea, 2006), Pastis (Meatpacking, 2019 reopen), Upland (Flatiron), Electric Lemon (Hudson Yards, 24th floor Equinox), Babbo (Greenwich Village, acquired 2025), Lupa (SoHo, acquired 2025), The Clocktower (NoMad), Blue Fin (Times Square). Top-grossing restaurateur — Buddakan NYC $21.8M, Electric Lemon $13.9M, Le Coucou $12.5M.",
+    "active": true,
+    "founded_year": 1995,
+    "model": "restaurateur",
+    "total_locations": 40,
+    "notable_alumni": [],
+    "website": "https://starr-restaurants.com",
+    "notes": "Acquired Babbo and Lupa from Joe Bastianich in 2025. Mark Ladner hired as chef for Babbo."
+  },
+  {
+    "id": "group_tao",
+    "name": "Tao Group Hospitality",
+    "type": "operator",
+    "key_people": [
+      "Noah Tepperberg",
+      "Jason Strauss",
+      "Marc Packer",
+      "Rich Wolf"
+    ],
+    "city": "New York",
+    "portfolio": [],
+    "description": "Nightlife-forward restaurant and entertainment conglomerate. NYC venues: TAO Uptown, TAO Downtown (Chelsea, 2013), Beauty & Essex (Lower East Side), LAVO (Midtown), Marquee (Chelsea), Avenue (Chelsea), Cathédrale (East Village, Moxy Hotel), Stanton Social, Little Sister, The Highlight Room, Peak + Edge (Hudson Yards, 100th-101st floor, 2025). Also operates all F&B at Dream Downtown and Dream Midtown hotels. 91 venues worldwide.",
+    "active": true,
+    "founded_year": 2000,
+    "model": "operator",
+    "total_locations": 91,
+    "notable_alumni": [],
+    "website": "https://taogroup.com",
+    "notes": "Originally merged nightclub operations (Tepperberg/Strauss) with TAO restaurant (Packer/Wolf). Hospitality megaplatform — restaurants, nightclubs, daylife, events."
+  },
+  {
+    "id": "group_catch_hospitality",
+    "name": "Catch Hospitality Group",
+    "type": "operator",
+    "key_people": [
+      "Eugene Remm",
+      "Mark Birnbaum",
+      "Tilman Fertitta"
+    ],
+    "city": "New York",
+    "portfolio": [],
+    "description": "Founded as EMM Group (2006), now Catch Hospitality Group. NYC: Catch (Meatpacking, 2011), Catch Steak. Earlier NYC ventures: Tenjune, Abe & Arthur's, SL New York. Tilman Fertitta acquired 50% stake. Expanding to LA, Las Vegas, Aspen.",
+    "active": true,
+    "founded_year": 2006,
+    "model": "operator",
+    "total_locations": 8,
+    "notable_alumni": [],
+    "website": null,
+    "notes": "Nightlife-to-restaurant pivot. Fertitta investment brought national expansion capital."
+  },
+  {
+    "id": "group_frenchette",
+    "name": "Frenchette Group",
+    "type": "chef-owned",
+    "key_people": [
+      "Lee Hanson",
+      "Riad Nasr"
+    ],
+    "city": "New York",
+    "portfolio": [
+      "rest_frenchette"
+    ],
+    "description": "Lee Hanson & Riad Nasr's restaurant group. Frenchette (TriBeCa, 2018, JBF Best New Restaurant 2019), Le Rock (Rockefeller Center, 2022), Le Veau d'Or (Upper East Side, 2024, revived historic French bistro — North America's 50 Best), Wild Cherry (Cherry Lane Theatre, 2025), Frenchette Bakery (Whitney + Tribeca). Both trained at Daniel, then ran kitchens at Balthazar, Pastis, Minetta Tavern for Keith McNally.",
+    "active": true,
+    "founded_year": 2018,
+    "model": "chef-restaurateur",
+    "total_locations": 5,
+    "notable_alumni": [],
+    "website": null,
+    "notes": "Lineage: Daniel (Boulud) → McNally restaurants → independent. Le Veau d'Or named to North America's 50 Best 2025."
+  },
+  {
+    "id": "group_quality_branded",
+    "name": "Quality Branded",
+    "type": "restaurateur",
+    "key_people": [
+      "Michael Stillman",
+      "Alan Stillman"
+    ],
+    "city": "New York",
+    "portfolio": [
+      "rest_don_angie",
+      "rest_san_sabino",
+      "rest_quality_meats"
+    ],
+    "description": "Father-son restaurateurs Alan and Michael Stillman. Founded as Fourth Wall Restaurants (2007), rebranded Quality Branded (2016). NYC portfolio: Smith & Wollensky (flagship), Quality Meats (Midtown, 2006, chef Craig Koketsu), Quality Italian, Quality Bistro, Quality Eats, Don Angie (West Village, chefs Angie Rito & Scott Tacinelli), San Sabino (West Village, Rito & Tacinelli), Zou Zou's (Eastern Mediterranean), Bad Roman (Columbus Circle), Chez Zou, Twin Tails, Limusina. Alan Stillman founded TGI Fridays (1965). Michael trained at USHG under Danny Meyer.",
+    "active": true,
+    "founded_year": 2007,
+    "model": "restaurateur",
+    "total_locations": 12,
+    "notable_alumni": [],
+    "website": "https://www.qualitybranded.com",
+    "notes": "Also in Denver: Quality Italian, Kini's, Cretans."
+  },
+  {
+    "id": "group_mattos",
+    "name": "Mattos Hospitality",
+    "type": "chef-owned",
+    "key_people": [
+      "Ignacio Mattos"
+    ],
+    "city": "New York",
+    "portfolio": [
+      "rest_estela"
+    ],
+    "description": "Uruguayan-born chef Ignacio Mattos's restaurant group. Estela (Nolita, 2013, 1 Michelin star), Altro Paradiso (SoHo, 2016, Italian), Corner Bar, Swan Room. Lodi (Rockefeller Center, all-day cafe, opened 2021, closed 2025). Known for deceptive simplicity and bold flavors.",
+    "active": true,
+    "founded_year": 2013,
+    "model": "chef-restaurateur",
+    "total_locations": 4,
+    "notable_alumni": [],
+    "website": null,
+    "notes": null
+  },
+  {
+    "id": "group_grovehouse",
+    "name": "Grovehouse Hospitality",
+    "type": "chef-owned",
+    "key_people": [
+      "Missy Robbins",
+      "Sean Feeney"
+    ],
+    "city": "New York",
+    "portfolio": [
+      "rest_lilia"
+    ],
+    "description": "Missy Robbins & Sean Feeney's Williamsburg-based group. Lilia (2016, 3 NYT stars, wood-fired seafood + handmade pasta), Misi (2018, 3 NYT stars, pasta + vegetable focused, Domino Sugar Refinery), Misipasta (2023, pasta shop + eatery), Fini Pizza, MP Market (Italian specialty retail). JBF Best Chef NYC 2018 (Robbins). ICE graduate. Previously chef at A Voce.",
+    "active": true,
+    "founded_year": 2014,
+    "model": "chef-restaurateur",
+    "total_locations": 5,
+    "notable_alumni": [],
+    "website": "https://www.grovehousenyc.com",
+    "notes": null
+  },
+  {
+    "id": "group_happy_cooking",
+    "name": "Happy Cooking Hospitality",
+    "type": "restaurateur",
+    "key_people": [
+      "Gabriel Stulman"
+    ],
+    "city": "New York",
+    "portfolio": [],
+    "description": "Gabriel Stulman's West Village-based restaurant group. Currently operating: Joseph Leonard (West Village), Jeffrey's Grocery (West Village), Fairfax (West Village), Sailor (Fort Greene, Brooklyn, 2023, with chef April Bloomfield), Jolene. Previously operated: Fedora, Bar Sardine, The Jones, Perla, Montmartre, Studio, Simon & The Whale, George Washington Bar (Freehand Hotel). Known for intimate neighborhood restaurants.",
+    "active": true,
+    "founded_year": 2010,
+    "model": "restaurateur",
+    "total_locations": 5,
+    "notable_alumni": [],
+    "website": "https://www.happycookingnyc.com",
+    "notes": "Sailor is a collaboration with April Bloomfield (ex-Spotted Pig, The Breslin)."
+  },
+  {
+    "id": "group_crafted",
+    "name": "Crafted Hospitality",
+    "type": "chef-owned",
+    "key_people": [
+      "Tom Colicchio"
+    ],
+    "city": "New York",
+    "portfolio": [
+      "rest_craft"
+    ],
+    "description": "Tom Colicchio's restaurant group. NYC: Craft (Flatiron, 2001, JBF Best New Restaurant), Temple Court (Beekman Hotel), Vallata (Italian). Also: Craft LA, Craftsteak (Las Vegas), Small Batch (Garden City, LI), 'Wichcraft (fast-casual sandwiches, 2003). Previously: Craftbar, Fowler & Wells, Beachcraft. Colicchio was original chef at Gramercy Tavern under Danny Meyer before going independent.",
+    "active": true,
+    "founded_year": 2001,
+    "model": "chef-restaurateur",
+    "total_locations": 6,
+    "notable_alumni": [],
+    "website": "https://www.craftedhospitality.com",
+    "notes": "Top Chef head judge. Lineage: Gramercy Tavern (USHG) → independent."
+  },
+  {
+    "id": "group_empellon",
+    "name": "Empellón",
+    "type": "chef-owned",
+    "key_people": [
+      "Alex Stupak"
+    ],
+    "city": "New York",
+    "portfolio": [
+      "rest_empellon"
+    ],
+    "description": "Alex Stupak's modern Mexican restaurant group. Empellón Midtown (flagship, Midtown East), Empellón Taqueria (West Village), Empellón Taqueria (Upper West Side, Waterline Square, 2021). Also operates The Otter and Sloane's at The Manner Hotel. Stupak was pastry chef at wd~50 (Wylie Dufresne) and Alinea before pivoting to Mexican cuisine.",
+    "active": true,
+    "founded_year": 2011,
+    "model": "chef-restaurateur",
+    "total_locations": 5,
+    "notable_alumni": [],
+    "website": "https://www.empellon.com",
+    "notes": "Lineage: Alinea → wd~50 (pastry) → independent Mexican concept."
+  },
+  {
+    "id": "group_respect",
+    "name": "Respect Hospitality",
+    "type": "chef-owned",
+    "key_people": [
+      "Marc Forgione"
+    ],
+    "city": "New York",
+    "portfolio": [
+      "rest_restaurant_marc_forgione"
+    ],
+    "description": "Marc Forgione's restaurant group. Restaurant Marc Forgione (Tribeca, relocated 2024), Peasant (Nolita, wood-fired Italian, acquired 2020), One Fifth / Trattoria One Fifth (Greenwich Village, pizza). Previously: American Cut (steakhouse — Tribeca location still open, Midtown + Atlantic City + Englewood Cliffs closed), Khe-Yo (Laotian, co-founded with Soulayphet Schwader). Son of chef Larry Forgione (An American Place).",
+    "active": true,
+    "founded_year": 2008,
+    "model": "chef-restaurateur",
+    "total_locations": 4,
+    "notable_alumni": [],
+    "website": "https://www.respecthospitality.com",
+    "notes": "Second-generation NYC chef. Iron Chef winner."
+  },
+  {
+    "id": "group_morimoto",
+    "name": "Morimoto Restaurants",
+    "type": "chef-brand",
+    "key_people": [
+      "Masaharu Morimoto"
+    ],
+    "city": "Global",
+    "portfolio": [
+      "rest_momosan_ramen_sake"
+    ],
+    "description": "Iron Chef Masaharu Morimoto's global restaurant empire. NYC: Momosan Ramen & Sake (Murray Hill, 2016), Sa'Moto (Hudson Yards, pan-Asian). 21 restaurants worldwide under brands: Morimoto, MM by Morimoto, Momosan, Morimoto Asia. Flagship Morimoto NYC (Chelsea, Tadao Ando design). Global locations across Philadelphia, Napa, Las Vegas, Honolulu, Mumbai, Tokyo, Mexico City, Doha.",
+    "active": true,
+    "founded_year": 2001,
+    "model": "chef-brand",
+    "total_locations": 21,
+    "notable_alumni": [],
+    "website": "https://ironchefmorimoto.com",
+    "notes": null
+  },
+  {
+    "id": "group_gracious",
+    "name": "Gracious Hospitality Management",
+    "type": "chef-owned",
+    "key_people": [
+      "Simon Kim"
+    ],
+    "city": "New York",
+    "portfolio": [
+      "rest_cote"
+    ],
+    "description": "Simon Kim's restaurant group. COTE Korean Steakhouse (Flatiron, 2017, 1 Michelin star — only Michelin-starred Korean tabletop grill in the world), Undercote (cocktail lounge beneath COTE), COQODAQ (fried chicken concept, 2024). Expanding: COTE Las Vegas (Venetian, 2025), COTE #2 at 550 Madison Ave (NYC), exclusive sushi restaurant with chef Masahiro Yoshitake at 550 Madison. Kim trained with Jean-Georges Vongerichten and Thomas Keller before opening Piora (Michelin star at 31).",
+    "active": true,
+    "founded_year": 2017,
+    "model": "chef-restaurateur",
+    "total_locations": 6,
+    "notable_alumni": [],
+    "website": null,
+    "notes": "Partnership with Olayan Group for 550 Madison Ave expansion. Also COTE Miami and COTE Singapore."
+  },
+  {
+    "id": "group_naeun",
+    "name": "NA:EUN Hospitality",
+    "type": "chef-owned",
+    "key_people": [
+      "Junghyun Park",
+      "Ellia Park"
+    ],
+    "city": "New York",
+    "portfolio": [
+      "rest_atomix"
+    ],
+    "description": "Junghyun 'JP' Park & Ellia Park's progressive Korean restaurant group. Atoboy (2016, casual banchan-focused), Atomix (2 Michelin stars, World's 50 Best), Naro, Naro Terrace, Seoul Salon. French-trained Korean fine dining — among the most decorated Korean restaurants globally.",
+    "active": true,
+    "founded_year": 2016,
+    "model": "chef-restaurateur",
+    "total_locations": 5,
+    "notable_alumni": [],
+    "website": null,
+    "notes": null
+  },
+  {
+    "id": "group_kent",
+    "name": "Kent Hospitality Group",
+    "type": "chef-owned",
+    "key_people": [
+      "James Kent",
+      "Jeff Katz"
+    ],
+    "city": "New York",
+    "portfolio": [
+      "rest_crown_shy",
+      "rest_saga"
+    ],
+    "description": "Founded by chef James Kent (d. 2024, age 45) and Jeff Katz. Crown Shy (Financial District, 2019, 1 Michelin star), Saga (63rd floor 70 Pine St, 2021, 2 Michelin stars), Overstory (64th floor cocktail bar, 50 Best), Time and Tide (Park Ave South, 2024, chef Danny Garcia — Top Chef Season 21 winner), Birdee (Williamsburg, chef Renata Ameni). Kent trained at Eleven Madison Park and The NoMad. LeBron James is a backer.",
+    "active": true,
+    "founded_year": 2019,
+    "model": "chef-restaurateur",
+    "total_locations": 5,
+    "notable_alumni": [],
+    "website": "https://www.kenthospitalitygroup.com",
+    "notes": "James Kent died unexpectedly in 2024. Group continues under Jeff Katz's leadership. Expanding to 9 West 57th Street (Soloviev Group partnership)."
+  },
+  {
+    "id": "group_humm",
+    "name": "Daniel Humm Hospitality",
+    "type": "chef-owned",
+    "key_people": [
+      "Daniel Humm"
+    ],
+    "city": "New York",
+    "portfolio": [
+      "rest_eleven_madison_park"
+    ],
+    "description": "Daniel Humm's restaurant group (formerly Make It Nice). Eleven Madison Park (Flatiron, 3 Michelin stars, #1 World's 50 Best 2017, fully plant-based since 2021 — first and only plant-based 3-star in Michelin history), Clemente Bar, Eleven Madison Home (D2C lifestyle brand). Previously included The NoMad (partnership with Will Guidara, dissolved 2019). Also co-founded Rethink Food (nonprofit).",
+    "active": true,
+    "founded_year": 2011,
+    "model": "chef-restaurateur",
+    "total_locations": 2,
+    "notable_alumni": [],
+    "website": null,
+    "notes": "Humm bought out Will Guidara in 2019. Guidara went on to write Unreasonable Hospitality. Former EMP chefs include James Kent (Kent Hospitality)."
+  },
+  {
+    "id": "group_le_bernardin",
+    "name": "Le Bernardin",
+    "type": "chef-owned",
+    "key_people": [
+      "Eric Ripert",
+      "Maguy Le Coze"
+    ],
+    "city": "New York",
+    "portfolio": [
+      "rest_le_bernardin"
+    ],
+    "description": "Eric Ripert & Maguy Le Coze. Le Bernardin (Midtown, 3 Michelin stars, 4 NYT stars since 1986 — the only NYC restaurant to hold 4 NYT stars for 35+ years). Aldo Sohm Wine Bar (2014, named for legendary wine director). Le Bernardin Privé (private dining). Founded by Gilbert & Maguy Le Coze in Paris (1972), moved to NYC (1986). Ripert became EC after Gilbert's death (1994), co-owner (1996).",
+    "active": true,
+    "founded_year": 1986,
+    "model": "chef-restaurateur",
+    "total_locations": 2,
+    "notable_alumni": [],
+    "website": "https://www.le-bernardin.com",
+    "notes": "Training ground. Alumni include numerous NYC chefs."
+  },
+  {
+    "id": "group_batali_bastianich",
+    "name": "B&B Hospitality / Pasta Resources",
+    "type": "restaurant-group",
+    "key_people": [
+      "Mario Batali",
+      "Joe Bastianich",
+      "Lidia Bastianich"
+    ],
+    "city": "New York",
+    "portfolio": [
+      "rest_del_posto",
+      "rest_casa_mono",
+      "rest_lupa",
+      "rest_felidia"
+    ],
+    "description": "Historical Batali & Bastianich empire. NYC restaurants included: Babbo (1998, JBF Best New Restaurant — sold to Starr 2025), Lupa (1999, sold to Starr 2025), Esca, Casa Mono (2003, still open), Bar Jamon, Otto (closed during COVID), Del Posto (Chelsea, Michelin-starred, closed 2021), Eataly (Italian marketplace, partnership). Becco (1993, Lidia Bastianich, Theatre District — still open). Felidia (Upper East Side, Lidia's flagship). Batali surrendered ownership March 2019 after misconduct allegations. Group renamed Pasta Resources July 2019.",
+    "active": false,
+    "founded_year": 1998,
+    "model": "chef-partner",
+    "total_locations": 5,
+    "notable_alumni": [],
+    "website": null,
+    "notes": "Largely dissolved. Babbo + Lupa sold to Starr Restaurants (2025). Casa Mono, Becco, Felidia, Eataly still operate under different ownership structures. Historical significance as the most important Italian restaurant group in NYC pre-2019."
+  }
+]

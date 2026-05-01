@@ -1,0 +1,48 @@
+# ICDB Batch Intake Template
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━
+# Fill this out and run: python3 scripts/batch-intake.py data/intake-batch.yaml
+# Dry run first:         python3 scripts/batch-intake.py data/intake-batch.yaml --dry-run --verbose
+#
+# ID generation is automatic:
+#   Chef "Jon Shook" → chef_jon_shook
+#   Restaurant "Animal" → rest_animal
+#   Stop IDs auto-increment from the current max
+#
+# Mentor names must match existing chefs in the DB (by display name → ID).
+# Restaurants are created automatically if they don't exist yet.
+# Duplicate chefs (by ID) are skipped with a warning.
+
+chefs:
+  - name: "Example Chef"              # required — generates chef ID
+    bio: "Short factual blurb."        # keep brief at intake stage
+    birth_country: "US"                # ISO country, defaults to US
+    birth_city: "Los Angeles, CA"
+    tier: "lineage"                   # lineage (default) | notable | listed
+    cuisine_tags: ["mexican", "fine-dining"]
+    instagram: "@example"
+    education:
+      - institution: "Culinary Institute of America"
+        city: "Hyde Park, NY"
+        year: 2005
+        credential: "Culinary Arts"
+    # OR simple string form:
+    # education:
+    #   - "Culinary Institute of America"
+    stops:
+      - restaurant: "Providence"       # required — matches or creates restaurant
+        position: "Sous Chef"          # required
+        start_year: 2010
+        end_year: 2014
+        is_current: false
+        mentor: "Michael Cimarusti"    # optional — must exist in DB
+        notes: "Opened the raw bar program"  # optional
+
+      - restaurant: "New Restaurant"   # auto-created if doesn't exist
+        position: "Executive Chef & Owner"
+        start_year: 2015
+        is_current: true
+        city: "Los Angeles"            # used when creating the restaurant
+        neighborhood: "Silver Lake"
+        cuisine_tags: ["mexican"]
+        restaurant_status: "open"
+        open_year: 2015

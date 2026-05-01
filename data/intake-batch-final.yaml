@@ -1,0 +1,22 @@
+# IRDB Final Session Batch — 2026-03-18
+# Source: WebSearch — high-lineage LA chefs
+
+chefs:
+  - name: "Deau Arpapornnopparat"
+    bio: "Bangkok-born, Le Cordon Bleu-trained. Food & Wine Best New Chef 2024. Opened Holy Basil as a takeout window in 2020, full restaurant in Atwater Village 2024, expanded to Santa Monica."
+    birth_country: "TH"
+    birth_city: "Bangkok, Thailand"
+    cuisine_tags: ["thai", "street-food", "bangkok"]
+    education:
+      - institution: "Le Cordon Bleu"
+    stops:
+      - restaurant: "Holy Basil"
+        position: "Chef & Co-Owner"
+        start_year: 2020
+        is_current: true
+        city: "Los Angeles"
+        neighborhood: "Atwater Village"
+        cuisine_tags: ["thai", "street-food"]
+        open_year: 2020
+        ratings:
+          other: ["Food & Wine Best New Chef 2024"]

@@ -1,0 +1,437 @@
+# IRDB Batch Intake — Multi-Source Scrape 2026-03-18
+# Sources: Eater Heatmap, Eater Essential 38, Eater South LA, Eater Venice,
+#          Eater SFV, Eater Santa Monica, Eater Arts District,
+#          Timeout (Best, Japanese, Korean, Thai, Tacos, Young Chefs),
+#          Resy Year-Defining, Bon Appétit Best New 2025
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+chefs:
+
+  # ─── TIER 1: Strong lineage connections ───
+
+  - name: "Daniel Son"
+    bio: "Sushi chef. Trained at Spago under Wolfgang Puck and Ryugin (3 Michelin stars) in Tokyo. Father owned Kura sushi."
+    cuisine_tags: ["japanese", "sushi", "omakase"]
+    stops:
+      - restaurant: "Spago"
+        position: "Sushi Chef"
+        is_current: false
+        mentor: "Wolfgang Puck"
+      - restaurant: "Ryugin"
+        position: "Stage"
+        is_current: false
+        city: "Tokyo"
+        cuisine_tags: ["japanese", "fine-dining"]
+        restaurant_status: "open"
+        notes: "3 Michelin star restaurant in Tokyo"
+      - restaurant: "Sushi Sonagi"
+        position: "Chef & Owner"
+        is_current: true
+        city: "Los Angeles"
+        neighborhood: "Gardena"
+        cuisine_tags: ["japanese", "sushi", "omakase"]
+        restaurant_status: "open"
+        notes: "10-seat omakase, Korean inflections. Eater Essential 38, Timeout Japanese 2026."
+
+  - name: "Lord Maynard Llera"
+    bio: "James Beard Award winner. Former sous chef at Bestia. Filipino cuisine."
+    cuisine_tags: ["filipino"]
+    stops:
+      - restaurant: "Bestia"
+        position: "Sous Chef"
+        is_current: false
+        mentor: "Ori Menashe"
+      - restaurant: "Kuya Lord"
+        position: "Chef & Owner"
+        is_current: true
+        city: "Los Angeles"
+        neighborhood: "East Hollywood"
+        cuisine_tags: ["filipino"]
+        restaurant_status: "open"
+        notes: "James Beard Award winner. Timeout Best Restaurants 2026."
+
+  - name: "Kevin De Los Santos"
+    bio: "Co-chef of Vin Folk. Former Somni under Aitor Zabala. Michelin Bib Gourmand."
+    cuisine_tags: ["french", "fine-dining", "california"]
+    stops:
+      - restaurant: "Somni"
+        position: "Cook"
+        is_current: false
+        mentor: "Aitor Zabala"
+      - restaurant: "Vin Folk"
+        position: "Co-Chef & Co-Owner"
+        is_current: true
+        city: "Los Angeles"
+        neighborhood: "Hermosa Beach"
+        cuisine_tags: ["french", "california", "fine-dining"]
+        restaurant_status: "open"
+        notes: "Michelin Bib Gourmand. Filipino + Russian flourishes. With Katya Shastova. Eater Essential 38 2026."
+
+  - name: "Katya Shastova"
+    bio: "Co-chef of Vin Folk. Former Somni under Aitor Zabala."
+    cuisine_tags: ["french", "fine-dining", "california"]
+    stops:
+      - restaurant: "Somni"
+        position: "Cook"
+        is_current: false
+        mentor: "Aitor Zabala"
+      - restaurant: "Vin Folk"
+        position: "Co-Chef & Co-Owner"
+        is_current: true
+
+  - name: "Justin Pichetrungsi"
+    bio: "James Beard Award-winning chef. Took over father's decades-old restaurant. Conceptual artist. Installed premier wine program."
+    cuisine_tags: ["thai"]
+    stops:
+      - restaurant: "Anajak Thai"
+        position: "Chef & Owner"
+        is_current: true
+        city: "Los Angeles"
+        neighborhood: "Sherman Oaks"
+        cuisine_tags: ["thai"]
+        restaurant_status: "open"
+        notes: "James Beard winner. Eater Essential 38, Eater SFV, Timeout Best + Thai 2026."
+
+  - name: "Kwang Uh"
+    bio: "Korean chef known for fermentation-forward tasting menus. Reopened Baroo in 2024 after 2018 closure."
+    cuisine_tags: ["korean", "fine-dining"]
+    stops:
+      - restaurant: "Baroo"
+        position: "Chef & Owner"
+        is_current: true
+        city: "Los Angeles"
+        neighborhood: "Arts District"
+        cuisine_tags: ["korean", "fine-dining"]
+        restaurant_status: "open"
+        notes: "Fermentation-forward Korean tasting menu. Originally closed 2018, reopened 2024. Timeout Best + Korean + Arts District 2026."
+
+  - name: "Chris Bianco"
+    bio: "James Beard Award-winning pizza chef. Opened original Pizzeria Bianco in Phoenix."
+    cuisine_tags: ["italian", "pizza"]
+    stops:
+      - restaurant: "Pizzeria Bianco"
+        position: "Chef & Owner"
+        is_current: true
+        city: "Los Angeles"
+        neighborhood: "Arts District"
+        cuisine_tags: ["italian", "pizza"]
+        restaurant_status: "open"
+        notes: "James Beard Award winner. Phoenix original, expanded to LA Arts District. Timeout Arts District 2026."
+
+  - name: "Diego Hernandez"
+    bio: "Baja California chef. Alta California cuisine. Partnered with Dudley Market in Venice."
+    birth_country: "MX"
+    cuisine_tags: ["mexican", "california", "baja"]
+    stops:
+      - restaurant: "Dudley Market"
+        position: "Consulting Chef"
+        start_year: 2022
+        is_current: true
+        notes: "Partnered to inject Alta California flavor. Eater Venice 2026."
+
+  - name: "Casey Lane"
+    bio: "Former chef of The Tasting Kitchen in Venice. Now at Ghisallo in Santa Monica."
+    cuisine_tags: ["italian", "california"]
+    stops:
+      - restaurant: "The Tasting Kitchen"
+        position: "Chef"
+        is_current: false
+        city: "Los Angeles"
+        neighborhood: "Venice"
+        cuisine_tags: ["california"]
+        restaurant_status: "closed"
+      - restaurant: "Ghisallo"
+        position: "Chef"
+        is_current: true
+        city: "Los Angeles"
+        neighborhood: "Santa Monica"
+        cuisine_tags: ["italian", "california"]
+        restaurant_status: "open"
+        notes: "Italian American, wood-fired pizza. Eater Santa Monica 2026."
+
+  - name: "Jihee Kim"
+    bio: "Korean chef. Rustic Canyon alum. Farm-to-table banchan."
+    cuisine_tags: ["korean", "california"]
+    stops:
+      - restaurant: "Rustic Canyon"
+        position: "Cook"
+        is_current: false
+        mentor: "Jeremy Fox"
+      - restaurant: "Perilla LA"
+        position: "Chef & Owner"
+        is_current: true
+        city: "Los Angeles"
+        neighborhood: "Echo Park"
+        cuisine_tags: ["korean", "california"]
+        restaurant_status: "open"
+        notes: "Farm-to-table banchan, seasonal vegetables. Timeout Korean 2026."
+
+  # ─── TIER 2: Good pedigree, fewer connections ───
+
+  - name: "Akira Back"
+    bio: "Celebrity chef. Elevated Korean BBQ concept."
+    cuisine_tags: ["korean", "fine-dining"]
+    stops:
+      - restaurant: "ABSteak"
+        position: "Chef & Owner"
+        is_current: true
+        city: "Los Angeles"
+        neighborhood: "Beverly Hills"
+        cuisine_tags: ["korean", "fine-dining"]
+        restaurant_status: "open"
+        notes: "Premium Korean BBQ, dry-aged steaks. Timeout Korean 2026."
+
+  - name: "William Joo"
+    bio: "Tokyo-trained pizza chef. Created pizza omakase concept."
+    cuisine_tags: ["italian", "pizza", "japanese"]
+    stops:
+      - restaurant: "Pizzeria Sei"
+        position: "Chef & Owner"
+        is_current: true
+        city: "Los Angeles"
+        neighborhood: "West LA"
+        cuisine_tags: ["italian", "pizza"]
+        restaurant_status: "open"
+        notes: "Tokyo-style Neapolitan pizza omakase. Timeout Best Restaurants 2026."
+
+  - name: "Tyler J. Wells"
+    bio: "Founded All Time in Los Feliz. Opened Betsy in Altadena."
+    cuisine_tags: ["california", "wood-fired"]
+    stops:
+      - restaurant: "All Time"
+        position: "Founder & Chef"
+        is_current: false
+        city: "Los Angeles"
+        neighborhood: "Los Feliz"
+        cuisine_tags: ["california"]
+        restaurant_status: "open"
+      - restaurant: "Betsy"
+        position: "Chef & Owner"
+        is_current: true
+        city: "Altadena"
+        neighborhood: "Altadena"
+        cuisine_tags: ["california", "wood-fired"]
+        restaurant_status: "open"
+        notes: "Wood-fired cooking. Resy Year-Defining 2025, Eater Essential 38 2026."
+
+  - name: "Cody Ma"
+    bio: "From Pine & Crane. Opened Azizam with Misha Sesar."
+    cuisine_tags: ["persian"]
+    stops:
+      - restaurant: "Pine & Crane"
+        position: "Cook"
+        is_current: false
+        city: "Los Angeles"
+        neighborhood: "Silver Lake"
+        cuisine_tags: ["taiwanese"]
+        restaurant_status: "open"
+      - restaurant: "Azizam"
+        position: "Co-Chef & Co-Owner"
+        is_current: true
+        city: "Los Angeles"
+        neighborhood: "Silver Lake"
+        cuisine_tags: ["persian"]
+        restaurant_status: "open"
+        notes: "Homestyle Persian. Timeout Best Restaurants 2026."
+
+  - name: "José Olmedo Carles Rojas"
+    bio: "Panamanian chef. Founded Fonda Lo Que Hay in Panama City."
+    birth_country: "PA"
+    cuisine_tags: ["latin-american", "panamanian"]
+    stops:
+      - restaurant: "Si! Mon"
+        position: "Chef"
+        is_current: true
+        city: "Los Angeles"
+        neighborhood: "Venice"
+        cuisine_tags: ["latin-american", "panamanian"]
+        restaurant_status: "open"
+        notes: "Central American flavors + seafood. Eater Essential 38, Venice, Arts District 2026."
+
+  - name: "Marcus Jernmark"
+    bio: "Swedish chef. Four-course tasting menu restaurant."
+    birth_country: "SE"
+    cuisine_tags: ["california", "fine-dining"]
+    stops:
+      - restaurant: "Lielle"
+        position: "Chef & Owner"
+        start_year: 2026
+        is_current: true
+        city: "Los Angeles"
+        neighborhood: "Pico-Robertson"
+        cuisine_tags: ["california", "fine-dining"]
+        restaurant_status: "open"
+        open_year: 2026
+        notes: "$150 four-course tasting. Former Bicyclette space. Sister restaurant Marée planned. Eater Heatmap March 2026."
+
+  - name: "Curtis Park"
+    bio: "Korean American chef. Updated homey Korean dishes with California ingredients."
+    cuisine_tags: ["korean", "california"]
+    stops:
+      - restaurant: "The Mulberry"
+        position: "Chef"
+        is_current: true
+        city: "Los Angeles"
+        neighborhood: "Sawtelle"
+        cuisine_tags: ["korean", "california"]
+        restaurant_status: "open"
+        notes: "Korean American bistro. Former Plan Check Sawtelle space. Eater Heatmap March 2026."
+
+  - name: "Gabriel Lindsey"
+    bio: "Dudley Market alum. French bistro cooking."
+    cuisine_tags: ["french"]
+    stops:
+      - restaurant: "Dudley Market"
+        position: "Cook"
+        is_current: false
+      - restaurant: "Galerie"
+        position: "Chef"
+        is_current: true
+        city: "Los Angeles"
+        neighborhood: "West Hollywood"
+        cuisine_tags: ["french"]
+        restaurant_status: "open"
+        notes: "French bistro. Timeout Best New Restaurants 2026."
+
+  - name: "Sandra Cordero"
+    bio: "Spanish chef. Pan-Spanish tapas cooking."
+    birth_country: "ES"
+    cuisine_tags: ["spanish"]
+    stops:
+      - restaurant: "Xuntos"
+        position: "Chef & Owner"
+        is_current: true
+        city: "Los Angeles"
+        neighborhood: "Santa Monica"
+        cuisine_tags: ["spanish"]
+        restaurant_status: "open"
+        notes: "Tapas bar. Eater Santa Monica 2026."
+
+  - name: "Karla Subero Pittol"
+    bio: "Venezuelan chef. Pop-up turned permanent. Arepas, empanadas, pabellón criollo."
+    birth_country: "VE"
+    cuisine_tags: ["venezuelan"]
+    stops:
+      - restaurant: "Chainsaw Cafe"
+        position: "Chef & Owner"
+        is_current: true
+        city: "Los Angeles"
+        neighborhood: "Melrose Hill"
+        cuisine_tags: ["venezuelan", "cafe"]
+        restaurant_status: "open"
+        notes: "Venezuelan heritage dishes + passionfruit lime icebox pie. Eater Heatmap March 2026."
+
+  - name: "Anthony Plascencia"
+    bio: "Family-run coastal Mexican. From Nayarit, Mexico. Sustainable practices."
+    cuisine_tags: ["mexican", "seafood"]
+    stops:
+      - restaurant: "Mariscos Los Corchos"
+        position: "Chef & Owner"
+        start_year: 2026
+        is_current: true
+        city: "Los Angeles"
+        neighborhood: "East Los Angeles"
+        cuisine_tags: ["mexican", "seafood"]
+        restaurant_status: "open"
+        open_year: 2026
+        notes: "Opened Feb 2026 in former beauty salon. Whole fish, tostadas, consommé. Eater Heatmap March 2026."
+
+  # ─── TIER 3: Community-level / fewer connections ───
+
+  - name: "Rose Previte"
+    bio: "Middle Eastern and North African cuisine."
+    cuisine_tags: ["middle-eastern"]
+    stops:
+      - restaurant: "Maydan LA"
+        position: "Chef & Owner"
+        is_current: true
+        city: "Los Angeles"
+        neighborhood: "West Adams"
+        cuisine_tags: ["middle-eastern"]
+        restaurant_status: "open"
+        notes: "Timeout Best New Restaurants 2026."
+
+  - name: "Jeff Strauss"
+    bio: "Valley restaurateur. Experimental cooking. Farmers market-driven menu."
+    cuisine_tags: ["american", "california"]
+    stops:
+      - restaurant: "Jeff's Table"
+        position: "Chef & Owner"
+        is_current: true
+        city: "Los Angeles"
+        neighborhood: "Highland Park"
+        cuisine_tags: ["american"]
+        restaurant_status: "open"
+      - restaurant: "Oy Bar"
+        position: "Chef & Owner"
+        is_current: true
+        city: "Los Angeles"
+        neighborhood: "Studio City"
+        cuisine_tags: ["american", "california"]
+        restaurant_status: "open"
+        notes: "Valley bar bistro. Walk-ins only. Rotating market-driven menu. Eater Essential 38, SFV 2026."
+
+  - name: "Debbie Lee"
+    bio: "Korean gastropub. Former food truck operator (Ahnjoo)."
+    cuisine_tags: ["korean"]
+    stops:
+      - restaurant: "Yi Cha"
+        position: "Chef & Owner"
+        is_current: true
+        city: "Los Angeles"
+        neighborhood: "Highland Park"
+        cuisine_tags: ["korean"]
+        restaurant_status: "open"
+        notes: "Timeout Best New Restaurants 2026."
+
+  - name: "Nan Yimcharoen"
+    bio: "Thai/Japanese fusion. Seafood-centric."
+    cuisine_tags: ["thai", "japanese"]
+    stops:
+      - restaurant: "Kinkan"
+        position: "Chef & Owner"
+        is_current: true
+        city: "Los Angeles"
+        neighborhood: "Virgil Village"
+        cuisine_tags: ["thai", "japanese"]
+        restaurant_status: "open"
+        notes: "Timeout Thai Restaurants 2026."
+
+  - name: "Geter Atienza"
+    bio: "Chef at Somerville, the Issa Rae-backed restaurant in South LA."
+    cuisine_tags: ["american"]
+    stops:
+      - restaurant: "Somerville"
+        position: "Chef"
+        is_current: true
+        city: "Los Angeles"
+        neighborhood: "View Park-Windsor Hills"
+        cuisine_tags: ["american"]
+        restaurant_status: "open"
+        notes: "Issa Rae collab. Parker house rolls, wagyu strip. Eater South LA 2026."
+
+  - name: "Marcus Yaw"
+    bio: "West African and California flavors. Co-chef of Two Hommés."
+    cuisine_tags: ["west-african", "california"]
+    stops:
+      - restaurant: "Two Hommés"
+        position: "Co-Chef & Co-Owner"
+        is_current: true
+        city: "Los Angeles"
+        neighborhood: "Inglewood"
+        cuisine_tags: ["west-african", "california"]
+        restaurant_status: "open"
+        notes: "Near SoFi Stadium. Jollof rice, Senegalese lamb. Eater Essential 38, South LA 2026."
+
+  - name: "Danny Ly"
+    bio: "Vietnamese chef. Contemporary Vietnamese cuisine."
+    cuisine_tags: ["vietnamese"]
+    stops:
+      - restaurant: "Viet Kitchen"
+        position: "Chef & Owner"
+        is_current: true
+        city: "Los Angeles"
+        neighborhood: "Panorama City"
+        cuisine_tags: ["vietnamese"]
+        restaurant_status: "open"
+        notes: "Best bánh mì in the Valley. Eater SFV 2026."

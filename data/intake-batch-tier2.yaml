@@ -1,0 +1,164 @@
+# IRDB Tier 2 Intake Batch — 2026-03-18
+# Source: /icdb-intake run 2026-03-18, Tier 2 banked candidates
+# Run: python3 scripts/batch-intake.py data/intake-batch-tier2.yaml --dry-run --verbose
+
+chefs:
+  - name: "Andy Doubrava"
+    bio: "Berklee-trained drummer turned cook. Line cook to executive chef at Rustic Canyon (2015–present). Michelin star under Jeremy Fox's oversight. NYC stints at Reynard, Spotted Pig, Salt & Fat."
+    birth_country: "US"
+    cuisine_tags: ["california", "seasonal", "farm-to-table"]
+    stops:
+      - restaurant: "Rustic Canyon"
+        position: "Executive Chef"
+        start_year: 2019
+        is_current: true
+        mentor: "Jeremy Fox"
+
+      - restaurant: "Rustic Canyon"
+        position: "Line Cook"
+        start_year: 2015
+        end_year: 2019
+        mentor: "Jeremy Fox"
+
+      - restaurant: "Reynard"
+        position: "Cook"
+        city: "Brooklyn, NY"
+        state: "NY"
+        restaurant_status: "closed"
+
+      - restaurant: "The Spotted Pig"
+        position: "Cook"
+        city: "New York"
+        state: "NY"
+        restaurant_status: "closed"
+
+  - name: "Ilan Hall"
+    bio: "CIA grad, Top Chef Season 2 winner. Trained under Charlie Palmer at Aureole and at Casa Mono. Opened The Gorbals in DTLA (2009), co-founded Ramen Hood at Grand Central Market (2015)."
+    birth_country: "US"
+    birth_city: "New York, NY"
+    cuisine_tags: ["global", "vegan", "eclectic"]
+    education:
+      - institution: "Culinary Institute of America"
+        city: "Hyde Park, NY"
+        year: 2002
+        credential: "Culinary Arts"
+    stops:
+      - restaurant: "Ramen Hood"
+        position: "Executive Chef & Co-Owner"
+        start_year: 2015
+        is_current: true
+        city: "Los Angeles"
+        neighborhood: "Downtown"
+        cuisine_tags: ["ramen", "vegan"]
+        open_year: 2015
+
+      - restaurant: "The Gorbals"
+        position: "Chef & Owner"
+        start_year: 2009
+        end_year: 2015
+        city: "Los Angeles"
+        neighborhood: "Downtown"
+        restaurant_status: "closed"
+        open_year: 2009
+        close_year: 2015
+
+      - restaurant: "Aureole"
+        position: "Line Cook"
+        mentor: "Charlie Palmer"
+
+      - restaurant: "Casa Mono"
+        position: "Line Cook"
+        start_year: 2006
+        city: "New York"
+        state: "NY"
+        cuisine_tags: ["spanish", "tapas"]
+        open_year: 2003
+
+  - name: "Stephanie Izard"
+    bio: "First woman to win Top Chef (Season 4). Chicago-based, expanded Girl & the Goat to LA in 2021. Scottsdale Culinary Institute. Early career at Vong (Vongerichten) in Chicago."
+    birth_country: "US"
+    birth_city: "Evanston, IL"
+    cuisine_tags: ["new-american", "global", "bold-flavors"]
+    education:
+      - institution: "Scottsdale Culinary Institute"
+        city: "Scottsdale, AZ"
+        year: 1999
+        credential: "Culinary Arts"
+    stops:
+      - restaurant: "Girl & the Goat LA"
+        position: "Chef & Owner"
+        start_year: 2021
+        is_current: true
+        city: "Los Angeles"
+        neighborhood: "Arts District"
+        cuisine_tags: ["new-american", "global"]
+        open_year: 2021
+
+      - restaurant: "Cabra"
+        position: "Chef & Owner"
+        start_year: 2022
+        is_current: true
+        city: "Los Angeles"
+        neighborhood: "Downtown"
+        cuisine_tags: ["peruvian"]
+        open_year: 2022
+
+      - restaurant: "Girl & the Goat Chicago"
+        position: "Chef & Owner"
+        start_year: 2010
+        is_current: true
+        city: "Chicago"
+        state: "IL"
+        cuisine_tags: ["new-american"]
+        open_year: 2010
+
+  - name: "Aarti Sequeira"
+    bio: "Food Network Star Season 6 winner. Trained at New School of Cooking in Culver City, interned under Suzanne Goin at Lucques. Mumbai-born, Northwestern journalism grad turned chef and TV personality."
+    birth_country: "IN"
+    birth_city: "Mumbai, India"
+    cuisine_tags: ["indian", "fusion", "comfort"]
+    education:
+      - institution: "New School of Cooking"
+        city: "Culver City, CA"
+        year: 2007
+        credential: "Professional Certificate"
+    stops:
+      - restaurant: "Lucques"
+        position: "Intern"
+        start_year: 2006
+        end_year: 2007
+        mentor: "Suzanne Goin"
+
+  - name: "Jet Tila"
+    bio: "LA-born Thai-Chinese chef. Family founded Bangkok Market (1972) and Royal Thai (1978). Le Cordon Bleu Paris, California Sushi Academy. TV personality (Iron Chef America, Cutthroat Kitchen). Culinary ambassador for Thai cuisine."
+    birth_country: "US"
+    birth_city: "Los Angeles, CA"
+    cuisine_tags: ["thai", "asian", "chinese"]
+    education:
+      - institution: "Le Cordon Bleu"
+        city: "Paris, France"
+      - institution: "California Sushi Academy"
+        city: "Los Angeles, CA"
+    stops:
+      - restaurant: "Bangkok Market"
+        position: "Family Business"
+        start_year: 1972
+        city: "Los Angeles"
+        neighborhood: "East Hollywood"
+        cuisine_tags: ["thai"]
+        open_year: 1972
+        notes: "Family-founded, first Thai grocery in the US"
+
+      - restaurant: "Royal Thai"
+        position: "Family Business"
+        start_year: 1978
+        city: "Los Angeles"
+        cuisine_tags: ["thai"]
+        open_year: 1978
+        notes: "Family restaurant, one of the first Thai restaurants in LA"
+
+      - restaurant: "The Charleston"
+        position: "Chef"
+        is_current: true
+        city: "Santa Monica"
+        cuisine_tags: ["thai", "asian"]

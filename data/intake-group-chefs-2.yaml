@@ -1,0 +1,105 @@
+chefs:
+  - name: Ken Takayama
+    bio: "Chef/Partner at Citrin and Mélisse. Started at Kayo (Monterey Park), Patina Pastry under Christophe Moreau, then 20+ years at Mélisse — extern to sous to CdC to partner. Day-to-day kitchen leader across both Citrin Hospitality properties."
+    birth_country: US
+    birth_city: "Los Angeles, CA"
+    cuisine_tags: [california, french, fine-dining]
+    stops:
+      - restaurant: Mélisse
+        position: "Chef/Partner"
+        start_year: 2001
+        is_current: true
+        mentor: Josiah Citrin
+      - restaurant: Citrin
+        position: "Chef/Partner"
+        is_current: true
+        mentor: Josiah Citrin
+      - restaurant: Patina
+        position: "Pastry Extern"
+        start_year: null
+        end_year: null
+        mentor: Joachim Splichal
+
+  - name: John-Carlos Kuramoto
+    bio: "CIA-trained chef running food for the h.wood Group. Apprenticed under Ming Tsai at Blue Ginger, cooked at Michael Mina's Bellagio, Campanile, and was EC at Michael's Santa Monica at 23. Joined h.wood with The Nice Guy opening in 2014."
+    birth_country: US
+    cuisine_tags: [italian, american, japanese, supper-club]
+    education:
+      - institution: Culinary Institute of America
+        city: "Hyde Park, NY"
+    stops:
+      - restaurant: The Nice Guy
+        position: "Executive Chef / Culinary Director"
+        start_year: 2014
+        is_current: true
+      - restaurant: Campanile
+        position: "Cook"
+        mentor: Mark Peel
+
+  - name: Jacob Solomon
+    bio: "Executive chef at Orla (Mina Group) at Regent Santa Monica. LA native. Previously corporate chef at Lettuce Entertain You, ran Testaccio in Chicago. Egyptian-Mediterranean focus."
+    birth_country: US
+    birth_city: "Los Angeles, CA"
+    cuisine_tags: [mediterranean, middle-eastern, egyptian, fine-dining]
+    stops:
+      - restaurant: Orla
+        position: "Executive Chef"
+        is_current: true
+        city: Santa Monica
+
+  - name: Sean Tan
+    bio: "Executive chef at Nobu Los Angeles. Malaysian-born. Came up through the Nobu system — Nobu Melbourne, then EC at Nobu Hotel Chicago. Culinary lead for Australian Open and BNP Paribas Open events."
+    birth_country: MY
+    cuisine_tags: [japanese, peruvian, sushi, fine-dining]
+    stops:
+      - restaurant: Nobu Los Angeles
+        position: "Executive Chef"
+        is_current: true
+        mentor: Nobu Matsuhisa
+
+  - name: Hans Rockenwagner
+    bio: "German-trained chef with 40-year LA career. Black Forest Academy (classical French/nouvelle), then Michelin 2-star Zum Adler near Basel. Recruited to Le Perroquet in Chicago at 22. Opened Rockenwagner in LA in 1984. JBF Rising Star Chef. Now co-owns Dear John's and Dear Jane's with Josiah Citrin."
+    birth_country: DE
+    cuisine_tags: [german, french, american, bakery]
+    stops:
+      - restaurant: "Dear John's"
+        position: "Co-Chef/Owner"
+        start_year: 2019
+        is_current: true
+
+  - name: Brandon Gray
+    bio: "Culinary director at Cape Seafood & Provisions. Trained at Providence under Michael Cimarusti, then Trois Mec under Ludo Lefebvre. Two-mentor pedigree. Runs the day-to-day at Cimarusti's seafood market."
+    birth_country: US
+    cuisine_tags: [seafood, california, sustainable]
+    stops:
+      - restaurant: Cape Seafood & Provisions
+        position: "Culinary Director"
+        is_current: true
+        mentor: Michael Cimarusti
+      - restaurant: Providence
+        position: "Cook"
+        mentor: Michael Cimarusti
+      - restaurant: Trois Mec
+        position: "Cook"
+        mentor: Ludo Lefebvre
+
+  - name: Thomas Lim
+    bio: "Executive chef at Elephante since opening in 2018. Australian-born. Previously at Goldie's (LA) and Dudley's (NYC). Zagat 30 Under 30 (2014)."
+    birth_country: AU
+    cuisine_tags: [italian, coastal, california, mediterranean]
+    stops:
+      - restaurant: Elephante
+        position: "Executive Chef"
+        start_year: 2018
+        is_current: true
+
+  - name: Gabriel Pulido
+    bio: "Executive chef at Bourbon Steak Los Angeles (Mina Group). Art Institute of Los Angeles culinary program."
+    birth_country: US
+    cuisine_tags: [steakhouse, american, fine-dining]
+    education:
+      - institution: Art Institute of Los Angeles
+    stops:
+      - restaurant: Bourbon Steak Los Angeles
+        position: "Executive Chef"
+        is_current: true

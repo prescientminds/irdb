@@ -1,0 +1,199 @@
+chefs:
+  # ── Mentor-only entries first (so within-batch resolution works) ──
+
+  # Gaston Lenôtre — mentor for Michel Richard
+  - name: "Gaston Lenotre"
+    bio: "Founder of Maison Lenôtre, one of France's most influential pastry houses. Trained generations of pastry chefs including Michel Richard."
+    birth_country: "FR"
+    birth_city: "Saint-Nicolas-du-Bosc, Normandy"
+    cuisine_tags: ["french", "pastry"]
+    status: "deceased"
+    stops:
+      - restaurant: "Maison Lenotre"
+        position: "Founder"
+        is_current: false
+        city: "Paris"
+        cuisine_tags: ["french", "pastry"]
+        restaurant_status: "open"
+
+  # Marc Veyrat — mentor for Christophe Émé
+  - name: "Marc Veyrat"
+    bio: "Legendary French mountain chef. Earned 3 Michelin stars at Auberge de l'Eridan. Known for foraging Alpine herbs and flowers."
+    birth_country: "FR"
+    birth_city: "Annecy, France"
+    cuisine_tags: ["french", "fine-dining", "foraging", "alpine"]
+    status: "active"
+    stops:
+      - restaurant: "Auberge de l'Eridan"
+        position: "Chef & Owner"
+        is_current: false
+        city: "Veyrier-du-Lac, France"
+        cuisine_tags: ["french", "fine-dining"]
+        restaurant_status: "closed"
+
+  # ── 1. Michel Richard ──────────────────────────────────
+  # JBF 1992 Best Chef: California. JBF 2007 Outstanding Chef.
+  - name: "Michel Richard"
+    bio: "French pastry prodigy turned LA fine dining pioneer. Trained under Gaston Lenôtre in Paris, opened Citrus in 1986 which redefined French cooking in LA. Won JBF Best Chef: California 1992 and Outstanding Chef 2007. Later moved to DC. Died 2016."
+    birth_country: "FR"
+    birth_city: "Pabu, Brittany"
+    cuisine_tags: ["french", "pastry", "fine-dining", "california"]
+    status: "deceased"
+    stops:
+      - restaurant: "Citrus"
+        position: "Chef & Owner"
+        start_year: 1986
+        end_year: 2001
+        is_current: false
+        city: "Los Angeles"
+        neighborhood: "West Hollywood"
+        cuisine_tags: ["french", "california", "fine-dining"]
+        restaurant_status: "closed"
+        open_year: 1986
+        close_year: 2001
+        price_range: "$$$$"
+        format: "fine-dining"
+
+      - restaurant: "Citronelle"
+        position: "Chef & Owner"
+        start_year: 1994
+        end_year: 2012
+        is_current: false
+        city: "Washington"
+        neighborhood: "Georgetown"
+        cuisine_tags: ["french", "fine-dining"]
+        restaurant_status: "closed"
+        open_year: 1994
+        close_year: 2012
+        price_range: "$$$$"
+        format: "fine-dining"
+
+      - restaurant: "Maison Lenotre"
+        position: "Patissier"
+        is_current: false
+        mentor: "Gaston Lenotre"
+
+  # ── 2. Celestino Drago ─────────────────────────────────
+  # F&W 1993 Best New Chef.
+  - name: "Celestino Drago"
+    bio: "Sicilian-born chef who built LA's most enduring Italian restaurant empire. Arrived 1979, worked at Orlando Orsini, opened Drago (Santa Monica, 1991-2011). F&W Best New Chef 1993. Knighted by the Italian government."
+    birth_country: "IT"
+    birth_city: "Sicily"
+    cuisine_tags: ["italian", "fine-dining", "pasta"]
+    stops:
+      - restaurant: "Drago"
+        position: "Chef & Owner"
+        start_year: 1991
+        end_year: 2011
+        is_current: false
+        city: "Los Angeles"
+        neighborhood: "Santa Monica"
+        cuisine_tags: ["italian", "fine-dining"]
+        restaurant_status: "closed"
+        open_year: 1991
+        close_year: 2011
+        price_range: "$$$"
+        format: "fine-dining"
+
+      - restaurant: "Il Pastaio"
+        position: "Chef & Owner"
+        start_year: 1994
+        is_current: true
+        city: "Los Angeles"
+        neighborhood: "Beverly Hills"
+        cuisine_tags: ["italian", "pasta"]
+        restaurant_status: "open"
+        open_year: 1994
+        price_range: "$$$"
+        format: "casual"
+
+      - restaurant: "Drago Centro"
+        position: "Chef & Owner"
+        start_year: 2008
+        is_current: true
+        city: "Los Angeles"
+        neighborhood: "Downtown"
+        cuisine_tags: ["italian", "fine-dining"]
+        restaurant_status: "open"
+        open_year: 2008
+        price_range: "$$$"
+        format: "fine-dining"
+
+      - restaurant: "Orlando Orsini"
+        position: "Chef"
+        start_year: 1979
+        is_current: false
+        city: "Los Angeles"
+        cuisine_tags: ["italian"]
+        restaurant_status: "closed"
+
+  # ── 3. Ari Taymor ─────────────────────────────────────
+  # F&W 2014 Best New Chef.
+  - name: "Ari Taymor"
+    bio: "Opened Alma in a tiny downtown LA storefront in 2012, earned F&W Best New Chef 2014. Trained at Flour + Water, Bar Tartine, and La Chassagnette. Closed Alma 2015. Advocate for chef mental health."
+    birth_country: "US"
+    birth_city: "Hawaii"
+    cuisine_tags: ["california", "seasonal", "fine-dining"]
+    stops:
+      - restaurant: "Alma"
+        position: "Chef & Co-Owner"
+        start_year: 2012
+        end_year: 2015
+        is_current: false
+        city: "Los Angeles"
+        neighborhood: "Downtown"
+        cuisine_tags: ["california", "seasonal", "fine-dining"]
+        restaurant_status: "closed"
+        open_year: 2012
+        close_year: 2015
+        price_range: "$$$"
+        format: "tasting-menu"
+
+      - restaurant: "Bar Tartine"
+        position: "Cook"
+        is_current: false
+        mentor: "Jeremy Fox"
+        city: "San Francisco"
+        cuisine_tags: ["california", "seasonal"]
+        restaurant_status: "closed"
+
+      - restaurant: "Flour + Water"
+        position: "Cook"
+        is_current: false
+        city: "San Francisco"
+        cuisine_tags: ["italian", "pasta"]
+        restaurant_status: "open"
+
+  # ── 4. Christophe Eme ──────────────────────────────────
+  # F&W 2005 Best New Chef. Ortolan (Michelin star).
+  # NOTE: using "Gilles Epie" without accent to match existing DB ID
+  - name: "Christophe Eme"
+    bio: "French chef who earned a Michelin star at Ortolan in LA. Trained under Marc Veyrat at Auberge de l'Eridan (3-star) and at Taillevent. Worked at L'Orangerie before opening Ortolan in 2005. F&W Best New Chef 2005."
+    birth_country: "FR"
+    cuisine_tags: ["french", "fine-dining", "modern-french"]
+    stops:
+      - restaurant: "Ortolan"
+        position: "Chef & Owner"
+        start_year: 2005
+        end_year: 2011
+        is_current: false
+
+      - restaurant: "L'Orangerie"
+        position: "Chef"
+        start_year: 2001
+        end_year: 2005
+        is_current: false
+        mentor: "Gilles Epie"
+
+      - restaurant: "Auberge de l'Eridan"
+        position: "Cook"
+        is_current: false
+        mentor: "Marc Veyrat"
+
+      - restaurant: "Taillevent"
+        position: "Cook"
+        is_current: false
+        city: "Paris"
+        cuisine_tags: ["french", "fine-dining"]
+        restaurant_status: "open"
+        price_range: "$$$$"
